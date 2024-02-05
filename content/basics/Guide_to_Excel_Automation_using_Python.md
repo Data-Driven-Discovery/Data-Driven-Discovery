@@ -1,3 +1,12 @@
+
+---
+title: "Guide to Excel Automation using Python"
+date: 2024-02-05
+tags: ['Python', 'ETL Processes', 'Tutorial']
+categories: ["basics"]
+---
+
+
 # Guide to Excel Automation using Python
 
 Businesses often rely on Excel to handle vast amounts of data, from sales data analysis to financial forecasting. However, manually processing this data is often tedious and time-consuming. Python, a versatile programming language widely-known for its ease-of-use and broad ecosystem of data analyst tools, can be applied to automate tasks involving Excel datasets. This article provides a comprehensive guide on how to automate Excel tasks using Python.

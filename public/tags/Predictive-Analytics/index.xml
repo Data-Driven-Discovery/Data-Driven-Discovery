@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Predictive Analytics on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Predictive-Analytics/</link>
+    <description>Recent content in Predictive Analytics on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Predictive-Analytics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Demystifying the Basics of Predictive Analytics</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Demystifying_the_Basics_of_Predictive_Analytics/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Demystifying_the_Basics_of_Predictive_Analytics/</guid>
+      <description>Demystifying the Basics of Predictive Analytics In the modern age where data drives decisions, predictive analytics has emerged as a game-changer for businesses, governments, and individuals alike. This article aims to demystify the fundamentals of predictive analytics for readers who are interested in the burgeoning field of data science, machine learning, and data engineering. We will take a glimpse at what predictive analytics is, its working process, its applications, as well as a some practical Python code examples using common Machine Learning libraries.</description>
+    </item>
+    <item>
+      <title>The Power and Pitfalls of Monte Carlo Simulations</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Power_and_Pitfalls_of_Monte_Carlo_Simulations/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Power_and_Pitfalls_of_Monte_Carlo_Simulations/</guid>
+      <description>The Power and Pitfalls of Monte Carlo Simulations Monte Carlo simulations are a powerful tool widely applied in fields like data science, finance, project management, energy, manufacturing, engineering, research, and more. They provide a way to explore and understand the impact of risk and uncertainty in prediction and forecasting models. In this article, we will delve into the exciting world of Monte Carlo simulations, their applications, and associated pitfalls.
+As we embark on this journey, we will use Python and its rich library ecosystem including libraries like Numpy and Matplotlib.</description>
+    </item>
+  </channel>
+</rss>

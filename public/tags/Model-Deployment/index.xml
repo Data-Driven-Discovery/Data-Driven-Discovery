@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Model Deployment on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Model-Deployment/</link>
+    <description>Recent content in Model Deployment on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Model-Deployment/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced Strategies in Model Compression for Edge Computing</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Advanced_Strategies_in_Model_Compression_for_Edge_Computing/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Advanced_Strategies_in_Model_Compression_for_Edge_Computing/</guid>
+      <description>Advanced Strategies in Model Compression for Edge Computing In today’s ever-evolving technological landscape, edge computing has emerged as a pivotal mechanism for processing data closer to its source. This paradigm shift reduces latency, saves bandwidth, and enhances privacy. However, deploying machine learning models on edge devices, constrained by limited compute power and memory, poses unique challenges. Model compression becomes an essential strategy to bridge this gap, enabling the execution of sophisticated models on devices like smartphones, IoT devices, and embedded systems.</description>
+    </item>
+    <item>
+      <title>Deep Dive into Model Distillation: Strategies for Optimizing Large-Scale Models</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Deep_Dive_into_Model_Distillation_Strategies_for_Optimizing_Large-Scale_Models/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Deep_Dive_into_Model_Distillation_Strategies_for_Optimizing_Large-Scale_Models/</guid>
+      <description>Deep Dive into Model Distillation: Strategies for Optimizing Large-Scale Models In the rapidly advancing field of machine learning, deploying large-scale models efficiently remains a critical challenge. While these models, like those based on deep neural networks, have shown remarkable accuracy and capabilities, their size often makes them impractical for certain applications, especially those with limited computational resources. This is where model distillation comes into play. In this article, we will explore what model distillation is, why it’s important, and how you can implement it to optimize your large-scale models.</description>
+    </item>
+    <item>
+      <title>Efficient Pipelining in Data Science: From Data Ingestion to Model Deployment</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Efficient_Pipelining_in_Data_Science_From_Data_Ingestion_to_Model_Deployment/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Efficient_Pipelining_in_Data_Science_From_Data_Ingestion_to_Model_Deployment/</guid>
+      <description>Efficient Pipelining in Data Science: From Data Ingestion to Model Deployment In the fast-paced world of data science, efficiency is key. From data ingestion to model deployment, each step in the data science pipeline must be optimized to save time, resources, and ultimately, contribute to the success of projects. This article aims to guide you through building efficient pipelines in data science, empowering both beginners and more advanced users with knowledge, practical tips, and code snippets to streamline their processes.</description>
+    </item>
+    <item>
+      <title>Secrets of Successful Model Deployment: Scalability and Maintenance Strategies</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Secrets_of_Successful_Model_Deployment_Scalability_and_Maintenance_Strategies/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Secrets_of_Successful_Model_Deployment_Scalability_and_Maintenance_Strategies/</guid>
+      <description>Secrets of Successful Model Deployment: Scalability and Maintenance Strategies Deploying machine learning models into production is a critical step in the lifecycle of any data-driven application. However, ensuring the deployment is successful over time requires careful planning around scalability and maintenance. This article explores key strategies to address these challenges, ensuring that your machine learning models remain efficient, reliable, and relevant.
+Introduction Deploying machine learning models is more than just making your model available for use.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Data Engineering on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Engineering/</link>
+    <description>Recent content in Data Engineering on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced Techniques for Robust and Scalable Distributed Databases</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Advanced_Techniques_for_Robust_and_Scalable_Distributed_Databases/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Advanced_Techniques_for_Robust_and_Scalable_Distributed_Databases/</guid>
+      <description>Advanced Techniques for Robust and Scalable Distributed Databases In today&amp;rsquo;s data-driven world, the ability to store, access, and manipulate data efficiently is paramount for the success of businesses and applications alike. Distributed databases have become a cornerstone for achieving scalability and robustness in handling large, diverse datasets. This article will explore advanced techniques that ensure distributed databases are both robust and scalable, catering to beginners and advanced users interested in optimizing their data infrastructure.</description>
+    </item>
+    <item>
+      <title>How to Develop a Data Engineering Project from Scratch</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Develop_a_Data_Engineering_Project_from_Scratch/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Develop_a_Data_Engineering_Project_from_Scratch/</guid>
+      <description>How to Develop a Data Engineering Project from Scratch There is a growing demand for professionals skilled in data engineering, which is the foundation of the data-driven decision-making that is pivotal in today’s business environment. Embarking on a data engineering project can certainly be exhilarating but also daunting. In this blog post, we&amp;rsquo;ll walk through the major steps and practices for starting a data engineering project from scratch.
+Introduction Data Engineering is the backbone of any Machine Learning, Data Science, and Artificial Intelligence projects.</description>
+    </item>
+    <item>
+      <title>How to Improve ETL Performance</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Improve_ETL_Performance/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Improve_ETL_Performance/</guid>
+      <description>How to Improve ETL Performance Extract, Transform, Load (ETL) is a fundamental concept in the realm of Data Engineering. ETL processes are the backbone of every data warehouse, responsible for the timely and accurate migration of data from source systems to the data warehouse. A bottleneck in ETL can lead to undesirable consequences in business decision-making, making ETL performance optimization a priority for every Data Engineer. In this article, we&amp;rsquo;ll be looking at practical means to improve ETL performance, using Python and the pandarallel library to leverage parallel processing for our ETL tasks.</description>
+    </item>
+    <item>
+      <title>Managing Big Data with Apache Spark</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Managing_Big_Data_with_Apache_Spark/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Managing_Big_Data_with_Apache_Spark/</guid>
+      <description>Managing Big Data with Apache Spark In this digital age, virtually every aspect of our lives generates data. From our social media activities to our online shopping habits, data is being harvested and used in ways that we could hardly have imagined even a decade ago. Among the tools designed to handle big data analytics, Apache Spark stands out due to its speed, ease of use, and general-purpose processing power.</description>
+    </item>
+  </channel>
+</rss>

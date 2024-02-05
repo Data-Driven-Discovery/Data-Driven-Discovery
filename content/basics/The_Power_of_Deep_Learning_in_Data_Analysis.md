@@ -1,3 +1,12 @@
+
+---
+title: "The Power of Deep Learning in Data Analysis"
+date: 2024-02-05
+tags: ['Deep Learning', 'Data Analysis', 'Neural Networks', 'Tutorial']
+categories: ["basics"]
+---
+
+
 # The Power of Deep Learning in Data Analysis
 
 Machine Learning and Data Science have been transforming multiple industries dramatically in recent years. Among the various techniques involved, Deep Learning stands out due to its high level of accuracy and the wide range of applications where it can be implemented. 

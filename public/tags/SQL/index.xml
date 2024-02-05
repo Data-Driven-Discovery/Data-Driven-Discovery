@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SQL on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/SQL/</link>
+    <description>Recent content in SQL on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/SQL/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Top Tips for Optimizing Query Performance</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Top_Tips_for_Optimizing_Query_Performance/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Top_Tips_for_Optimizing_Query_Performance/</guid>
+      <description>Top Tips for Optimizing Query Performance When it comes to working with data-intensive applications, the efficiency of your queries can make or break the performance of your technology stack. Any successful Data Science or Data Engineer has, at some point, faced the need to optimize a database query. This article will outline some strategies for optimizing your query performance across common languages and platforms.
+Introduction Query optimization is a crucial task in handling databases or working on big data applications.</description>
+    </item>
+    <item>
+      <title>Understanding the Basics of SQL and its Importance</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Understanding_the_Basics_of_SQL_and_its_Importance/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Understanding_the_Basics_of_SQL_and_its_Importance/</guid>
+      <description>Understanding the Basics of SQL and its Importance SQL or Structured Query Language is a fundamental tool used across industries for accessing, manipulating, and analyzing data stored in relational databases. If you&amp;rsquo;re a Data professional, chances are high that you will encounter SQL. This article covers the basics of SQL and its significance in Data Science, Machine Learning, Data Engineering, and MLOps.
+Introduction Despite the increasing use of NoSQL databases and newer technology stacks, SQL continues to be the dialect of choice for performing data analysis on structured data.</description>
+    </item>
+  </channel>
+</rss>

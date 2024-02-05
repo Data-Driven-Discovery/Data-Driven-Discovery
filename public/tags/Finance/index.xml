@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Finance on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Finance/</link>
+    <description>Recent content in Finance on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Finance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started with Python for Finance</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Getting_Started_with_Python_for_Finance/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Getting_Started_with_Python_for_Finance/</guid>
+      <description>Getting Started with Python for Finance Python, with its robust libraries and user-friendly syntax, has emerged as an essential tool for financial data analysis and modeling. From risk management to trading strategies, the Python ecosystem hosts a plethora of libraries designed to tackle a wide array of finance-related tasks. In this blog, we will delve into key concepts and tools that every data professional needs to navigate Python in finance.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,3 +1,12 @@
+
+---
+title: "Python vs R vs SAS: Comparing Data Analysis Languages"
+date: 2024-02-05
+tags: ['Data Analysis', 'Python', 'R', 'SAS', 'Comparison']
+categories: ["basics"]
+---
+
+
 # Python vs R vs SAS: Comparing Data Analysis Languages
 
 Data analysis is a major domain of computer science that is rapidly transforming industries globally. Numerous programming languages support data analysis, each possessing unique features, strengths, and limitations. The choice of which language to use often depends on various factors such as the specific task, industry requirements, and personal preference. In this article, we will compare three commonly used languages: Python, R, and SAS, and understand where each stands in the field of data science and machine learning.

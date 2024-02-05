@@ -5,18 +5,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Data Driven Discovery - D3</title>
-<meta name="keywords" content="">
+<title>Introduction to Database Normalization | Data Driven Discovery - D3</title>
+<meta name="keywords" content="Database Normalization, Data Science">
 <meta name="description" content="Introduction to Database Normalization Database normalization is a crucial step in data engineering and design. It defines a set of methods to break down tables to their simplest form to avoid complex attributes and redundancy. The goal of normalization is to eliminate redundant (redundant = duplicate) data, which in turn prevents data anomalies and saves storage.
 In this article, we will look into different levels of database normalization and understand why they are significant.">
 <meta name="author" content="">
-<link rel="canonical" href="http://example.org/basics/Intro_to_Database_Normalization/">
+<link rel="canonical" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Intro_to_Database_Normalization/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://example.org/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png">
-<link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg">
+<link rel="icon" href="https://lustrous-paprenjak-b7c3d8.netlify.app/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lustrous-paprenjak-b7c3d8.netlify.app/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lustrous-paprenjak-b7c3d8.netlify.app/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://lustrous-paprenjak-b7c3d8.netlify.app/apple-touch-icon.png">
+<link rel="mask-icon" href="https://lustrous-paprenjak-b7c3d8.netlify.app/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <noscript>
@@ -55,16 +55,16 @@ In this article, we will look into different levels of database normalization an
         }
 
     </style>
-</noscript><meta property="og:title" content="" />
+</noscript><meta property="og:title" content="Introduction to Database Normalization" />
 <meta property="og:description" content="Introduction to Database Normalization Database normalization is a crucial step in data engineering and design. It defines a set of methods to break down tables to their simplest form to avoid complex attributes and redundancy. The goal of normalization is to eliminate redundant (redundant = duplicate) data, which in turn prevents data anomalies and saves storage.
 In this article, we will look into different levels of database normalization and understand why they are significant." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://example.org/basics/Intro_to_Database_Normalization/" /><meta property="article:section" content="basics" />
-
-
+<meta property="og:url" content="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Intro_to_Database_Normalization/" /><meta property="article:section" content="basics" />
+<meta property="article:published_time" content="2024-02-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-02-05T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
+<meta name="twitter:title" content="Introduction to Database Normalization"/>
 <meta name="twitter:description" content="Introduction to Database Normalization Database normalization is a crucial step in data engineering and design. It defines a set of methods to break down tables to their simplest form to avoid complex attributes and redundancy. The goal of normalization is to eliminate redundant (redundant = duplicate) data, which in turn prevents data anomalies and saves storage.
 In this article, we will look into different levels of database normalization and understand why they are significant."/>
 
@@ -78,13 +78,13 @@ In this article, we will look into different levels of database normalization an
       "@type": "ListItem",
       "position":  1 ,
       "name": "Basics",
-      "item": "http://example.org/basics/"
+      "item": "https://lustrous-paprenjak-b7c3d8.netlify.app/basics/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "",
-      "item": "http://example.org/basics/Intro_to_Database_Normalization/"
+      "name": "Introduction to Database Normalization",
+      "item": "https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Intro_to_Database_Normalization/"
     }
   ]
 }
@@ -93,27 +93,27 @@ In this article, we will look into different levels of database normalization an
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "",
-  "name": "",
+  "headline": "Introduction to Database Normalization",
+  "name": "Introduction to Database Normalization",
   "description": "Introduction to Database Normalization Database normalization is a crucial step in data engineering and design. It defines a set of methods to break down tables to their simplest form to avoid complex attributes and redundancy. The goal of normalization is to eliminate redundant (redundant = duplicate) data, which in turn prevents data anomalies and saves storage.\nIn this article, we will look into different levels of database normalization and understand why they are significant.",
   "keywords": [
-    
+    "Database Normalization", "Data Science"
   ],
   "articleBody": "Introduction to Database Normalization Database normalization is a crucial step in data engineering and design. It defines a set of methods to break down tables to their simplest form to avoid complex attributes and redundancy. The goal of normalization is to eliminate redundant (redundant = duplicate) data, which in turn prevents data anomalies and saves storage.\nIn this article, we will look into different levels of database normalization and understand why they are significant. Also, we will view Python code snippets to explain how a database can be normalized.\nNote: This article aims to provide a theoretical understanding of concepts and as such, will not contain any working code snippets.\nUnderstanding The Normal Forms: There are several stages of normalization known as ’normal forms’—first normal form, second normal form, third normal form, etc. Let’s simplify them.\nFirst Normal Form (1NF) A table (relation) is said to be in 1NF when all the attributes (columns) in a relation are atomic. An attribute is said to be atomic if the values in the attribute are indivisible units.\nSecond Normal Formal (2NF) A table is in 2NF if it is in 1NF and every non-prime attribute of the table is dependent on the primary key. A non-prime attribute of a table is an attribute that is not a part of any candidate key of the table.\nThird Normal Form (3NF): A table is in 3NF if it is in 2NF and no non-prime attribute is dependent on any other non-prime attribute. Effectively, this means that all non-key attributes must be mutually independent.\nBoyce-Codd Normal Form (BCNF) A table is in BCNF if every functional dependency is a dependency on a superkey.\nWhy is Database Normalization Important? Normalization significantly improves the query performance of a database. This enhancement is achieved by reducing the amount of data that needs to be read from the hard disk for each query.\nA well-designed database also simplifies development activities — It’s easier to build reports, forms, queries and other application objects with a well-structured backend.\nApart from this, you can easily maintain security with well-defined data access. For instance, the IT department can have access to the employee database, but the HR department will only have access to the employee details table.\nDatabase normalization ensures the data integrity of a database. Minimum data redundancy leads to less data duplication and a smaller database size.\nChallenges with Database Normalization While database normalization has several advantages, it’s not without its challenges. The process can become complex as the number of tables increases, and the relationships between them may become more complex. Also, in some instances, denormalization (the process of trying to improve the read performance of a database by adding redundant data) might be more fitting. Although this adds onto the storage overhead, the expense is offset by the resulting improvement in query performance.\nConclusion The normalization of a database is critical in creating a functional database. Coupled with the sound understanding of your data, the right application of normalization principles will yield a database design that accurately models your data, is efficient to maintain, avoids redundant data storage, is consistent over time, and is flexible to future growth and change.\nRemember, normalization is not a cure-all solution, rising to higher levels of normalization is not necessarily better. There might be scenarios where normalization up to 3NF or BCNF is sufficient.\nThe final design of a database is often a compromise between efficiency, convenience, and speed of retrieval. Deciding on the level of normalization in the database design is essential as it significantly impacts the database’s performance and storage.\nINSERT IMAGE HERE\n![Database Normalization](./image.png) With a good understanding of database normalization, you can design the database that perfectly suits your requirements for data storage and retrieval.\n",
   "wordCount" : "626",
   "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
+  "datePublished": "2024-02-05T00:00:00Z",
+  "dateModified": "2024-02-05T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://example.org/basics/Intro_to_Database_Normalization/"
+    "@id": "https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Intro_to_Database_Normalization/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Data Driven Discovery - D3",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://example.org/favicon.ico"
+      "url": "https://lustrous-paprenjak-b7c3d8.netlify.app/favicon.ico"
     }
   }
 }
@@ -135,7 +135,7 @@ In this article, we will look into different levels of database normalization an
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://example.org/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <a href="https://lustrous-paprenjak-b7c3d8.netlify.app/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -169,9 +169,9 @@ In this article, we will look into different levels of database normalization an
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      
+      Introduction to Database Normalization
     </h1>
-    <div class="post-meta">
+    <div class="post-meta"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span>
 
 </div>
   </header> 
@@ -210,13 +210,15 @@ This article aims to provide a theoretical understanding of concepts and as such
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Database-Normalization/">Database Normalization</a></li>
+      <li><a href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Science/">Data Science</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="http://example.org/">Data Driven Discovery - D3</a></span>
+    <span>&copy; 2024 <a href="https://lustrous-paprenjak-b7c3d8.netlify.app/">Data Driven Discovery - D3</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

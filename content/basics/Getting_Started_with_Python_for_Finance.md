@@ -1,3 +1,12 @@
+
+---
+title: "Getting Started with Python for Finance"
+date: 2024-02-05
+tags: ['Python', 'Tutorial', 'Finance']
+categories: ["basics"]
+---
+
+
 # Getting Started with Python for Finance
 
 Python, with its robust libraries and user-friendly syntax, has emerged as an essential tool for financial data analysis and modeling. From risk management to trading strategies, the Python ecosystem hosts a plethora of libraries designed to tackle a wide array of finance-related tasks. In this blog, we will delve into key concepts and tools that every data professional needs to navigate Python in finance.

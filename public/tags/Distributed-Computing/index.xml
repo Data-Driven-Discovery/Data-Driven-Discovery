@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Distributed Computing on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Distributed-Computing/</link>
+    <description>Recent content in Distributed Computing on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Distributed-Computing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Optimal Resource Allocation in Distributed Machine Learning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Optimal_Resource_Allocation_in_Distributed_Machine_Learning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Optimal_Resource_Allocation_in_Distributed_Machine_Learning/</guid>
+      <description>Optimal Resource Allocation in Distributed Machine Learning In the burgeoning field of artificial intelligence (AI), distributed machine learning (ML) stands out as a pivotal method for tackling complex computational tasks. This method leverages the power of multiple computing units to process data more efficiently, thereby accelerating the training of models on large datasets. However, to harness its full potential, it&amp;rsquo;s crucial to address the challenge of optimal resource allocation. This article delves into effective strategies and techniques to maximize resource utilization in distributed ML environments, catering to both beginners and advanced practitioners.</description>
+    </item>
+  </channel>
+</rss>

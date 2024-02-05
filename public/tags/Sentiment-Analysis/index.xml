@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sentiment Analysis on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Sentiment-Analysis/</link>
+    <description>Recent content in Sentiment Analysis on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Sentiment-Analysis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Innovative Techniques in Sentiment Analysis: Beyond Polarity</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Innovative_Techniques_in_Sentiment_Analysis_Beyond_Polarity/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Innovative_Techniques_in_Sentiment_Analysis_Beyond_Polarity/</guid>
+      <description>Innovative Techniques in Sentiment Analysis: Beyond Polarity Sentiment analysis occupies a central place in natural language processing (NLP) and machine learning (ML), providing incredible insights from customer feedback, social media, reviews, and much more. Traditionally, sentiment analysis focuses on determining whether a piece of text expresses a positive, negative, or neutral sentiment. However, as industries evolve and data complexities grow, there&amp;rsquo;s a noticeable shift towards innovative techniques that go beyond mere polarity, unlocking a deeper understanding of emotions, intentions, and nuanced sentiments.</description>
+    </item>
+  </channel>
+</rss>

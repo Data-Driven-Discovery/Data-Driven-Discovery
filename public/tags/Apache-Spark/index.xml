@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Apache Spark on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Apache-Spark/</link>
+    <description>Recent content in Apache Spark on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Apache-Spark/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Managing Big Data with Apache Spark</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Managing_Big_Data_with_Apache_Spark/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Managing_Big_Data_with_Apache_Spark/</guid>
+      <description>Managing Big Data with Apache Spark In this digital age, virtually every aspect of our lives generates data. From our social media activities to our online shopping habits, data is being harvested and used in ways that we could hardly have imagined even a decade ago. Among the tools designed to handle big data analytics, Apache Spark stands out due to its speed, ease of use, and general-purpose processing power.</description>
+    </item>
+    <item>
+      <title>Spark SQL: A ROMP Through the Basics</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Spark_SQL_A_ROMP_Through_the_Basics/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Spark_SQL_A_ROMP_Through_the_Basics/</guid>
+      <description>Spark SQL: A ROMP Through the Basics Welcome to a beginner&amp;rsquo;s guide to Spark SQL! If you find yourself frequenting the landscape of big data, knowing Spark and Spark SQL is an absolute necessity. In this article, we&amp;rsquo;ll be delving into the main features, basic commands, and some practical examples of using Spark SQL.
+Apache Spark is an open-source cluster-computing framework that provides an interface for programming entire clusters with implicit data parallelism and fault tolerance.</description>
+    </item>
+  </channel>
+</rss>

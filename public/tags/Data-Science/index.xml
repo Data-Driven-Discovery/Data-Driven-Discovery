@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Data Science on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Science/</link>
+    <description>Recent content in Data Science on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Classification Algorithms Every Data Scientist Should Know</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Classification_Algorithms_every_Data_Scientist_should_know/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Classification_Algorithms_every_Data_Scientist_should_know/</guid>
+      <description>Classification Algorithms Every Data Scientist Should Know Classification algorithms are indeed the backbone of machine learning. They help in predicting the category or class of certain data points based on past observations. The reliability of their prediction is staggeringly good, making them widely used across several domains. This post will walk you through some pivotal classification algorithms every data scientist should know.
+Introduction Before we begin, let&amp;rsquo;s get a sense of what we are dealing with.</description>
+    </item>
+    <item>
+      <title>Creating User-Friendly Visualizations with Tableau</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Creating_User-Friendly_Visualizations_with_Tableau/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Creating_User-Friendly_Visualizations_with_Tableau/</guid>
+      <description>Creating User-Friendly Visualizations with Tableau Data visualization plays an essential role in the field of Data Science, Machine Learning, and Data Engineering. It not only helps in understanding patterns, trends, or insights but also makes it easier to illustrate the story behind the numbers. In this guide, we&amp;rsquo;re going to explore the role of Tableau, a widely-used data visualization tool, in creating user-friendly and interactive visualizations.
+Note: Though this guide talks about Tableau, it does not include any Python or Bash code snippets since Tableau itself is a standalone tool for visualizing data.</description>
+    </item>
+    <item>
+      <title>Deeper Dive into Data Cleaning with Python</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Deeper_Dive_into_Data_Cleaning_with_Python/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Deeper_Dive_into_Data_Cleaning_with_Python/</guid>
+      <description>Deeper Dive into Data Cleaning with Python Harnessing the power of machine learning and data science often begins with one critical step: data cleaning. Raw data is often messy and packed with inefficiencies and inaccuracies, not to mention irrelevant information that can skew your models and findings if left unchecked. Successful data professionals always make time for thorough data cleaning as the data foundation determines the quality and precision of end products.</description>
+    </item>
+    <item>
+      <title>Efficient Pipelining in Data Science: From Data Ingestion to Model Deployment</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Efficient_Pipelining_in_Data_Science_From_Data_Ingestion_to_Model_Deployment/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Efficient_Pipelining_in_Data_Science_From_Data_Ingestion_to_Model_Deployment/</guid>
+      <description>Efficient Pipelining in Data Science: From Data Ingestion to Model Deployment In the fast-paced world of data science, efficiency is key. From data ingestion to model deployment, each step in the data science pipeline must be optimized to save time, resources, and ultimately, contribute to the success of projects. This article aims to guide you through building efficient pipelines in data science, empowering both beginners and more advanced users with knowledge, practical tips, and code snippets to streamline their processes.</description>
+    </item>
+    <item>
+      <title>Ethics in Data Science</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Ethics_in_Data_Science/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Ethics_in_Data_Science/</guid>
+      <description>Ethics in Data Science With the proliferation of big data, the field of data science has been thrust into the spotlight. This increase in data availability and computational power has enabled businesses and organizations worldwide to leverage data to enhance operational efficiency, drive innovation and even pioneer new technological domains. Yet, as we propel further into this data-driven era, we mustn&amp;rsquo;t disregard the ethical implications.
+In this article, we examine the ethics surrounding the practice of data science, why they&amp;rsquo;re important, how they impact our day-to-day lives and how we can address them.</description>
+    </item>
+    <item>
+      <title>Exploring the Wide Range of Applications for Python</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Exploring_the_Wide_Range_of_Applications_for_Python/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Exploring_the_Wide_Range_of_Applications_for_Python/</guid>
+      <description>Exploring the Wide Range of Applications for Python Python, known as the “Swiss Army Knife” of programming languages, has certainly grown in popularity since its inception. Versatile and beginner-friendly, it is used widely in various sectors ranging from academic research to the development of complex systems and services. This article delves into the broad applications of Python especially in the realm of data science, data engineering, machine learning operations (MLOps), and more.</description>
+    </item>
+    <item>
+      <title>How important is testing in Data Science</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_important_is_testing_in_Data_Science/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_important_is_testing_in_Data_Science/</guid>
+      <description>How important is testing in Data Science Data Science is not just about creating complex Machine Learning models or extracting valuable insights from data. It is about creating accurate, robust, and reliable systems that can make accurate predictions and analytics decisions. From this perspective, testing becomes a critical part in the life-cycle of a Data Science project. It ensures that the derived models meet the desired accuracy and performance.
+In this article, we&amp;rsquo;ll dive deepened on the importance of testing in Data Science.</description>
+    </item>
+    <item>
+      <title>How to Create an Effective Data Strategy</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Create_an_Effective_Data_Strategy/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Create_an_Effective_Data_Strategy/</guid>
+      <description>How to Create an Effective Data Strategy Data has emerged as the fuel for the information-era engine, impacting every professional industry and crevices of life. Accumulating and employing data is becoming increasingly pivotal for organizations, thus necessitating a coolheaded, systematic, and efficient data strategy. Not only does a well-structured data strategy facilitate insightful decision-making, but it also enables enterprises to gain a sure competitive edge.
+Without a robust data strategy, organizations risk falling behind in a data-driven economy.</description>
+    </item>
+    <item>
+      <title>How Version Control is Revolutionizing Data Science</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_Version_Control_is_Revolutionizing_Data_Science/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_Version_Control_is_Revolutionizing_Data_Science/</guid>
+      <description>How Version Control is Revolutionizing Data Science Introduction:
+Data Science is an exciting field that is rapidly evolving, and the ability to manage the evolution of projects has become equally crucial. This is where version control comes into play.
+Today, we discuss version control- a system that records changes to a file or set of files over time so that you can recall specific versions later. It makes collaboration easier among teams and contributes significantly to the robustness and reproducibility of Data Science projects.</description>
+    </item>
+    <item>
+      <title>Introduction to Database Normalization</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Intro_to_Database_Normalization/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Intro_to_Database_Normalization/</guid>
+      <description>Introduction to Database Normalization Database normalization is a crucial step in data engineering and design. It defines a set of methods to break down tables to their simplest form to avoid complex attributes and redundancy. The goal of normalization is to eliminate redundant (redundant = duplicate) data, which in turn prevents data anomalies and saves storage.
+In this article, we will look into different levels of database normalization and understand why they are significant.</description>
+    </item>
+    <item>
+      <title>Maximizing your Coding Efficiency with Jupyter Notebooks</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Maximizing_your_Coding_Efficiency_with_Jupyter_Notebooks/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Maximizing_your_Coding_Efficiency_with_Jupyter_Notebooks/</guid>
+      <description>Maximizing your Coding Efficiency with Jupyter Notebooks Jupyter Notebooks have become a staple in the toolkit of every Data Scientist, Data Engineer, and other data professionals. Its interactive and easy-to-use environment provides seamless experimentations, data cleaning operations, stats modeling, machine learning, and visualizations. In this article, we&amp;rsquo;ll go over how you can truly maximize your coding efficiency with Jupyter notebooks.
+Introduction Jupyter Notebooks function as an electronic lab notebook for those working with data.</description>
+    </item>
+    <item>
+      <title>Natural Language Processing: An Introduction</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Natural_Language_Processing_An_Introduction/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Natural_Language_Processing_An_Introduction/</guid>
+      <description>Natural Language Processing: An Introduction Natural Language Processing (NLP) has emerged as one of the most significant subfields in machine learning and data science. From auto-correct features in smartphones to voice-assistants like Alexa and Siri understanding and even predicting our speech patterns, NLP applications are relentlessly interweaved into our everyday lives. In this blog, we will venture into the world of NLP, illustrating its applications, techniques, and how it revolutionizes the way we interact with machines.</description>
+    </item>
+    <item>
+      <title>Statistical Modeling: The Two Types of Errors One Should Know About</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Statistical_Modeling_The_Two_Types_of_Errors_one_should_know_about/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Statistical_Modeling_The_Two_Types_of_Errors_one_should_know_about/</guid>
+      <description>Statistical Modeling: The Two Types of Errors One Should Know About Statistical modeling is a crucial aspect of machine learning, data science, and data engineering. These models are often trained to predict unseen data. However, the predictions are not always 100% accurate. Therefore, it is important to understand the errors involved - Type I and Type II errors. Let&amp;rsquo;s dive in to explore both of these error types.
+Introduction Type I and Type II errors represent the incorrect conclusions that we might make from hypothesis testing.</description>
+    </item>
+    <item>
+      <title>The Art of Storytelling through Data</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Art_of_Storytelling_through_Data/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Art_of_Storytelling_through_Data/</guid>
+      <description>The Art of Storytelling through Data In this technologically advanced era, data is often visualized as vast networks of numbers and codes. But, a skilled data practitioner knows data can be much more than dry statistics. For those who know how to wield, interpret and communicate, data becomes a compelling storyteller, offering tantalizing insights into patterns and trends that were previously hidden.
+This article seeks to delve into leveraging data visualization and analytics, examining their role in storytelling, and demonstrating various techniques using commonly used Python libraries like Matplotlib, Pandas, and Seaborn.</description>
+    </item>
+    <item>
+      <title>The Ins and Outs of GPU-accelerated Data Science</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_ins_and_outs_of_GPU-accelerated_Data_Science/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_ins_and_outs_of_GPU-accelerated_Data_Science/</guid>
+      <description>The Ins and Outs of GPU-accelerated Data Science The use of Graphics Processing Units (GPUs) has become increasingly prevalent in the field of Data Science due to their capability to process large amounts of data quickly and efficiently. This article explores the concept of GPU-accelerated Data Science, its benefits, real-world applications and how we can leverage GPU power using Python libraries such as CuDF, CuPy and TensorFlow.
+Introduction In traditional computers, the Central Processing Unit (CPU) has been the core of processing power.</description>
+    </item>
+    <item>
+      <title>The Journey From Data to Insights</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Journey_From_Data_to_Insights/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Journey_From_Data_to_Insights/</guid>
+      <description>The Journey From Data to Insights In this era of digital transformation, significantly influenced by the fourth industrial revolution, data is the critical fuel that powers business decision-making and strategy building. In the terrain of data, the journey from raw data to useful insights is not always easy. However, with the right set of skills, tools and techniques, one can seamlessly transform raw data into actionable insights.
+The purpose of this article is to guide you through the stages of data processing and to equip you with fundamental skills such as data cleaning, data engineering, feature extraction, data modelling, and others, using machine learning libraries such as Scikit-Learn, pandas, Matplotlib etc.</description>
+    </item>
+    <item>
+      <title>Things Every Data Scientist Must Know About Web Scraping</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Things_Every_Data_Scientist_Must_Know_About_Web_Scraping/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Things_Every_Data_Scientist_Must_Know_About_Web_Scraping/</guid>
+      <description>Things Every Data Scientist Must Know About Web Scraping Web scraping is an essential skill in the data scientist&amp;rsquo;s arsenal. It involves the extraction of data from webpages. This information often helps in understanding and predicting trends, making it an indispensable tool in the world of data science. In this article, we will dive into what web scraping entails, Python&amp;rsquo;s tools available for web scraping, and key considerations to understand during the process.</description>
+    </item>
+    <item>
+      <title>Top Python Libraries for Data Science</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Top_Python_Libraries_for_Data_Science/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Top_Python_Libraries_for_Data_Science/</guid>
+      <description>Top Python Libraries for Data Science As we navigate the 21st century, data continues to grow exponentially. To make sense of this plethora of information, we resort to Data Science. Data Science concerns extraction of insights from raw, structured or unstructured data. It&amp;rsquo;s an interdisciplinary field that uses various techniques from many fields like mathematics, machine learning, computer science, and statistics to generate insights from data.
+Python has emerged as one of the leading languages in this landscape due to its simplicity, flexibility and a wealth of powerful libraries dedicated to almost every Data Science task imaginable - from web scraping to deep learning.</description>
+    </item>
+  </channel>
+</rss>

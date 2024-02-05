@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI Ethics on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/AI-Ethics/</link>
+    <description>Recent content in AI Ethics on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/AI-Ethics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ethics in Data Science</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Ethics_in_Data_Science/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Ethics_in_Data_Science/</guid>
+      <description>Ethics in Data Science With the proliferation of big data, the field of data science has been thrust into the spotlight. This increase in data availability and computational power has enabled businesses and organizations worldwide to leverage data to enhance operational efficiency, drive innovation and even pioneer new technological domains. Yet, as we propel further into this data-driven era, we mustn&amp;rsquo;t disregard the ethical implications.
+In this article, we examine the ethics surrounding the practice of data science, why they&amp;rsquo;re important, how they impact our day-to-day lives and how we can address them.</description>
+    </item>
+  </channel>
+</rss>

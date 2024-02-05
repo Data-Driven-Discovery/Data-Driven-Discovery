@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>High-Performance Computing on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/High-Performance-Computing/</link>
+    <description>Recent content in High-Performance Computing on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/High-Performance-Computing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Running High-Performance Computing with Scala</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Running_High-Performance_Computing_with_Scala/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Running_High-Performance_Computing_with_Scala/</guid>
+      <description>Running High-Performance Computing with Scala In the data world, performance and speed when processing large-scale datasets is a top priority. The trend has inclined towards language tools that offer both functionality and efficiency. While Python has been a front-runner in data science, Scala is captivating a large number of developers and data professionals due to its high performance, functional programming capability, and adaptability with Big Data tools like Apache Spark.</description>
+    </item>
+    <item>
+      <title>The Ins and Outs of GPU-accelerated Data Science</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_ins_and_outs_of_GPU-accelerated_Data_Science/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_ins_and_outs_of_GPU-accelerated_Data_Science/</guid>
+      <description>The Ins and Outs of GPU-accelerated Data Science The use of Graphics Processing Units (GPUs) has become increasingly prevalent in the field of Data Science due to their capability to process large amounts of data quickly and efficiently. This article explores the concept of GPU-accelerated Data Science, its benefits, real-world applications and how we can leverage GPU power using Python libraries such as CuDF, CuPy and TensorFlow.
+Introduction In traditional computers, the Central Processing Unit (CPU) has been the core of processing power.</description>
+    </item>
+  </channel>
+</rss>

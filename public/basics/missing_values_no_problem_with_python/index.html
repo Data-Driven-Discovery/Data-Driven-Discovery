@@ -5,17 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Data Driven Discovery - D3</title>
-<meta name="keywords" content="">
+<title>Missing Values? No Problem with Python | Data Driven Discovery - D3</title>
+<meta name="keywords" content="Data Cleaning, Python, Tutorial">
 <meta name="description" content="Missing Values? No Problem with Python Data is becoming the lifeblood of virtually all industries. In the era of big data, the quality of your dataset is crucial to the success of your predictive models. One of the frequent challenges faced by data scientists in preparing their data is dealing with missing values. Missing values are nothing but the absence of data values in a column. To be put simply, when there is no information, it&rsquo;s a missing value.">
 <meta name="author" content="">
-<link rel="canonical" href="http://example.org/basics/Missing_Values_No_Problem_with_Python/">
+<link rel="canonical" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Missing_Values_No_Problem_with_Python/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://example.org/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png">
-<link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg">
+<link rel="icon" href="https://lustrous-paprenjak-b7c3d8.netlify.app/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lustrous-paprenjak-b7c3d8.netlify.app/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lustrous-paprenjak-b7c3d8.netlify.app/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://lustrous-paprenjak-b7c3d8.netlify.app/apple-touch-icon.png">
+<link rel="mask-icon" href="https://lustrous-paprenjak-b7c3d8.netlify.app/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <noscript>
@@ -54,15 +54,15 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="" />
+</noscript><meta property="og:title" content="Missing Values? No Problem with Python" />
 <meta property="og:description" content="Missing Values? No Problem with Python Data is becoming the lifeblood of virtually all industries. In the era of big data, the quality of your dataset is crucial to the success of your predictive models. One of the frequent challenges faced by data scientists in preparing their data is dealing with missing values. Missing values are nothing but the absence of data values in a column. To be put simply, when there is no information, it&rsquo;s a missing value." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://example.org/basics/Missing_Values_No_Problem_with_Python/" /><meta property="article:section" content="basics" />
-
-
+<meta property="og:url" content="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Missing_Values_No_Problem_with_Python/" /><meta property="article:section" content="basics" />
+<meta property="article:published_time" content="2024-02-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-02-05T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
+<meta name="twitter:title" content="Missing Values? No Problem with Python"/>
 <meta name="twitter:description" content="Missing Values? No Problem with Python Data is becoming the lifeblood of virtually all industries. In the era of big data, the quality of your dataset is crucial to the success of your predictive models. One of the frequent challenges faced by data scientists in preparing their data is dealing with missing values. Missing values are nothing but the absence of data values in a column. To be put simply, when there is no information, it&rsquo;s a missing value."/>
 
 
@@ -75,13 +75,13 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Basics",
-      "item": "http://example.org/basics/"
+      "item": "https://lustrous-paprenjak-b7c3d8.netlify.app/basics/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "",
-      "item": "http://example.org/basics/Missing_Values_No_Problem_with_Python/"
+      "name": "Missing Values? No Problem with Python",
+      "item": "https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Missing_Values_No_Problem_with_Python/"
     }
   ]
 }
@@ -90,27 +90,27 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "",
-  "name": "",
+  "headline": "Missing Values? No Problem with Python",
+  "name": "Missing Values? No Problem with Python",
   "description": "Missing Values? No Problem with Python Data is becoming the lifeblood of virtually all industries. In the era of big data, the quality of your dataset is crucial to the success of your predictive models. One of the frequent challenges faced by data scientists in preparing their data is dealing with missing values. Missing values are nothing but the absence of data values in a column. To be put simply, when there is no information, it\u0026rsquo;s a missing value.",
   "keywords": [
-    
+    "Data Cleaning", "Python", "Tutorial"
   ],
   "articleBody": "Missing Values? No Problem with Python Data is becoming the lifeblood of virtually all industries. In the era of big data, the quality of your dataset is crucial to the success of your predictive models. One of the frequent challenges faced by data scientists in preparing their data is dealing with missing values. Missing values are nothing but the absence of data values in a column. To be put simply, when there is no information, it’s a missing value. In this article, we will navigate through handling missing values in python using various techniques and libraries including Pandas, NumPy, and scikit-learn.\nIntroduction A dataset might contain missing values for a multitude of reasons including human errors during data collection, interruptions in the data flow, or sometimes certain features are only available for a portion of the population. Whatever the reason might be, missing values can lead to biased or incorrect results when not handled correctly.\nIn python, there are various ways to check for and handle missing values. Let’s start with a simple example:\nimport pandas as pd import numpy as np # creating a simple dataframe with missing values data = {'A':[1, 2, np.nan], 'B':[5, np.nan, np.nan], 'C':[1, 2, 3]} df = pd.DataFrame(data) print(df) Output:\nA B C 0 1.0 5.0 1 1 2.0 NaN 2 2 NaN NaN 3 Handling Missing Values In the above output NaN, stands for Not a Number, and it is the missing value indicator in python. Now, let’s see how we can handle these missing values.\nDrop missing values The most simple solution to the missing values is to drop the rows or the entire column. Pandas library provides dropna() for that purpose.\ndf.dropna() Output:\nA B C 0 1.0 5.0 1 In the above case, dropna() drops all the rows with any column having null/no value.\nFilling the missing values Another regular method of dealing with missing values is imputation - replacing missing values with substituted values. With the help of pandas fillna(), one can replace NaN values with the value they want.\ndf.fillna(value='FILL VALUE') Output:\nA B C 0 1 5 1 1 2 FILL VALUE 2 2 FILL VALUE FILL VALUE 3 Also, we can fill missing values in a specified column with its mean value.\ndf['A'].fillna(value=df['A'].mean()) Output:\n0 1.0 1 2.0 2 1.5 Name: A, dtype: float64 Using Scikit-learn Scikit-learn also provides various ways to impute missing values. SimpleImputer is a 2-step transformation i.e., first it fits to the data and then it transforms. It provides basic strategies for imputing missing values.\nfrom sklearn.impute import SimpleImputer imp = SimpleImputer(missing_values=np.nan, strategy='mean') imp.fit([[1, 2], [np.nan, 3], [7, 6]]) SimpleImputer() X = [[np.nan, 2], [6, np.nan], [7, 6]] print(imp.transform(X)) Output:\narray([[4. , 2. ], [6. , 3.66666667], [7. , 6. ]]) Conclusion Although dropping or filling missing values can be beneficial for preliminary data analysis, it is merely a simplistic approach and might not be the best option for handling missing values depending on the complexity of the dataset and the ML model. Further understanding of the underlying data is necessary in most cases. An understanding of the reasons behind the missing data may provide insight into how it can best be treated: for example, data may be missing due to equipment malfunction, in which case it may be appropriate to interpolate between data points, or perhaps to use the mean or median value.\nRemember, the ultimate goal is to create a predictive model that generalizes well to new unseen data. Therefore, it’s not only about filling in missing values, but doing it in a manner that reflects the intricacies within your data.\nIn conclusion, the handling of missing values is one of the essential steps of the preprocessing data. Python offers an array of techniques to deal with missing data from Listwise or Pairwise deletion, to imputing with predictive models. The technique you choose should be primarily based on the nature of your data and the missingness.\n",
   "wordCount" : "656",
   "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
+  "datePublished": "2024-02-05T00:00:00Z",
+  "dateModified": "2024-02-05T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://example.org/basics/Missing_Values_No_Problem_with_Python/"
+    "@id": "https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Missing_Values_No_Problem_with_Python/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Data Driven Discovery - D3",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://example.org/favicon.ico"
+      "url": "https://lustrous-paprenjak-b7c3d8.netlify.app/favicon.ico"
     }
   }
 }
@@ -132,7 +132,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://example.org/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <a href="https://lustrous-paprenjak-b7c3d8.netlify.app/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -166,9 +166,9 @@
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      
+      Missing Values? No Problem with Python
     </h1>
-    <div class="post-meta">
+    <div class="post-meta"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span>
 
 </div>
   </header> 
@@ -238,13 +238,16 @@ Name: A, dtype: float64
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Cleaning/">Data Cleaning</a></li>
+      <li><a href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Python/">Python</a></li>
+      <li><a href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Tutorial/">Tutorial</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="http://example.org/">Data Driven Discovery - D3</a></span>
+    <span>&copy; 2024 <a href="https://lustrous-paprenjak-b7c3d8.netlify.app/">Data Driven Discovery - D3</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

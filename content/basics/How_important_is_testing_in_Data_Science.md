@@ -1,3 +1,12 @@
+
+---
+title: "How important is testing in Data Science"
+date: 2024-02-05
+tags: ['Testing', 'Data Science']
+categories: ["basics"]
+---
+
+
 # How important is testing in Data Science
 
 Data Science is not just about creating complex Machine Learning models or extracting valuable insights from data. It is about creating accurate, robust, and reliable systems that can make accurate predictions and analytics decisions. From this perspective, testing becomes a critical part in the life-cycle of a Data Science project. It ensures that the derived models meet the desired accuracy and performance.

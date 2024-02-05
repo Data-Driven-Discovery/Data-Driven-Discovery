@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Beginner on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Beginner/</link>
+    <description>Recent content in Beginner on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Beginner/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Demystifying Machine Learning and its Terminologies</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Demystifying_Machine_Learning_and_its_Terminologies/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Demystifying_Machine_Learning_and_its_Terminologies/</guid>
+      <description>Demystifying Machine Learning and its Terminologies In today&amp;rsquo;s data-driven world, Machine Learning (ML) has become a buzzword, but do we really understand what it means, and its potential? Are we aware of the various terminologies used in this field, which play a crucial role in understanding and implementing Machine Learning concepts? This article focuses on simplifying and explaining Machine Learning and its related terminologies.
+Introduction Machine Learning (ML) is a subset of artificial intelligence (AI) that gives computers the ability to learn from data without being explicitly programmed.</description>
+    </item>
+    <item>
+      <title>Understanding the Basics of Artificial Intelligence</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Understanding_the_Basics_of_Artificial_Intelligence/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Understanding_the_Basics_of_Artificial_Intelligence/</guid>
+      <description>Understanding the Basics of Artificial Intelligence Hello reader, whether you&amp;rsquo;re a data enthusiast, a machine learning developer, or someone looking to dip their toes into the exciting world of artificial intelligence(AI), you&amp;rsquo;ve come to the right place. In this article, we will provide a comprehensive overview of AI, including its origins, core concepts, and step-by-step instructions (with Python source code) on how to build a simplistic AI model.
+Introduction Artificial Intelligence has been a fascinating concept of science fiction for decades; it has now become a day-to-day reality.</description>
+    </item>
+  </channel>
+</rss>

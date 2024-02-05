@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Bayesian Inference on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Bayesian-Inference/</link>
+    <description>Recent content in Bayesian Inference on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Bayesian-Inference/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Demystifying Hyperparameter Optimization: Bayesian Methods and Beyond</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Demystifying_Hyperparameter_Optimization_Bayesian_Methods_and_Beyond/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Demystifying_Hyperparameter_Optimization_Bayesian_Methods_and_Beyond/</guid>
+      <description>Demystifying Hyperparameter Optimization: Bayesian Methods and Beyond In the realm of machine learning, the process of tuning a model to achieve the best possible performance is both an art and a science. Hyperparameter optimization represents this critical phase, where the right choices can turn a decent model into a highly accurate predictive engine. This article delves into one of the most powerful and sophisticated techniques for hyperparameter tuning: Bayesian Optimization, and explores advanced methods that extend beyond conventional approaches.</description>
+    </item>
+    <item>
+      <title>Scaling Bayesian Inference for Massive Datasets: Tricks of the Trade</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Scaling_Bayesian_Inference_for_Massive_Datasets_Tricks_of_the_Trade/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Scaling_Bayesian_Inference_for_Massive_Datasets_Tricks_of_the_Trade/</guid>
+      <description>Scaling Bayesian Inference for Massive Datasets: Tricks of the Trade In an era where data is burgeoning at an exponential rate, the demand for robust statistical methods to make sense of this data is more pressing than ever. Among these methods, Bayesian inference stands out for its ability to quantify uncertainty, incorporate prior knowledge, and provide a comprehensive probabilistic framework. However, its applicative prowess is often hindered by computational challenges, especially when dealing with massive datasets.</description>
+    </item>
+  </channel>
+</rss>

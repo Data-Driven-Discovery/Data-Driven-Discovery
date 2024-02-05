@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Tutorial | Data Driven Discovery - D3</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Tutorial/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://lustrous-paprenjak-b7c3d8.netlify.app/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lustrous-paprenjak-b7c3d8.netlify.app/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lustrous-paprenjak-b7c3d8.netlify.app/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://lustrous-paprenjak-b7c3d8.netlify.app/apple-touch-icon.png">
+<link rel="mask-icon" href="https://lustrous-paprenjak-b7c3d8.netlify.app/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Tutorial/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Tutorial" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Tutorial/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Tutorial"/>
+<meta name="twitter:description" content=""/>
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://lustrous-paprenjak-b7c3d8.netlify.app/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Tutorial
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to Develop a Data Engineering Project from Scratch
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>How to Develop a Data Engineering Project from Scratch There is a growing demand for professionals skilled in data engineering, which is the foundation of the data-driven decision-making that is pivotal in today’s business environment. Embarking on a data engineering project can certainly be exhilarating but also daunting. In this blog post, we’ll walk through the major steps and practices for starting a data engineering project from scratch.
+Introduction Data Engineering is the backbone of any Machine Learning, Data Science, and Artificial Intelligence projects....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to How to Develop a Data Engineering Project from Scratch" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Develop_a_Data_Engineering_Project_from_Scratch/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to Improve ETL Performance
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>How to Improve ETL Performance Extract, Transform, Load (ETL) is a fundamental concept in the realm of Data Engineering. ETL processes are the backbone of every data warehouse, responsible for the timely and accurate migration of data from source systems to the data warehouse. A bottleneck in ETL can lead to undesirable consequences in business decision-making, making ETL performance optimization a priority for every Data Engineer. In this article, we’ll be looking at practical means to improve ETL performance, using Python and the pandarallel library to leverage parallel processing for our ETL tasks....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to How to Improve ETL Performance" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Improve_ETL_Performance/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Introduction to Cloud Computing
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction to Cloud Computing This article aims to give you a clear understanding about cloud computing and its importance in the world of Data Science, Machine Learning, and MLOps. As data professionals, we’re surrounded by terms like ‘software as a service’ and ‘infrastructure as a service’: rooted in cloud computing. This article is a highly-readable primer: introducing you to these technologies, why they’re important, and how they reshape how we work with data....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Introduction to Cloud Computing" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Introduction_to_Cloud_Computing/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Machine Learning Algorithms: An Overview
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Machine Learning Algorithms: An Overview Machine learning is at the heart of many modern systems, providing the foundation for recommendations algorithms, search engines, image recognition programs, and even self-driving cars. Central to all of these are machine learning algorithms, which enable computers to learn from and make decisions or predictions based on data. This article will offer a broad overview of Machine Learning (ML) algorithms, touching on their categorization, some of the top methods used, and demonstrative Python code snippets of how several are implemented....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Machine Learning Algorithms: An Overview" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Machine_learning_algorithms_an_overview/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Maximizing your Coding Efficiency with Jupyter Notebooks
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Maximizing your Coding Efficiency with Jupyter Notebooks Jupyter Notebooks have become a staple in the toolkit of every Data Scientist, Data Engineer, and other data professionals. Its interactive and easy-to-use environment provides seamless experimentations, data cleaning operations, stats modeling, machine learning, and visualizations. In this article, we’ll go over how you can truly maximize your coding efficiency with Jupyter notebooks.
+Introduction Jupyter Notebooks function as an electronic lab notebook for those working with data....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Maximizing your Coding Efficiency with Jupyter Notebooks" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Maximizing_your_Coding_Efficiency_with_Jupyter_Notebooks/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Missing Values? No Problem with Python
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Missing Values? No Problem with Python Data is becoming the lifeblood of virtually all industries. In the era of big data, the quality of your dataset is crucial to the success of your predictive models. One of the frequent challenges faced by data scientists in preparing their data is dealing with missing values. Missing values are nothing but the absence of data values in a column. To be put simply, when there is no information, it’s a missing value....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Missing Values? No Problem with Python" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Missing_Values_No_Problem_with_Python/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Natural Language Processing: An Introduction
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Natural Language Processing: An Introduction Natural Language Processing (NLP) has emerged as one of the most significant subfields in machine learning and data science. From auto-correct features in smartphones to voice-assistants like Alexa and Siri understanding and even predicting our speech patterns, NLP applications are relentlessly interweaved into our everyday lives. In this blog, we will venture into the world of NLP, illustrating its applications, techniques, and how it revolutionizes the way we interact with machines....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Natural Language Processing: An Introduction" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Natural_Language_Processing_An_Introduction/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Running High-Performance Computing with Scala
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Running High-Performance Computing with Scala In the data world, performance and speed when processing large-scale datasets is a top priority. The trend has inclined towards language tools that offer both functionality and efficiency. While Python has been a front-runner in data science, Scala is captivating a large number of developers and data professionals due to its high performance, functional programming capability, and adaptability with Big Data tools like Apache Spark....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Running High-Performance Computing with Scala" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Running_High-Performance_Computing_with_Scala/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Spark SQL: A ROMP Through the Basics
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Spark SQL: A ROMP Through the Basics Welcome to a beginner’s guide to Spark SQL! If you find yourself frequenting the landscape of big data, knowing Spark and Spark SQL is an absolute necessity. In this article, we’ll be delving into the main features, basic commands, and some practical examples of using Spark SQL.
+Apache Spark is an open-source cluster-computing framework that provides an interface for programming entire clusters with implicit data parallelism and fault tolerance....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Spark SQL: A ROMP Through the Basics" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Spark_SQL_A_ROMP_Through_the_Basics/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Statistical Analysis in Python: A Progressing Tool for Data Analysis
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Statistical Analysis in Python: A Progressing Tool for Data Analysis Introduction Statistical analysis is a fundamental component of data science. Besides it being the backbone of Machine Learning, its techniques allow us to get a clear picture of what data is trying to convey. Python, owing to its simplicity and extensive capabilities, has become a popular language for data analysis. It offers an array of libraries for performing statistical analysis, including Pandas, Numpy, Scipy, etc....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Statistical Analysis in Python: A Progressing Tool for Data Analysis" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Statistical_Analysis_in_Python/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Tutorial/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Tutorial/page/3/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://lustrous-paprenjak-b7c3d8.netlify.app/">Data Driven Discovery - D3</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

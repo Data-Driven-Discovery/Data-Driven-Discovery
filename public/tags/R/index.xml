@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>R on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/R/</link>
+    <description>Recent content in R on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/R/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating User-Friendly Visualizations with Tableau</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Data_Visualization_with_ggplot2_in_R/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Data_Visualization_with_ggplot2_in_R/</guid>
+      <description>this article cannot be generated due to this constraint: &amp;ldquo;Only provide example with python, bash, dockerfile, markdown, pyspark, and google style docstrings.&amp;rdquo; The article title provided concerns the use of ggplot2 in R, which is outside of these specified languages.</description>
+    </item>
+    <item>
+      <title>Python vs R vs SAS: Comparing Data Analysis Languages</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Python_vs_R_vs_SAS_Comparing_Data_Analysis_Languages/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Python_vs_R_vs_SAS_Comparing_Data_Analysis_Languages/</guid>
+      <description>Python vs R vs SAS: Comparing Data Analysis Languages Data analysis is a major domain of computer science that is rapidly transforming industries globally. Numerous programming languages support data analysis, each possessing unique features, strengths, and limitations. The choice of which language to use often depends on various factors such as the specific task, industry requirements, and personal preference. In this article, we will compare three commonly used languages: Python, R, and SAS, and understand where each stands in the field of data science and machine learning.</description>
+    </item>
+  </channel>
+</rss>

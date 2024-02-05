@@ -2,326 +2,327 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Basics on Data Driven Discovery - D3</title>
-    <link>http://example.org/basics/</link>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/</link>
     <description>Recent content in Basics on Data Driven Discovery - D3</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://example.org/basics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>http://example.org/basics/A_Comprehensive_Guide_to_Data_Structures_and_Algorithms/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/A_Comprehensive_Guide_to_Data_Structures_and_Algorithms/</guid>
+      <title>A Comprehensive Guide to Data Structures and Algorithms</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/A_Comprehensive_Guide_to_Data_Structures_and_Algorithms/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/A_Comprehensive_Guide_to_Data_Structures_and_Algorithms/</guid>
       <description>A Comprehensive Guide to Data Structures and Algorithms Data structures and algorithms form the bedrock of data science, engineering, and machine learning (ML). This guide aims to provide the keen reader with a solid understanding of the fundamentals of these two disciplines and their centrality to the Data Science field. Throughout this guide, we&amp;rsquo;ll share working code examples in Python that you can run in your environment.
 Introduction Data Science is a composite entity that straddles multiple disciplines such as statistics, machine learning, and data engineering.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Classification_Algorithms_every_Data_Scientist_should_know/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Classification_Algorithms_every_Data_Scientist_should_know/</guid>
+      <title>Classification Algorithms Every Data Scientist Should Know</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Classification_Algorithms_every_Data_Scientist_should_know/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Classification_Algorithms_every_Data_Scientist_should_know/</guid>
       <description>Classification Algorithms Every Data Scientist Should Know Classification algorithms are indeed the backbone of machine learning. They help in predicting the category or class of certain data points based on past observations. The reliability of their prediction is staggeringly good, making them widely used across several domains. This post will walk you through some pivotal classification algorithms every data scientist should know.
 Introduction Before we begin, let&amp;rsquo;s get a sense of what we are dealing with.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Creating_User-Friendly_Visualizations_with_Tableau/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Creating_User-Friendly_Visualizations_with_Tableau/</guid>
+      <title>Creating User-Friendly Visualizations with Tableau</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Creating_User-Friendly_Visualizations_with_Tableau/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Creating_User-Friendly_Visualizations_with_Tableau/</guid>
       <description>Creating User-Friendly Visualizations with Tableau Data visualization plays an essential role in the field of Data Science, Machine Learning, and Data Engineering. It not only helps in understanding patterns, trends, or insights but also makes it easier to illustrate the story behind the numbers. In this guide, we&amp;rsquo;re going to explore the role of Tableau, a widely-used data visualization tool, in creating user-friendly and interactive visualizations.
 Note: Though this guide talks about Tableau, it does not include any Python or Bash code snippets since Tableau itself is a standalone tool for visualizing data.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Data_Visualization_with_ggplot2_in_R/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Data_Visualization_with_ggplot2_in_R/</guid>
+      <title>Creating User-Friendly Visualizations with Tableau</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Data_Visualization_with_ggplot2_in_R/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Data_Visualization_with_ggplot2_in_R/</guid>
       <description>this article cannot be generated due to this constraint: &amp;ldquo;Only provide example with python, bash, dockerfile, markdown, pyspark, and google style docstrings.&amp;rdquo; The article title provided concerns the use of ggplot2 in R, which is outside of these specified languages.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Deeper_Dive_into_Data_Cleaning_with_Python/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Deeper_Dive_into_Data_Cleaning_with_Python/</guid>
+      <title>Deeper Dive into Data Cleaning with Python</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Deeper_Dive_into_Data_Cleaning_with_Python/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Deeper_Dive_into_Data_Cleaning_with_Python/</guid>
       <description>Deeper Dive into Data Cleaning with Python Harnessing the power of machine learning and data science often begins with one critical step: data cleaning. Raw data is often messy and packed with inefficiencies and inaccuracies, not to mention irrelevant information that can skew your models and findings if left unchecked. Successful data professionals always make time for thorough data cleaning as the data foundation determines the quality and precision of end products.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Demystifying_Machine_Learning_and_its_Terminologies/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Demystifying_Machine_Learning_and_its_Terminologies/</guid>
+      <title>Demystifying Machine Learning and its Terminologies</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Demystifying_Machine_Learning_and_its_Terminologies/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Demystifying_Machine_Learning_and_its_Terminologies/</guid>
       <description>Demystifying Machine Learning and its Terminologies In today&amp;rsquo;s data-driven world, Machine Learning (ML) has become a buzzword, but do we really understand what it means, and its potential? Are we aware of the various terminologies used in this field, which play a crucial role in understanding and implementing Machine Learning concepts? This article focuses on simplifying and explaining Machine Learning and its related terminologies.
 Introduction Machine Learning (ML) is a subset of artificial intelligence (AI) that gives computers the ability to learn from data without being explicitly programmed.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Demystifying_the_Basics_of_Predictive_Analytics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Demystifying_the_Basics_of_Predictive_Analytics/</guid>
+      <title>Demystifying the Basics of Predictive Analytics</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Demystifying_the_Basics_of_Predictive_Analytics/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Demystifying_the_Basics_of_Predictive_Analytics/</guid>
       <description>Demystifying the Basics of Predictive Analytics In the modern age where data drives decisions, predictive analytics has emerged as a game-changer for businesses, governments, and individuals alike. This article aims to demystify the fundamentals of predictive analytics for readers who are interested in the burgeoning field of data science, machine learning, and data engineering. We will take a glimpse at what predictive analytics is, its working process, its applications, as well as a some practical Python code examples using common Machine Learning libraries.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Ethics_in_Data_Science/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Ethics_in_Data_Science/</guid>
+      <title>Ethics in Data Science</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Ethics_in_Data_Science/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Ethics_in_Data_Science/</guid>
       <description>Ethics in Data Science With the proliferation of big data, the field of data science has been thrust into the spotlight. This increase in data availability and computational power has enabled businesses and organizations worldwide to leverage data to enhance operational efficiency, drive innovation and even pioneer new technological domains. Yet, as we propel further into this data-driven era, we mustn&amp;rsquo;t disregard the ethical implications.
 In this article, we examine the ethics surrounding the practice of data science, why they&amp;rsquo;re important, how they impact our day-to-day lives and how we can address them.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Exploring_the_Wide_Range_of_Applications_for_Python/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Exploring_the_Wide_Range_of_Applications_for_Python/</guid>
+      <title>Exploring the Wide Range of Applications for Python</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Exploring_the_Wide_Range_of_Applications_for_Python/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Exploring_the_Wide_Range_of_Applications_for_Python/</guid>
       <description>Exploring the Wide Range of Applications for Python Python, known as the “Swiss Army Knife” of programming languages, has certainly grown in popularity since its inception. Versatile and beginner-friendly, it is used widely in various sectors ranging from academic research to the development of complex systems and services. This article delves into the broad applications of Python especially in the realm of data science, data engineering, machine learning operations (MLOps), and more.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Getting_Started_with_Data_Visualization_using_Matplotlib/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Getting_Started_with_Data_Visualization_using_Matplotlib/</guid>
+      <title>Getting Started with Data Visualization using Matplotlib</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Getting_Started_with_Data_Visualization_using_Matplotlib/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Getting_Started_with_Data_Visualization_using_Matplotlib/</guid>
       <description>Getting Started with Data Visualization using Matplotlib In the world of Data Science, visualization often takes precedence due to its crucial role in interpreting complex datasets, uncovering patterns, trends and correlations. Of the numerous libraries available for data visualization in Python, Matplotlib is the most widely used one. In this tutorial, we&amp;rsquo;ll explore the basics of data visualization using Matplotlib, featuring some working Python code snippets that demonstrate its functionality.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Getting_Started_with_Python_for_Finance/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Getting_Started_with_Python_for_Finance/</guid>
+      <title>Getting Started with Python for Finance</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Getting_Started_with_Python_for_Finance/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Getting_Started_with_Python_for_Finance/</guid>
       <description>Getting Started with Python for Finance Python, with its robust libraries and user-friendly syntax, has emerged as an essential tool for financial data analysis and modeling. From risk management to trading strategies, the Python ecosystem hosts a plethora of libraries designed to tackle a wide array of finance-related tasks. In this blog, we will delve into key concepts and tools that every data professional needs to navigate Python in finance.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Guide_to_Excel_Automation_using_Python/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Guide_to_Excel_Automation_using_Python/</guid>
+      <title>Guide to Excel Automation using Python</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Guide_to_Excel_Automation_using_Python/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Guide_to_Excel_Automation_using_Python/</guid>
       <description>Guide to Excel Automation using Python Businesses often rely on Excel to handle vast amounts of data, from sales data analysis to financial forecasting. However, manually processing this data is often tedious and time-consuming. Python, a versatile programming language widely-known for its ease-of-use and broad ecosystem of data analyst tools, can be applied to automate tasks involving Excel datasets. This article provides a comprehensive guide on how to automate Excel tasks using Python.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/How_important_is_testing_in_Data_Science/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/How_important_is_testing_in_Data_Science/</guid>
+      <title>How important is testing in Data Science</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_important_is_testing_in_Data_Science/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_important_is_testing_in_Data_Science/</guid>
       <description>How important is testing in Data Science Data Science is not just about creating complex Machine Learning models or extracting valuable insights from data. It is about creating accurate, robust, and reliable systems that can make accurate predictions and analytics decisions. From this perspective, testing becomes a critical part in the life-cycle of a Data Science project. It ensures that the derived models meet the desired accuracy and performance.
 In this article, we&amp;rsquo;ll dive deepened on the importance of testing in Data Science.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/How_to_Create_an_Effective_Data_Strategy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/How_to_Create_an_Effective_Data_Strategy/</guid>
+      <title>How to Create an Effective Data Strategy</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Create_an_Effective_Data_Strategy/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Create_an_Effective_Data_Strategy/</guid>
       <description>How to Create an Effective Data Strategy Data has emerged as the fuel for the information-era engine, impacting every professional industry and crevices of life. Accumulating and employing data is becoming increasingly pivotal for organizations, thus necessitating a coolheaded, systematic, and efficient data strategy. Not only does a well-structured data strategy facilitate insightful decision-making, but it also enables enterprises to gain a sure competitive edge.
 Without a robust data strategy, organizations risk falling behind in a data-driven economy.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/How_to_Develop_a_Data_Engineering_Project_from_Scratch/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/How_to_Develop_a_Data_Engineering_Project_from_Scratch/</guid>
+      <title>How to Develop a Data Engineering Project from Scratch</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Develop_a_Data_Engineering_Project_from_Scratch/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Develop_a_Data_Engineering_Project_from_Scratch/</guid>
       <description>How to Develop a Data Engineering Project from Scratch There is a growing demand for professionals skilled in data engineering, which is the foundation of the data-driven decision-making that is pivotal in today’s business environment. Embarking on a data engineering project can certainly be exhilarating but also daunting. In this blog post, we&amp;rsquo;ll walk through the major steps and practices for starting a data engineering project from scratch.
 Introduction Data Engineering is the backbone of any Machine Learning, Data Science, and Artificial Intelligence projects.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/How_to_Improve_ETL_Performance/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/How_to_Improve_ETL_Performance/</guid>
+      <title>How to Improve ETL Performance</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Improve_ETL_Performance/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Improve_ETL_Performance/</guid>
       <description>How to Improve ETL Performance Extract, Transform, Load (ETL) is a fundamental concept in the realm of Data Engineering. ETL processes are the backbone of every data warehouse, responsible for the timely and accurate migration of data from source systems to the data warehouse. A bottleneck in ETL can lead to undesirable consequences in business decision-making, making ETL performance optimization a priority for every Data Engineer. In this article, we&amp;rsquo;ll be looking at practical means to improve ETL performance, using Python and the pandarallel library to leverage parallel processing for our ETL tasks.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/How_Version_Control_is_Revolutionizing_Data_Science/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/How_Version_Control_is_Revolutionizing_Data_Science/</guid>
+      <title>How Version Control is Revolutionizing Data Science</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_Version_Control_is_Revolutionizing_Data_Science/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_Version_Control_is_Revolutionizing_Data_Science/</guid>
       <description>How Version Control is Revolutionizing Data Science Introduction:
 Data Science is an exciting field that is rapidly evolving, and the ability to manage the evolution of projects has become equally crucial. This is where version control comes into play.
 Today, we discuss version control- a system that records changes to a file or set of files over time so that you can recall specific versions later. It makes collaboration easier among teams and contributes significantly to the robustness and reproducibility of Data Science projects.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Intro_to_Database_Normalization/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Intro_to_Database_Normalization/</guid>
+      <title>Introduction to Cloud Computing</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Introduction_to_Cloud_Computing/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Introduction_to_Cloud_Computing/</guid>
+      <description>Introduction to Cloud Computing This article aims to give you a clear understanding about cloud computing and its importance in the world of Data Science, Machine Learning, and MLOps. As data professionals, we&amp;rsquo;re surrounded by terms like &amp;lsquo;software as a service&amp;rsquo; and &amp;lsquo;infrastructure as a service&amp;rsquo;: rooted in cloud computing. This article is a highly-readable primer: introducing you to these technologies, why they&amp;rsquo;re important, and how they reshape how we work with data.</description>
+    </item>
+    <item>
+      <title>Introduction to Database Normalization</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Intro_to_Database_Normalization/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Intro_to_Database_Normalization/</guid>
       <description>Introduction to Database Normalization Database normalization is a crucial step in data engineering and design. It defines a set of methods to break down tables to their simplest form to avoid complex attributes and redundancy. The goal of normalization is to eliminate redundant (redundant = duplicate) data, which in turn prevents data anomalies and saves storage.
 In this article, we will look into different levels of database normalization and understand why they are significant.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Introduction_to_Cloud_Computing/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Introduction_to_Cloud_Computing/</guid>
-      <description>Introduction to Cloud Computing This article aims to give you a clear understanding about cloud computing and its importance in the world of Data Science, Machine Learning, and MLOps. As data professionals, we&amp;rsquo;re surrounded by terms like &amp;lsquo;software as a service&amp;rsquo; and &amp;lsquo;infrastructure as a service&amp;rsquo;: rooted in cloud computing. This article is a highly-readable primer: introducing you to these technologies, why they&amp;rsquo;re important, and how they reshape how we work with data.</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://example.org/basics/Machine_learning_algorithms_an_overview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Machine_learning_algorithms_an_overview/</guid>
+      <title>Machine Learning Algorithms: An Overview</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Machine_learning_algorithms_an_overview/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Machine_learning_algorithms_an_overview/</guid>
       <description>Machine Learning Algorithms: An Overview Machine learning is at the heart of many modern systems, providing the foundation for recommendations algorithms, search engines, image recognition programs, and even self-driving cars. Central to all of these are machine learning algorithms, which enable computers to learn from and make decisions or predictions based on data. This article will offer a broad overview of Machine Learning (ML) algorithms, touching on their categorization, some of the top methods used, and demonstrative Python code snippets of how several are implemented.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Managing_Big_Data_with_Apache_Spark/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Managing_Big_Data_with_Apache_Spark/</guid>
+      <title>Managing Big Data with Apache Spark</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Managing_Big_Data_with_Apache_Spark/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Managing_Big_Data_with_Apache_Spark/</guid>
       <description>Managing Big Data with Apache Spark In this digital age, virtually every aspect of our lives generates data. From our social media activities to our online shopping habits, data is being harvested and used in ways that we could hardly have imagined even a decade ago. Among the tools designed to handle big data analytics, Apache Spark stands out due to its speed, ease of use, and general-purpose processing power.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Maximizing_your_Coding_Efficiency_with_Jupyter_Notebooks/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Maximizing_your_Coding_Efficiency_with_Jupyter_Notebooks/</guid>
+      <title>Maximizing your Coding Efficiency with Jupyter Notebooks</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Maximizing_your_Coding_Efficiency_with_Jupyter_Notebooks/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Maximizing_your_Coding_Efficiency_with_Jupyter_Notebooks/</guid>
       <description>Maximizing your Coding Efficiency with Jupyter Notebooks Jupyter Notebooks have become a staple in the toolkit of every Data Scientist, Data Engineer, and other data professionals. Its interactive and easy-to-use environment provides seamless experimentations, data cleaning operations, stats modeling, machine learning, and visualizations. In this article, we&amp;rsquo;ll go over how you can truly maximize your coding efficiency with Jupyter notebooks.
 Introduction Jupyter Notebooks function as an electronic lab notebook for those working with data.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Missing_Values_No_Problem_with_Python/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Missing_Values_No_Problem_with_Python/</guid>
+      <title>Missing Values? No Problem with Python</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Missing_Values_No_Problem_with_Python/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Missing_Values_No_Problem_with_Python/</guid>
       <description>Missing Values? No Problem with Python Data is becoming the lifeblood of virtually all industries. In the era of big data, the quality of your dataset is crucial to the success of your predictive models. One of the frequent challenges faced by data scientists in preparing their data is dealing with missing values. Missing values are nothing but the absence of data values in a column. To be put simply, when there is no information, it&amp;rsquo;s a missing value.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Natural_Language_Processing_An_Introduction/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Natural_Language_Processing_An_Introduction/</guid>
+      <title>Natural Language Processing: An Introduction</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Natural_Language_Processing_An_Introduction/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Natural_Language_Processing_An_Introduction/</guid>
       <description>Natural Language Processing: An Introduction Natural Language Processing (NLP) has emerged as one of the most significant subfields in machine learning and data science. From auto-correct features in smartphones to voice-assistants like Alexa and Siri understanding and even predicting our speech patterns, NLP applications are relentlessly interweaved into our everyday lives. In this blog, we will venture into the world of NLP, illustrating its applications, techniques, and how it revolutionizes the way we interact with machines.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Python_vs_R_vs_SAS_Comparing_Data_Analysis_Languages/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Python_vs_R_vs_SAS_Comparing_Data_Analysis_Languages/</guid>
+      <title>Python vs R vs SAS: Comparing Data Analysis Languages</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Python_vs_R_vs_SAS_Comparing_Data_Analysis_Languages/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Python_vs_R_vs_SAS_Comparing_Data_Analysis_Languages/</guid>
       <description>Python vs R vs SAS: Comparing Data Analysis Languages Data analysis is a major domain of computer science that is rapidly transforming industries globally. Numerous programming languages support data analysis, each possessing unique features, strengths, and limitations. The choice of which language to use often depends on various factors such as the specific task, industry requirements, and personal preference. In this article, we will compare three commonly used languages: Python, R, and SAS, and understand where each stands in the field of data science and machine learning.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Running_High-Performance_Computing_with_Scala/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Running_High-Performance_Computing_with_Scala/</guid>
+      <title>Running High-Performance Computing with Scala</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Running_High-Performance_Computing_with_Scala/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Running_High-Performance_Computing_with_Scala/</guid>
       <description>Running High-Performance Computing with Scala In the data world, performance and speed when processing large-scale datasets is a top priority. The trend has inclined towards language tools that offer both functionality and efficiency. While Python has been a front-runner in data science, Scala is captivating a large number of developers and data professionals due to its high performance, functional programming capability, and adaptability with Big Data tools like Apache Spark.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Spark_SQL_A_ROMP_Through_the_Basics/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Spark_SQL_A_ROMP_Through_the_Basics/</guid>
+      <title>Spark SQL: A ROMP Through the Basics</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Spark_SQL_A_ROMP_Through_the_Basics/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Spark_SQL_A_ROMP_Through_the_Basics/</guid>
       <description>Spark SQL: A ROMP Through the Basics Welcome to a beginner&amp;rsquo;s guide to Spark SQL! If you find yourself frequenting the landscape of big data, knowing Spark and Spark SQL is an absolute necessity. In this article, we&amp;rsquo;ll be delving into the main features, basic commands, and some practical examples of using Spark SQL.
 Apache Spark is an open-source cluster-computing framework that provides an interface for programming entire clusters with implicit data parallelism and fault tolerance.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Statistical_Analysis_in_Python/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Statistical_Analysis_in_Python/</guid>
+      <title>Statistical Analysis in Python: A Progressing Tool for Data Analysis</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Statistical_Analysis_in_Python/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Statistical_Analysis_in_Python/</guid>
       <description>Statistical Analysis in Python: A Progressing Tool for Data Analysis Introduction Statistical analysis is a fundamental component of data science. Besides it being the backbone of Machine Learning, its techniques allow us to get a clear picture of what data is trying to convey. Python, owing to its simplicity and extensive capabilities, has become a popular language for data analysis. It offers an array of libraries for performing statistical analysis, including Pandas, Numpy, Scipy, etc.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Statistical_Modeling_The_Two_Types_of_Errors_one_should_know_about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Statistical_Modeling_The_Two_Types_of_Errors_one_should_know_about/</guid>
+      <title>Statistical Modeling: The Two Types of Errors One Should Know About</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Statistical_Modeling_The_Two_Types_of_Errors_one_should_know_about/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Statistical_Modeling_The_Two_Types_of_Errors_one_should_know_about/</guid>
       <description>Statistical Modeling: The Two Types of Errors One Should Know About Statistical modeling is a crucial aspect of machine learning, data science, and data engineering. These models are often trained to predict unseen data. However, the predictions are not always 100% accurate. Therefore, it is important to understand the errors involved - Type I and Type II errors. Let&amp;rsquo;s dive in to explore both of these error types.
 Introduction Type I and Type II errors represent the incorrect conclusions that we might make from hypothesis testing.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/The_Art_of_Storytelling_through_Data/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/The_Art_of_Storytelling_through_Data/</guid>
+      <title>The Art of Storytelling through Data</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Art_of_Storytelling_through_Data/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Art_of_Storytelling_through_Data/</guid>
       <description>The Art of Storytelling through Data In this technologically advanced era, data is often visualized as vast networks of numbers and codes. But, a skilled data practitioner knows data can be much more than dry statistics. For those who know how to wield, interpret and communicate, data becomes a compelling storyteller, offering tantalizing insights into patterns and trends that were previously hidden.
 This article seeks to delve into leveraging data visualization and analytics, examining their role in storytelling, and demonstrating various techniques using commonly used Python libraries like Matplotlib, Pandas, and Seaborn.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/The_Benefit_of_TensorFlow_in_Machine_Learning_Models/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/The_Benefit_of_TensorFlow_in_Machine_Learning_Models/</guid>
+      <title>The Benefit of TensorFlow in Machine Learning Models</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Benefit_of_TensorFlow_in_Machine_Learning_Models/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Benefit_of_TensorFlow_in_Machine_Learning_Models/</guid>
       <description>The Benefit of TensorFlow in Machine Learning Models In the vast world of technology, TensorFlow has been making waves in the field of Machine Learning, revolutionizing the way we use and understand data. In this article, we explore what TensorFlow is, why it is beneficial, and how to use it in creating Machine Learning models.
 What is TensorFlow? TensorFlow, developed by the Google Brain team for internal use, was open sourced in November 2015 under the Apache 2.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/The_ins_and_outs_of_GPU-accelerated_Data_Science/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/The_ins_and_outs_of_GPU-accelerated_Data_Science/</guid>
+      <title>The Ins and Outs of GPU-accelerated Data Science</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_ins_and_outs_of_GPU-accelerated_Data_Science/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_ins_and_outs_of_GPU-accelerated_Data_Science/</guid>
       <description>The Ins and Outs of GPU-accelerated Data Science The use of Graphics Processing Units (GPUs) has become increasingly prevalent in the field of Data Science due to their capability to process large amounts of data quickly and efficiently. This article explores the concept of GPU-accelerated Data Science, its benefits, real-world applications and how we can leverage GPU power using Python libraries such as CuDF, CuPy and TensorFlow.
 Introduction In traditional computers, the Central Processing Unit (CPU) has been the core of processing power.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/The_Journey_From_Data_to_Insights/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/The_Journey_From_Data_to_Insights/</guid>
+      <title>The Journey From Data to Insights</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Journey_From_Data_to_Insights/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Journey_From_Data_to_Insights/</guid>
       <description>The Journey From Data to Insights In this era of digital transformation, significantly influenced by the fourth industrial revolution, data is the critical fuel that powers business decision-making and strategy building. In the terrain of data, the journey from raw data to useful insights is not always easy. However, with the right set of skills, tools and techniques, one can seamlessly transform raw data into actionable insights.
 The purpose of this article is to guide you through the stages of data processing and to equip you with fundamental skills such as data cleaning, data engineering, feature extraction, data modelling, and others, using machine learning libraries such as Scikit-Learn, pandas, Matplotlib etc.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/The_Power_and_Pitfalls_of_Monte_Carlo_Simulations/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/The_Power_and_Pitfalls_of_Monte_Carlo_Simulations/</guid>
+      <title>The Power and Pitfalls of Monte Carlo Simulations</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Power_and_Pitfalls_of_Monte_Carlo_Simulations/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Power_and_Pitfalls_of_Monte_Carlo_Simulations/</guid>
       <description>The Power and Pitfalls of Monte Carlo Simulations Monte Carlo simulations are a powerful tool widely applied in fields like data science, finance, project management, energy, manufacturing, engineering, research, and more. They provide a way to explore and understand the impact of risk and uncertainty in prediction and forecasting models. In this article, we will delve into the exciting world of Monte Carlo simulations, their applications, and associated pitfalls.
 As we embark on this journey, we will use Python and its rich library ecosystem including libraries like Numpy and Matplotlib.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/The_Power_of_Deep_Learning_in_Data_Analysis/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/The_Power_of_Deep_Learning_in_Data_Analysis/</guid>
+      <title>The Power of Deep Learning in Data Analysis</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Power_of_Deep_Learning_in_Data_Analysis/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Power_of_Deep_Learning_in_Data_Analysis/</guid>
       <description>The Power of Deep Learning in Data Analysis Machine Learning and Data Science have been transforming multiple industries dramatically in recent years. Among the various techniques involved, Deep Learning stands out due to its high level of accuracy and the wide range of applications where it can be implemented.
 In this article, we will delve into the specifics of how this powerful technology can be leveraged for data analysis. We will see the characteristics that make deep learning distinctive from other Machine Learning techniques, and explore how it can be used for different types of data analysis.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Things_Every_Data_Scientist_Must_Know_About_Web_Scraping/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Things_Every_Data_Scientist_Must_Know_About_Web_Scraping/</guid>
+      <title>Things Every Data Scientist Must Know About Web Scraping</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Things_Every_Data_Scientist_Must_Know_About_Web_Scraping/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Things_Every_Data_Scientist_Must_Know_About_Web_Scraping/</guid>
       <description>Things Every Data Scientist Must Know About Web Scraping Web scraping is an essential skill in the data scientist&amp;rsquo;s arsenal. It involves the extraction of data from webpages. This information often helps in understanding and predicting trends, making it an indispensable tool in the world of data science. In this article, we will dive into what web scraping entails, Python&amp;rsquo;s tools available for web scraping, and key considerations to understand during the process.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Tips_to_Crack_Your_Next_Data_Science_Interview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Tips_to_Crack_Your_Next_Data_Science_Interview/</guid>
+      <title>Tips to Crack Your Next Data Science Interview</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Tips_to_Crack_Your_Next_Data_Science_Interview/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Tips_to_Crack_Your_Next_Data_Science_Interview/</guid>
       <description>Tips to Crack Your Next Data Science Interview Data science is one of the hottest career options of the 21st century, with businesses across the globe recognizing the power of data and utilizing it to drive organizational strategy. As a result, the demand for data science professionals is at an all-time high. By preparing well for your data science interview, you can increase the chances that you&amp;rsquo;ll land the job.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/TOP_10_Essential_Excel_Functions_for_Data_Analysis/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/TOP_10_Essential_Excel_Functions_for_Data_Analysis/</guid>
+      <title>TOP 10 Essential Excel Functions for Data Analysis</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/TOP_10_Essential_Excel_Functions_for_Data_Analysis/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/TOP_10_Essential_Excel_Functions_for_Data_Analysis/</guid>
       <description>TOP 10 Essential Excel Functions for Data Analysis As a Data Professional, you stumble across a ton of data. Not all of them will be in a structured form suitable for Machine Learning or Data Science algorithms. Often, you&amp;rsquo;ll find data hidden in Excel sheets. In such cases, the ability to use Excel becomes a necessary skill to have in your repertoire. In this article, we&amp;rsquo;ll walk you through 10 invaluable Excel functions that are quintessential for Data Analysis.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Top_Python_Libraries_for_Data_Science/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Top_Python_Libraries_for_Data_Science/</guid>
+      <title>Top Python Libraries for Data Science</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Top_Python_Libraries_for_Data_Science/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Top_Python_Libraries_for_Data_Science/</guid>
       <description>Top Python Libraries for Data Science As we navigate the 21st century, data continues to grow exponentially. To make sense of this plethora of information, we resort to Data Science. Data Science concerns extraction of insights from raw, structured or unstructured data. It&amp;rsquo;s an interdisciplinary field that uses various techniques from many fields like mathematics, machine learning, computer science, and statistics to generate insights from data.
 Python has emerged as one of the leading languages in this landscape due to its simplicity, flexibility and a wealth of powerful libraries dedicated to almost every Data Science task imaginable - from web scraping to deep learning.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Top_Tips_for_Optimizing_Query_Performance/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Top_Tips_for_Optimizing_Query_Performance/</guid>
+      <title>Top Tips for Optimizing Query Performance</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Top_Tips_for_Optimizing_Query_Performance/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Top_Tips_for_Optimizing_Query_Performance/</guid>
       <description>Top Tips for Optimizing Query Performance When it comes to working with data-intensive applications, the efficiency of your queries can make or break the performance of your technology stack. Any successful Data Science or Data Engineer has, at some point, faced the need to optimize a database query. This article will outline some strategies for optimizing your query performance across common languages and platforms.
 Introduction Query optimization is a crucial task in handling databases or working on big data applications.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Understanding_the_Basics_of_Artificial_Intelligence/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Understanding_the_Basics_of_Artificial_Intelligence/</guid>
+      <title>Understanding the Basics of Artificial Intelligence</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Understanding_the_Basics_of_Artificial_Intelligence/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Understanding_the_Basics_of_Artificial_Intelligence/</guid>
       <description>Understanding the Basics of Artificial Intelligence Hello reader, whether you&amp;rsquo;re a data enthusiast, a machine learning developer, or someone looking to dip their toes into the exciting world of artificial intelligence(AI), you&amp;rsquo;ve come to the right place. In this article, we will provide a comprehensive overview of AI, including its origins, core concepts, and step-by-step instructions (with Python source code) on how to build a simplistic AI model.
 Introduction Artificial Intelligence has been a fascinating concept of science fiction for decades; it has now become a day-to-day reality.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://example.org/basics/Understanding_the_Basics_of_SQL_and_its_Importance/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://example.org/basics/Understanding_the_Basics_of_SQL_and_its_Importance/</guid>
+      <title>Understanding the Basics of SQL and its Importance</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Understanding_the_Basics_of_SQL_and_its_Importance/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Understanding_the_Basics_of_SQL_and_its_Importance/</guid>
       <description>Understanding the Basics of SQL and its Importance SQL or Structured Query Language is a fundamental tool used across industries for accessing, manipulating, and analyzing data stored in relational databases. If you&amp;rsquo;re a Data professional, chances are high that you will encounter SQL. This article covers the basics of SQL and its significance in Data Science, Machine Learning, Data Engineering, and MLOps.
 Introduction Despite the increasing use of NoSQL databases and newer technology stacks, SQL continues to be the dialect of choice for performing data analysis on structured data.</description>
     </item>

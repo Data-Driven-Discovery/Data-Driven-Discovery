@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Data Science | Data Driven Discovery - D3</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Science/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://lustrous-paprenjak-b7c3d8.netlify.app/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lustrous-paprenjak-b7c3d8.netlify.app/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lustrous-paprenjak-b7c3d8.netlify.app/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://lustrous-paprenjak-b7c3d8.netlify.app/apple-touch-icon.png">
+<link rel="mask-icon" href="https://lustrous-paprenjak-b7c3d8.netlify.app/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Science/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Data Science" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Science/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Data Science"/>
+<meta name="twitter:description" content=""/>
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://lustrous-paprenjak-b7c3d8.netlify.app/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    Data Science
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Maximizing your Coding Efficiency with Jupyter Notebooks
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Maximizing your Coding Efficiency with Jupyter Notebooks Jupyter Notebooks have become a staple in the toolkit of every Data Scientist, Data Engineer, and other data professionals. Its interactive and easy-to-use environment provides seamless experimentations, data cleaning operations, stats modeling, machine learning, and visualizations. In this article, we’ll go over how you can truly maximize your coding efficiency with Jupyter notebooks.
+Introduction Jupyter Notebooks function as an electronic lab notebook for those working with data....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Maximizing your Coding Efficiency with Jupyter Notebooks" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Maximizing_your_Coding_Efficiency_with_Jupyter_Notebooks/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Natural Language Processing: An Introduction
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Natural Language Processing: An Introduction Natural Language Processing (NLP) has emerged as one of the most significant subfields in machine learning and data science. From auto-correct features in smartphones to voice-assistants like Alexa and Siri understanding and even predicting our speech patterns, NLP applications are relentlessly interweaved into our everyday lives. In this blog, we will venture into the world of NLP, illustrating its applications, techniques, and how it revolutionizes the way we interact with machines....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Natural Language Processing: An Introduction" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Natural_Language_Processing_An_Introduction/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Statistical Modeling: The Two Types of Errors One Should Know About
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Statistical Modeling: The Two Types of Errors One Should Know About Statistical modeling is a crucial aspect of machine learning, data science, and data engineering. These models are often trained to predict unseen data. However, the predictions are not always 100% accurate. Therefore, it is important to understand the errors involved - Type I and Type II errors. Let’s dive in to explore both of these error types.
+Introduction Type I and Type II errors represent the incorrect conclusions that we might make from hypothesis testing....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Statistical Modeling: The Two Types of Errors One Should Know About" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Statistical_Modeling_The_Two_Types_of_Errors_one_should_know_about/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Art of Storytelling through Data
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Art of Storytelling through Data In this technologically advanced era, data is often visualized as vast networks of numbers and codes. But, a skilled data practitioner knows data can be much more than dry statistics. For those who know how to wield, interpret and communicate, data becomes a compelling storyteller, offering tantalizing insights into patterns and trends that were previously hidden.
+This article seeks to delve into leveraging data visualization and analytics, examining their role in storytelling, and demonstrating various techniques using commonly used Python libraries like Matplotlib, Pandas, and Seaborn....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to The Art of Storytelling through Data" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Art_of_Storytelling_through_Data/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Ins and Outs of GPU-accelerated Data Science
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Ins and Outs of GPU-accelerated Data Science The use of Graphics Processing Units (GPUs) has become increasingly prevalent in the field of Data Science due to their capability to process large amounts of data quickly and efficiently. This article explores the concept of GPU-accelerated Data Science, its benefits, real-world applications and how we can leverage GPU power using Python libraries such as CuDF, CuPy and TensorFlow.
+Introduction In traditional computers, the Central Processing Unit (CPU) has been the core of processing power....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to The Ins and Outs of GPU-accelerated Data Science" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_ins_and_outs_of_GPU-accelerated_Data_Science/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">The Journey From Data to Insights
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>The Journey From Data to Insights In this era of digital transformation, significantly influenced by the fourth industrial revolution, data is the critical fuel that powers business decision-making and strategy building. In the terrain of data, the journey from raw data to useful insights is not always easy. However, with the right set of skills, tools and techniques, one can seamlessly transform raw data into actionable insights.
+The purpose of this article is to guide you through the stages of data processing and to equip you with fundamental skills such as data cleaning, data engineering, feature extraction, data modelling, and others, using machine learning libraries such as Scikit-Learn, pandas, Matplotlib etc....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to The Journey From Data to Insights" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Journey_From_Data_to_Insights/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Things Every Data Scientist Must Know About Web Scraping
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Things Every Data Scientist Must Know About Web Scraping Web scraping is an essential skill in the data scientist’s arsenal. It involves the extraction of data from webpages. This information often helps in understanding and predicting trends, making it an indispensable tool in the world of data science. In this article, we will dive into what web scraping entails, Python’s tools available for web scraping, and key considerations to understand during the process....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Things Every Data Scientist Must Know About Web Scraping" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Things_Every_Data_Scientist_Must_Know_About_Web_Scraping/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Top Python Libraries for Data Science
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Top Python Libraries for Data Science As we navigate the 21st century, data continues to grow exponentially. To make sense of this plethora of information, we resort to Data Science. Data Science concerns extraction of insights from raw, structured or unstructured data. It’s an interdisciplinary field that uses various techniques from many fields like mathematics, machine learning, computer science, and statistics to generate insights from data.
+Python has emerged as one of the leading languages in this landscape due to its simplicity, flexibility and a wealth of powerful libraries dedicated to almost every Data Science task imaginable - from web scraping to deep learning....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Top Python Libraries for Data Science" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Top_Python_Libraries_for_Data_Science/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Science/">
+      «&nbsp;Prev&nbsp;
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://lustrous-paprenjak-b7c3d8.netlify.app/">Data Driven Discovery - D3</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

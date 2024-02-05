@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Data Structures on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Structures/</link>
+    <description>Recent content in Data Structures on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Structures/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Comprehensive Guide to Data Structures and Algorithms</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/A_Comprehensive_Guide_to_Data_Structures_and_Algorithms/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/A_Comprehensive_Guide_to_Data_Structures_and_Algorithms/</guid>
+      <description>A Comprehensive Guide to Data Structures and Algorithms Data structures and algorithms form the bedrock of data science, engineering, and machine learning (ML). This guide aims to provide the keen reader with a solid understanding of the fundamentals of these two disciplines and their centrality to the Data Science field. Throughout this guide, we&amp;rsquo;ll share working code examples in Python that you can run in your environment.
+Introduction Data Science is a composite entity that straddles multiple disciplines such as statistics, machine learning, and data engineering.</description>
+    </item>
+  </channel>
+</rss>

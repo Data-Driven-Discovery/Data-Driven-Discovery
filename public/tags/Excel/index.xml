@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Excel on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Excel/</link>
+    <description>Recent content in Excel on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Excel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TOP 10 Essential Excel Functions for Data Analysis</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/TOP_10_Essential_Excel_Functions_for_Data_Analysis/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/TOP_10_Essential_Excel_Functions_for_Data_Analysis/</guid>
+      <description>TOP 10 Essential Excel Functions for Data Analysis As a Data Professional, you stumble across a ton of data. Not all of them will be in a structured form suitable for Machine Learning or Data Science algorithms. Often, you&amp;rsquo;ll find data hidden in Excel sheets. In such cases, the ability to use Excel becomes a necessary skill to have in your repertoire. In this article, we&amp;rsquo;ll walk you through 10 invaluable Excel functions that are quintessential for Data Analysis.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,3 +1,12 @@
+
+---
+title: "Machine Learning Algorithms: An Overview"
+date: 2024-02-05
+tags: ['Machine Learning', 'AI Algorithms', 'Tutorial']
+categories: ["basics"]
+---
+
+
 # Machine Learning Algorithms: An Overview
 
 Machine learning is at the heart of many modern systems, providing the foundation for recommendations algorithms, search engines, image recognition programs, and even self-driving cars. Central to all of these are machine learning algorithms, which enable computers to learn from and make decisions or predictions based on data. This article will offer a broad overview of Machine Learning (ML) algorithms, touching on their categorization, some of the top methods used, and demonstrative Python code snippets of how several are implemented.

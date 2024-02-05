@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cloud Computing for Data Science on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Cloud-Computing-for-Data-Science/</link>
+    <description>Recent content in Cloud Computing for Data Science on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Cloud-Computing-for-Data-Science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to Cloud Computing</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Introduction_to_Cloud_Computing/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Introduction_to_Cloud_Computing/</guid>
+      <description>Introduction to Cloud Computing This article aims to give you a clear understanding about cloud computing and its importance in the world of Data Science, Machine Learning, and MLOps. As data professionals, we&amp;rsquo;re surrounded by terms like &amp;lsquo;software as a service&amp;rsquo; and &amp;lsquo;infrastructure as a service&amp;rsquo;: rooted in cloud computing. This article is a highly-readable primer: introducing you to these technologies, why they&amp;rsquo;re important, and how they reshape how we work with data.</description>
+    </item>
+  </channel>
+</rss>

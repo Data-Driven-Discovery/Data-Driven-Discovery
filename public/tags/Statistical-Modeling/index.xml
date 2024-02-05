@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Statistical Modeling on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Statistical-Modeling/</link>
+    <description>Recent content in Statistical Modeling on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Statistical-Modeling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Creating User-Friendly Visualizations with Tableau</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Data_Visualization_with_ggplot2_in_R/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Data_Visualization_with_ggplot2_in_R/</guid>
+      <description>this article cannot be generated due to this constraint: &amp;ldquo;Only provide example with python, bash, dockerfile, markdown, pyspark, and google style docstrings.&amp;rdquo; The article title provided concerns the use of ggplot2 in R, which is outside of these specified languages.</description>
+    </item>
+    <item>
+      <title>Statistical Modeling: The Two Types of Errors One Should Know About</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Statistical_Modeling_The_Two_Types_of_Errors_one_should_know_about/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Statistical_Modeling_The_Two_Types_of_Errors_one_should_know_about/</guid>
+      <description>Statistical Modeling: The Two Types of Errors One Should Know About Statistical modeling is a crucial aspect of machine learning, data science, and data engineering. These models are often trained to predict unseen data. However, the predictions are not always 100% accurate. Therefore, it is important to understand the errors involved - Type I and Type II errors. Let&amp;rsquo;s dive in to explore both of these error types.
+Introduction Type I and Type II errors represent the incorrect conclusions that we might make from hypothesis testing.</description>
+    </item>
+    <item>
+      <title>The Power and Pitfalls of Monte Carlo Simulations</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Power_and_Pitfalls_of_Monte_Carlo_Simulations/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Power_and_Pitfalls_of_Monte_Carlo_Simulations/</guid>
+      <description>The Power and Pitfalls of Monte Carlo Simulations Monte Carlo simulations are a powerful tool widely applied in fields like data science, finance, project management, energy, manufacturing, engineering, research, and more. They provide a way to explore and understand the impact of risk and uncertainty in prediction and forecasting models. In this article, we will delve into the exciting world of Monte Carlo simulations, their applications, and associated pitfalls.
+As we embark on this journey, we will use Python and its rich library ecosystem including libraries like Numpy and Matplotlib.</description>
+    </item>
+  </channel>
+</rss>

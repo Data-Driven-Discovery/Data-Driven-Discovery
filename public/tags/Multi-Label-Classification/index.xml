@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Multi-Label Classification on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Multi-Label-Classification/</link>
+    <description>Recent content in Multi-Label Classification on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Multi-Label-Classification/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mastering Multi-Label Classification in Machine Learning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Mastering_Multi-Label_Classification_in_Machine_Learning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Mastering_Multi-Label_Classification_in_Machine_Learning/</guid>
+      <description>Mastering Multi-Label Classification in Machine Learning Multi-label classification represents one of the more nuanced aspects of machine learning, straddling the complexities of understanding how to predict multiple labels for a single instance, rather than the traditional single label per instance. As the digital world grows exponentially, so does the demand for sophisticated models that can understand and predict multiple attributes, tags, or categories for a given piece of data. This article aims to shed light on multi-label classification, offering both beginners and advanced users actionable insights, complete with working code snippets that can be executed as-is.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Data Preprocessing on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Preprocessing/</link>
+    <description>Recent content in Data Preprocessing on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Preprocessing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Efficient and Scalable Data Preprocessing Techniques for Machine Learning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Efficient_and_Scalable_Data_Preprocessing_Techniques_for_Machine_Learning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Efficient_and_Scalable_Data_Preprocessing_Techniques_for_Machine_Learning/</guid>
+      <description>Efficient and Scalable Data Preprocessing Techniques for Machine Learning In the realm of machine learning, data preprocessing stands as a cornerstone, pivotal to the development of robust models. Preprocessing encompasses a broad array of techniques designed to clean, scale, and partition data, thereby making it more conducive for feeding into machine learning algorithms. The efficacy of these methods directly correlates with the ultimate performance of the models. Recognizing this, this article delves into efficient and scalable data preprocessing techniques that cater to both novices and veterans in the field of machine learning, data science, and data engineering.</description>
+    </item>
+  </channel>
+</rss>

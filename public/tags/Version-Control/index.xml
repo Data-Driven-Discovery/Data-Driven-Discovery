@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Version Control on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Version-Control/</link>
+    <description>Recent content in Version Control on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Version-Control/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How Version Control is Revolutionizing Data Science</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_Version_Control_is_Revolutionizing_Data_Science/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_Version_Control_is_Revolutionizing_Data_Science/</guid>
+      <description>How Version Control is Revolutionizing Data Science Introduction:
+Data Science is an exciting field that is rapidly evolving, and the ability to manage the evolution of projects has become equally crucial. This is where version control comes into play.
+Today, we discuss version control- a system that records changes to a file or set of files over time so that you can recall specific versions later. It makes collaboration easier among teams and contributes significantly to the robustness and reproducibility of Data Science projects.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ETL Processes on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/ETL-Processes/</link>
+    <description>Recent content in ETL Processes on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/ETL-Processes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guide to Excel Automation using Python</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Guide_to_Excel_Automation_using_Python/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Guide_to_Excel_Automation_using_Python/</guid>
+      <description>Guide to Excel Automation using Python Businesses often rely on Excel to handle vast amounts of data, from sales data analysis to financial forecasting. However, manually processing this data is often tedious and time-consuming. Python, a versatile programming language widely-known for its ease-of-use and broad ecosystem of data analyst tools, can be applied to automate tasks involving Excel datasets. This article provides a comprehensive guide on how to automate Excel tasks using Python.</description>
+    </item>
+    <item>
+      <title>How to Improve ETL Performance</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Improve_ETL_Performance/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Improve_ETL_Performance/</guid>
+      <description>How to Improve ETL Performance Extract, Transform, Load (ETL) is a fundamental concept in the realm of Data Engineering. ETL processes are the backbone of every data warehouse, responsible for the timely and accurate migration of data from source systems to the data warehouse. A bottleneck in ETL can lead to undesirable consequences in business decision-making, making ETL performance optimization a priority for every Data Engineer. In this article, we&amp;rsquo;ll be looking at practical means to improve ETL performance, using Python and the pandarallel library to leverage parallel processing for our ETL tasks.</description>
+    </item>
+  </channel>
+</rss>

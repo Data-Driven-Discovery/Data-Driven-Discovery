@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Graph Neural Networks on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Graph-Neural-Networks/</link>
+    <description>Recent content in Graph Neural Networks on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Graph-Neural-Networks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mastering Graph Neural Networks: From Theory to Cutting-Edge Applications</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Mastering_Graph_Neural_Networks_From_Theory_to_Cutting-Edge_Applications/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Mastering_Graph_Neural_Networks_From_Theory_to_Cutting-Edge_Applications/</guid>
+      <description>Mastering Graph Neural Networks: From Theory to Cutting-Edge Applications Graph Neural Networks (GNNs) have revolutionized how we think about processing structured data. From social network analyses to molecular structure prediction, GNNs offer a powerful tool for researchers and engineers alike. This article aims to demystify GNNs, offering both an introduction for beginners and advanced insights for more experienced practitioners. By the end, you&amp;rsquo;ll not only grasp GNN concepts but also be equipped with the knowledge to implement cutting-edge GNN applications.</description>
+    </item>
+  </channel>
+</rss>

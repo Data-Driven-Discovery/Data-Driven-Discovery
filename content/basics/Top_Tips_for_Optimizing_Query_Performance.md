@@ -1,3 +1,12 @@
+
+---
+title: "Top Tips for Optimizing Query Performance"
+date: 2024-02-05
+tags: ['SQL', 'Data Optimization', 'Tutorial']
+categories: ["basics"]
+---
+
+
 # Top Tips for Optimizing Query Performance
 
 When it comes to working with data-intensive applications, the efficiency of your queries can make or break the performance of your technology stack. Any successful Data Science or Data Engineer has, at some point, faced the need to optimize a database query. This article will outline some strategies for optimizing your query performance across common languages and platforms.

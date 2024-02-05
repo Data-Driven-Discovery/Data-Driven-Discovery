@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Algorithmic Trading on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Algorithmic-Trading/</link>
+    <description>Recent content in Algorithmic Trading on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Algorithmic-Trading/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Art and Science of Algorithmic Trading with Machine Learning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/The_Art_and_Science_of_Algorithmic_Trading_with_Machine_Learning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/The_Art_and_Science_of_Algorithmic_Trading_with_Machine_Learning/</guid>
+      <description>The Art and Science of Algorithmic Trading with Machine Learning The intersection of machine learning (ML) and finance has opened up new avenues for investors and traders. Algorithmic trading, which leverages computer programs to execute trades at high speeds and volumes, has been revolutionized by machine learning. This synergy is not just about speed but also about the ability to predict market movements, minimize risks, and enhance profitability using data-driven strategies.</description>
+    </item>
+  </channel>
+</rss>

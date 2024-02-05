@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Feature Engineering on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Feature-Engineering/</link>
+    <description>Recent content in Feature Engineering on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Feature-Engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced Feature Engineering in High-Dimensional Spaces: Techniques and Pitfalls</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Advanced_Feature_Engineering_in_High-Dimensional_Spaces_Techniques_and_Pitfalls/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Advanced_Feature_Engineering_in_High-Dimensional_Spaces_Techniques_and_Pitfalls/</guid>
+      <description>Advanced Feature Engineering in High-Dimensional Spaces: Techniques and Pitfalls In the evolving landscape of machine learning and data science, feature engineering remains a cornerstone for building robust and predictive models. However, as we venture into the realm of high-dimensional spaces, the complexity of feature engineering magnifies. This article aims to demystify advanced feature engineering techniques tailored for high-dimensional data, while also warning against common pitfalls. Whether you&amp;rsquo;re a beginner eager to leap forward or an advanced practitioner refining your craft, these insights will elevate your data processing game.</description>
+    </item>
+  </channel>
+</rss>

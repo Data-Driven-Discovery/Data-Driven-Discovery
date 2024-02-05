@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Edge Computing on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Edge-Computing/</link>
+    <description>Recent content in Edge Computing on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Edge-Computing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced Strategies in Model Compression for Edge Computing</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Advanced_Strategies_in_Model_Compression_for_Edge_Computing/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Advanced_Strategies_in_Model_Compression_for_Edge_Computing/</guid>
+      <description>Advanced Strategies in Model Compression for Edge Computing In today’s ever-evolving technological landscape, edge computing has emerged as a pivotal mechanism for processing data closer to its source. This paradigm shift reduces latency, saves bandwidth, and enhances privacy. However, deploying machine learning models on edge devices, constrained by limited compute power and memory, poses unique challenges. Model compression becomes an essential strategy to bridge this gap, enabling the execution of sophisticated models on devices like smartphones, IoT devices, and embedded systems.</description>
+    </item>
+  </channel>
+</rss>

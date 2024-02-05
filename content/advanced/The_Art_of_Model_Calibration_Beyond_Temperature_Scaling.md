@@ -1,3 +1,11 @@
+---
+title: "The Art of Model Calibration: Beyond Temperature Scaling"
+date: 2024-02-05
+tags: ['Machine Learning', 'Model Calibration', 'Advanced Topic']
+categories: ["advanced"]
+---
+
+
 # The Art of Model Calibration: Beyond Temperature Scaling
 
 In the rapidly evolving field of machine learning, model calibration stands out as a crucial technique, especially when making decisions based on model predictions in high-stakes scenarios like healthcare, finance, and autonomous driving. A well-calibrated model ensures that the predicted probabilities of outcomes reflect their true likeliness, enabling more reliable and interpretable decision-making processes. While temperature scaling is a popular method for calibrating models, this article delves into more advanced strategies, offering valuable insights for both beginners and seasoned practitioners striving to enhance their model's reliability further.

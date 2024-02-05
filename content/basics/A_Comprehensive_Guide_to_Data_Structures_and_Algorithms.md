@@ -1,3 +1,12 @@
+
+---
+title: "A Comprehensive Guide to Data Structures and Algorithms"
+date: 2024-02-05
+tags: ['Data Structures', 'Algorithms', 'Tutorial']
+categories: ["basics"]
+---
+
+
 # A Comprehensive Guide to Data Structures and Algorithms
 
 Data structures and algorithms form the bedrock of data science, engineering, and machine learning (ML). This guide aims to provide the keen reader with a solid understanding of the fundamentals of these two disciplines and their centrality to the Data Science field. Throughout this guide, we'll share working code examples in Python that you can run in your environment.

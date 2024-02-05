@@ -1,3 +1,12 @@
+
+---
+title: "Tips to Crack Your Next Data Science Interview"
+date: 2024-02-05
+tags: ['Data Science Interview', 'Tutorial', 'Career']
+categories: ["basics"]
+---
+
+
 # Tips to Crack Your Next Data Science Interview
 
 Data science is one of the hottest career options of the 21st century, with businesses across the globe recognizing the power of data and utilizing it to drive organizational strategy. As a result, the demand for data science professionals is at an all-time high. By preparing well for your data science interview, you can increase the chances that you'll land the job. 

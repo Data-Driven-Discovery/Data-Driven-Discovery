@@ -1,3 +1,12 @@
+
+---
+title: "Spark SQL: A ROMP Through the Basics"
+date: 2024-02-05
+tags: ['Spark SQL', 'Big Data', 'Apache Spark', 'Tutorial']
+categories: ["basics"]
+---
+
+
 # Spark SQL: A ROMP Through the Basics
 
 Welcome to a beginner's guide to Spark SQL! If you find yourself frequenting the landscape of big data, knowing Spark and Spark SQL is an absolute necessity. In this article, we'll be delving into the main features, basic commands, and some practical examples of using Spark SQL.

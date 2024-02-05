@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Project Management on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Project-Management/</link>
+    <description>Recent content in Project Management on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Project-Management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Develop a Data Engineering Project from Scratch</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Develop_a_Data_Engineering_Project_from_Scratch/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Develop_a_Data_Engineering_Project_from_Scratch/</guid>
+      <description>How to Develop a Data Engineering Project from Scratch There is a growing demand for professionals skilled in data engineering, which is the foundation of the data-driven decision-making that is pivotal in today’s business environment. Embarking on a data engineering project can certainly be exhilarating but also daunting. In this blog post, we&amp;rsquo;ll walk through the major steps and practices for starting a data engineering project from scratch.
+Introduction Data Engineering is the backbone of any Machine Learning, Data Science, and Artificial Intelligence projects.</description>
+    </item>
+  </channel>
+</rss>

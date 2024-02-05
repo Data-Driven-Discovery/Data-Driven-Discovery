@@ -1,3 +1,12 @@
+
+---
+title: "How Version Control is Revolutionizing Data Science"
+date: 2024-02-05
+tags: ['Version Control', 'Data Science']
+categories: ["basics"]
+---
+
+
 # How Version Control is Revolutionizing Data Science
 
 Introduction:

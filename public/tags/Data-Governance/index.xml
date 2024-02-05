@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Data Governance on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Governance/</link>
+    <description>Recent content in Data Governance on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Governance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced Data Governance for Machine Learning: Strategies and Best Practices</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Advanced_Data_Governance_for_Machine_Learning_Strategies_and_Best_Practices/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Advanced_Data_Governance_for_Machine_Learning_Strategies_and_Best_Practices/</guid>
+      <description>Advanced Data Governance for Machine Learning: Strategies and Best Practices In the rapidly evolving domain of machine learning (ML), data serves as the foundational bedrock that powers algorithmic models to make predictions, automate decisions, and unearth insights. However, as data volume, velocity, and variety grow exponentially, effective data governance becomes paramount to ensure data quality, compliance, and security. This article delves into advanced data governance strategies and best practices tailored for machine learning, aiming to guide data scientists, ML engineers, and data governance professionals through the process of implementing robust data governance frameworks in ML workflows.</description>
+    </item>
+  </channel>
+</rss>

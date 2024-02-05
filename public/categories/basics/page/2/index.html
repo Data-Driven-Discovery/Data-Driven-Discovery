@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>basics | Data Driven Discovery - D3</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="https://lustrous-paprenjak-b7c3d8.netlify.app/categories/basics/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="https://lustrous-paprenjak-b7c3d8.netlify.app/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lustrous-paprenjak-b7c3d8.netlify.app/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lustrous-paprenjak-b7c3d8.netlify.app/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://lustrous-paprenjak-b7c3d8.netlify.app/apple-touch-icon.png">
+<link rel="mask-icon" href="https://lustrous-paprenjak-b7c3d8.netlify.app/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="https://lustrous-paprenjak-b7c3d8.netlify.app/categories/basics/index.xml">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="basics" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://lustrous-paprenjak-b7c3d8.netlify.app/categories/basics/" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="basics"/>
+<meta name="twitter:description" content=""/>
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://lustrous-paprenjak-b7c3d8.netlify.app/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header">
+  <h1>
+    basics
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Getting Started with Python for Finance
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Getting Started with Python for Finance Python, with its robust libraries and user-friendly syntax, has emerged as an essential tool for financial data analysis and modeling. From risk management to trading strategies, the Python ecosystem hosts a plethora of libraries designed to tackle a wide array of finance-related tasks. In this blog, we will delve into key concepts and tools that every data professional needs to navigate Python in finance....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Getting Started with Python for Finance" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Getting_Started_with_Python_for_Finance/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Guide to Excel Automation using Python
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Guide to Excel Automation using Python Businesses often rely on Excel to handle vast amounts of data, from sales data analysis to financial forecasting. However, manually processing this data is often tedious and time-consuming. Python, a versatile programming language widely-known for its ease-of-use and broad ecosystem of data analyst tools, can be applied to automate tasks involving Excel datasets. This article provides a comprehensive guide on how to automate Excel tasks using Python....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Guide to Excel Automation using Python" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Guide_to_Excel_Automation_using_Python/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How important is testing in Data Science
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>How important is testing in Data Science Data Science is not just about creating complex Machine Learning models or extracting valuable insights from data. It is about creating accurate, robust, and reliable systems that can make accurate predictions and analytics decisions. From this perspective, testing becomes a critical part in the life-cycle of a Data Science project. It ensures that the derived models meet the desired accuracy and performance.
+In this article, we’ll dive deepened on the importance of testing in Data Science....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to How important is testing in Data Science" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_important_is_testing_in_Data_Science/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to Create an Effective Data Strategy
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>How to Create an Effective Data Strategy Data has emerged as the fuel for the information-era engine, impacting every professional industry and crevices of life. Accumulating and employing data is becoming increasingly pivotal for organizations, thus necessitating a coolheaded, systematic, and efficient data strategy. Not only does a well-structured data strategy facilitate insightful decision-making, but it also enables enterprises to gain a sure competitive edge.
+Without a robust data strategy, organizations risk falling behind in a data-driven economy....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to How to Create an Effective Data Strategy" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Create_an_Effective_Data_Strategy/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to Develop a Data Engineering Project from Scratch
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>How to Develop a Data Engineering Project from Scratch There is a growing demand for professionals skilled in data engineering, which is the foundation of the data-driven decision-making that is pivotal in today’s business environment. Embarking on a data engineering project can certainly be exhilarating but also daunting. In this blog post, we’ll walk through the major steps and practices for starting a data engineering project from scratch.
+Introduction Data Engineering is the backbone of any Machine Learning, Data Science, and Artificial Intelligence projects....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to How to Develop a Data Engineering Project from Scratch" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Develop_a_Data_Engineering_Project_from_Scratch/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How to Improve ETL Performance
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>How to Improve ETL Performance Extract, Transform, Load (ETL) is a fundamental concept in the realm of Data Engineering. ETL processes are the backbone of every data warehouse, responsible for the timely and accurate migration of data from source systems to the data warehouse. A bottleneck in ETL can lead to undesirable consequences in business decision-making, making ETL performance optimization a priority for every Data Engineer. In this article, we’ll be looking at practical means to improve ETL performance, using Python and the pandarallel library to leverage parallel processing for our ETL tasks....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to How to Improve ETL Performance" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_to_Improve_ETL_Performance/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">How Version Control is Revolutionizing Data Science
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>How Version Control is Revolutionizing Data Science Introduction:
+Data Science is an exciting field that is rapidly evolving, and the ability to manage the evolution of projects has become equally crucial. This is where version control comes into play.
+Today, we discuss version control- a system that records changes to a file or set of files over time so that you can recall specific versions later. It makes collaboration easier among teams and contributes significantly to the robustness and reproducibility of Data Science projects....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to How Version Control is Revolutionizing Data Science" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/How_Version_Control_is_Revolutionizing_Data_Science/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Introduction to Cloud Computing
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction to Cloud Computing This article aims to give you a clear understanding about cloud computing and its importance in the world of Data Science, Machine Learning, and MLOps. As data professionals, we’re surrounded by terms like ‘software as a service’ and ‘infrastructure as a service’: rooted in cloud computing. This article is a highly-readable primer: introducing you to these technologies, why they’re important, and how they reshape how we work with data....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Introduction to Cloud Computing" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Introduction_to_Cloud_Computing/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Introduction to Database Normalization
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Introduction to Database Normalization Database normalization is a crucial step in data engineering and design. It defines a set of methods to break down tables to their simplest form to avoid complex attributes and redundancy. The goal of normalization is to eliminate redundant (redundant = duplicate) data, which in turn prevents data anomalies and saves storage.
+In this article, we will look into different levels of database normalization and understand why they are significant....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Introduction to Database Normalization" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Intro_to_Database_Normalization/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Machine Learning Algorithms: An Overview
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Machine Learning Algorithms: An Overview Machine learning is at the heart of many modern systems, providing the foundation for recommendations algorithms, search engines, image recognition programs, and even self-driving cars. Central to all of these are machine learning algorithms, which enable computers to learn from and make decisions or predictions based on data. This article will offer a broad overview of Machine Learning (ML) algorithms, touching on their categorization, some of the top methods used, and demonstrative Python code snippets of how several are implemented....</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Machine Learning Algorithms: An Overview" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Machine_learning_algorithms_an_overview/"></a>
+</article>
+<footer class="page-footer">
+  <nav class="pagination">
+    <a class="prev" href="https://lustrous-paprenjak-b7c3d8.netlify.app/categories/basics/">
+      «&nbsp;Prev&nbsp;
+    </a>
+    <a class="next" href="https://lustrous-paprenjak-b7c3d8.netlify.app/categories/basics/page/3/">Next&nbsp;&nbsp;»
+    </a>
+  </nav>
+</footer>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://lustrous-paprenjak-b7c3d8.netlify.app/">Data Driven Discovery - D3</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

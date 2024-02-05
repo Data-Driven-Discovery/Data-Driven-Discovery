@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Data Storytelling on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Storytelling/</link>
+    <description>Recent content in Data Storytelling on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Storytelling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Art of Storytelling through Data</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Art_of_Storytelling_through_Data/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Art_of_Storytelling_through_Data/</guid>
+      <description>The Art of Storytelling through Data In this technologically advanced era, data is often visualized as vast networks of numbers and codes. But, a skilled data practitioner knows data can be much more than dry statistics. For those who know how to wield, interpret and communicate, data becomes a compelling storyteller, offering tantalizing insights into patterns and trends that were previously hidden.
+This article seeks to delve into leveraging data visualization and analytics, examining their role in storytelling, and demonstrating various techniques using commonly used Python libraries like Matplotlib, Pandas, and Seaborn.</description>
+    </item>
+  </channel>
+</rss>

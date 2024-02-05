@@ -1,3 +1,12 @@
+
+---
+title: "The Ins and Outs of GPU-accelerated Data Science"
+date: 2024-02-05
+tags: ['GPU', 'Data Science', 'High-Performance Computing']
+categories: ["basics"]
+---
+
+
 # The Ins and Outs of GPU-accelerated Data Science
 
 The use of Graphics Processing Units (GPUs) has become increasingly prevalent in the field of Data Science due to their capability to process large amounts of data quickly and efficiently. This article explores the concept of GPU-accelerated Data Science, its benefits, real-world applications and how we can leverage GPU power using Python libraries such as CuDF, CuPy and TensorFlow.

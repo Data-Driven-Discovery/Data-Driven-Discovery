@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Federated Learning on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Federated-Learning/</link>
+    <description>Recent content in Federated Learning on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Federated-Learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced Techniques in Federated Learning: Privacy-Preserving and Efficient Approaches</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Advanced_Techniques_in_Federated_Learning_Privacy-Preserving_and_Efficient_Approaches/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Advanced_Techniques_in_Federated_Learning_Privacy-Preserving_and_Efficient_Approaches/</guid>
+      <description>Advanced Techniques in Federated Learning: Privacy-Preserving and Efficient Approaches Federated learning is a game-changer in the domain of machine learning, especially when it comes to respecting user privacy while still benefiting from their data to improve models. In essence, it’s a technique that allows a model to be trained across multiple decentralized devices or servers holding local data samples, without needing to exchange them. This approach not only protects privacy but also reduces the communication costs associated with traditional centralized training methods.</description>
+    </item>
+  </channel>
+</rss>

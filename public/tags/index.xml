@@ -2,10 +2,613 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Data Driven Discovery - D3</title>
-    <link>http://example.org/tags/</link>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/</link>
     <description>Recent content in Tags on Data Driven Discovery - D3</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced Topic</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Advanced-Topic/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Advanced-Topic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Adversarial Machine Learning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Adversarial-Machine-Learning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Adversarial-Machine-Learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI Algorithms</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/AI-Algorithms/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/AI-Algorithms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI Ethics</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/AI-Ethics/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/AI-Ethics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Algorithmic Trading</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Algorithmic-Trading/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Algorithmic-Trading/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Algorithms</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Algorithms/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Algorithms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Anomaly Detection</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Anomaly-Detection/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Anomaly-Detection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Apache Spark</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Apache-Spark/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Apache-Spark/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Artificial Intelligence</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Artificial-Intelligence/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Artificial-Intelligence/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automated Machine Learning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Automated-Machine-Learning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Automated-Machine-Learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Bayesian Inference</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Bayesian-Inference/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Bayesian-Inference/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Beginner</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Beginner/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Beginner/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Big Data</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Big-Data/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Big-Data/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Career</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Career/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Career/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Causal Inference</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Causal-Inference/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Causal-Inference/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cloud Computing for Data Science</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Cloud-Computing-for-Data-Science/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Cloud-Computing-for-Data-Science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Comparison</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Comparison/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Comparison/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Computer Vision</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Computer-Vision/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Computer-Vision/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Analysis</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Analysis/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Cleaning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Cleaning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Cleaning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Engineering</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Engineering/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Governance</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Governance/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Governance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Optimization</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Optimization/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Optimization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Pipelines</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Pipelines/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Pipelines/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Preprocessing</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Preprocessing/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Preprocessing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Retrieval</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Retrieval/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Retrieval/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Science</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Science/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Science/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Science Interview</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Science-Interview/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Science-Interview/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Security</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Security/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Storage</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Storage/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Storage/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Storytelling</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Storytelling/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Storytelling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Strategy</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Strategy/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Strategy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Structures</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Structures/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Structures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Visualization</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Visualization/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Visualization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Database Normalization</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Database-Normalization/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Database-Normalization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Deep Learning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Deep-Learning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Deep-Learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Distributed Computing</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Distributed-Computing/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Distributed-Computing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Edge Computing</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Edge-Computing/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Edge-Computing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ensemble Learning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Ensemble-Learning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Ensemble-Learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ETL Processes</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/ETL-Processes/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/ETL-Processes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Evolutionary Algorithms</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Evolutionary-Algorithms/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Evolutionary-Algorithms/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Excel</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Excel/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Excel/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Feature Engineering</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Feature-Engineering/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Feature-Engineering/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Federated Learning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Federated-Learning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Federated-Learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Finance</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Finance/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Finance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Generative Adversarial Networks</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Generative-Adversarial-Networks/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Generative-Adversarial-Networks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GPU</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/GPU/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/GPU/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Graph Neural Networks</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Graph-Neural-Networks/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Graph-Neural-Networks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>High-Performance Computing</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/High-Performance-Computing/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/High-Performance-Computing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hyperparameter Tuning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Hyperparameter-Tuning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Hyperparameter-Tuning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interpretable Machine Learning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Interpretable-Machine-Learning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Interpretable-Machine-Learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jupyter Notebooks</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Jupyter-Notebooks/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Jupyter-Notebooks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Machine Learning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Machine-Learning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Machine-Learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Model Calibration</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Model-Calibration/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Model-Calibration/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Model Deployment</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Model-Deployment/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Model-Deployment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Model Monitoring</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Model-Monitoring/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Model-Monitoring/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Monte Carlo Simulations</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Monte-Carlo-Simulations/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Monte-Carlo-Simulations/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multi-Label Classification</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Multi-Label-Classification/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Multi-Label-Classification/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Natural Language Processing</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Natural-Language-Processing/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Natural-Language-Processing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Network Security</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Network-Security/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Network-Security/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Neural Networks</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Neural-Networks/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Neural-Networks/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Optimization</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Optimization/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Optimization/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Predictive Analytics</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Predictive-Analytics/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Predictive-Analytics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Productivity</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Productivity/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Productivity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Project Management</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Project-Management/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Project-Management/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Python/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Quantum Machine Learning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Quantum-Machine-Learning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Quantum-Machine-Learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>R</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/R/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/R/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reinforcement Learning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Reinforcement-Learning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Reinforcement-Learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Representation Learning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Representation-Learning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Representation-Learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SAS</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/SAS/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/SAS/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scala</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Scala/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Scala/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sentiment Analysis</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Sentiment-Analysis/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Sentiment-Analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Spark SQL</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Spark-SQL/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Spark-SQL/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQL</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/SQL/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/SQL/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Statistical Analysis</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Statistical-Analysis/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Statistical-Analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Statistical Modeling</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Statistical-Modeling/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Statistical-Modeling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Supervised Learning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Supervised-Learning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Supervised-Learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TensorFlow</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/TensorFlow/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/TensorFlow/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Testing</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Testing/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Testing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Text Mining</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Text-Mining/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Text-Mining/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Time Series Forecasting</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Time-Series-Forecasting/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Time-Series-Forecasting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tutorial</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Tutorial/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Tutorial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unsupervised Learning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Unsupervised-Learning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Unsupervised-Learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Version Control</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Version-Control/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Version-Control/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Web Scraping</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Web-Scraping/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Web-Scraping/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

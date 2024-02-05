@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Data Pipelines on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Pipelines/</link>
+    <description>Recent content in Data Pipelines on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Pipelines/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Efficient Pipelining in Data Science: From Data Ingestion to Model Deployment</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Efficient_Pipelining_in_Data_Science_From_Data_Ingestion_to_Model_Deployment/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Efficient_Pipelining_in_Data_Science_From_Data_Ingestion_to_Model_Deployment/</guid>
+      <description>Efficient Pipelining in Data Science: From Data Ingestion to Model Deployment In the fast-paced world of data science, efficiency is key. From data ingestion to model deployment, each step in the data science pipeline must be optimized to save time, resources, and ultimately, contribute to the success of projects. This article aims to guide you through building efficient pipelines in data science, empowering both beginners and more advanced users with knowledge, practical tips, and code snippets to streamline their processes.</description>
+    </item>
+    <item>
+      <title>The Expert&#39;s Guide to Scalable Data Pipelines in Machine Learning</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/The_Experts_Guide_to_Scalable_Data_Pipelines_in_Machine_Learning/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/The_Experts_Guide_to_Scalable_Data_Pipelines_in_Machine_Learning/</guid>
+      <description>The Expert&amp;rsquo;s Guide to Scalable Data Pipelines in Machine Learning In the evolving landscape of machine learning (ML), the capacity to efficiently process and analyze data at scale directly correlates with the effectiveness of predictive models and insights derived. Data pipelines, the backbone of any machine learning system, ensure the seamless flow of data from its source to the model and eventually to the end-user. However, as data volumes surge and complexity heightens, building scalable data pipelines becomes pivotal.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Supervised Learning on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Supervised-Learning/</link>
+    <description>Recent content in Supervised Learning on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Supervised-Learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Classification Algorithms Every Data Scientist Should Know</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Classification_Algorithms_every_Data_Scientist_should_know/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Classification_Algorithms_every_Data_Scientist_should_know/</guid>
+      <description>Classification Algorithms Every Data Scientist Should Know Classification algorithms are indeed the backbone of machine learning. They help in predicting the category or class of certain data points based on past observations. The reliability of their prediction is staggeringly good, making them widely used across several domains. This post will walk you through some pivotal classification algorithms every data scientist should know.
+Introduction Before we begin, let&amp;rsquo;s get a sense of what we are dealing with.</description>
+    </item>
+  </channel>
+</rss>

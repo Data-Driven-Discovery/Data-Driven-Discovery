@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Computer Vision on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Computer-Vision/</link>
+    <description>Recent content in Computer Vision on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Computer-Vision/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced Multimodal Learning: Integrating Text, Image, and Audio</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Advanced_Multimodal_Learning_Integrating_Text_Image_and_Audio/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Advanced_Multimodal_Learning_Integrating_Text_Image_and_Audio/</guid>
+      <description>Advanced Multimodal Learning: Integrating Text, Image, and Audio The age of artificial intelligence is here, and it&amp;rsquo;s not just about understanding text, images, or audio in isolation anymore. The future of AI lies in the seamless integration of multiple data types to create more complex, nuanced models that better mimic human intelligence. This is where advanced multimodal learning comes into play, integrating text, image, and audio data to push the boundaries of what machine learning can achieve.</description>
+    </item>
+    <item>
+      <title>Creating User-Friendly Visualizations with Tableau</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Creating_User-Friendly_Visualizations_with_Tableau/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Creating_User-Friendly_Visualizations_with_Tableau/</guid>
+      <description>Creating User-Friendly Visualizations with Tableau Data visualization plays an essential role in the field of Data Science, Machine Learning, and Data Engineering. It not only helps in understanding patterns, trends, or insights but also makes it easier to illustrate the story behind the numbers. In this guide, we&amp;rsquo;re going to explore the role of Tableau, a widely-used data visualization tool, in creating user-friendly and interactive visualizations.
+Note: Though this guide talks about Tableau, it does not include any Python or Bash code snippets since Tableau itself is a standalone tool for visualizing data.</description>
+    </item>
+    <item>
+      <title>Cutting-Edge Techniques in Computer Vision: Beyond Convolutional Networks</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Cutting-Edge_Techniques_in_Computer_Vision_Beyond_Convolutional_Networks/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Cutting-Edge_Techniques_in_Computer_Vision_Beyond_Convolutional_Networks/</guid>
+      <description>Cutting-Edge Techniques in Computer Vision: Beyond Convolutional Networks In the ever-evolving field of computer vision, traditional techniques like Convolutional Neural Networks (CNNs) have paved the way for remarkable advancements. However, as technology progresses, newer, more sophisticated methods are emerging, promising to surpass the accomplishments of their predecessors. This article dives deep into some of these cutting-edge techniques, providing insights for beginners and advanced users alike. We&amp;rsquo;ll explore the landscape beyond CNNs, including innovations such as Vision Transformers, Graph Convolutional Networks, and few-shot learning, accompanied by working code snippets.</description>
+    </item>
+  </channel>
+</rss>

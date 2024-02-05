@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>TensorFlow on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/TensorFlow/</link>
+    <description>Recent content in TensorFlow on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/TensorFlow/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Optimizing TensorFlow: Under-the-Hood Techniques for Maximum Performance</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Optimizing_TensorFlow_Under-the-Hood_Techniques_for_Maximum_Performance/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Optimizing_TensorFlow_Under-the-Hood_Techniques_for_Maximum_Performance/</guid>
+      <description>Optimizing TensorFlow: Under-the-Hood Techniques for Maximum Performance TensorFlow is a powerful open-source software library for dataflow and differentiable programming across a range of tasks. It is a foundation for machine learning and also supports complex numerical computations. With its flexible ecosystem of tools, libraries, and community resources, TensorFlow allows researchers and developers to build and deploy machine learning applications with ease. However, to fully leverage TensorFlow&amp;rsquo;s capabilities and achieve maximum performance, it is crucial to understand and implement optimization techniques that can significantly improve the efficiency and speed of your machine learning models.</description>
+    </item>
+    <item>
+      <title>The Benefit of TensorFlow in Machine Learning Models</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Benefit_of_TensorFlow_in_Machine_Learning_Models/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Benefit_of_TensorFlow_in_Machine_Learning_Models/</guid>
+      <description>The Benefit of TensorFlow in Machine Learning Models In the vast world of technology, TensorFlow has been making waves in the field of Machine Learning, revolutionizing the way we use and understand data. In this article, we explore what TensorFlow is, why it is beneficial, and how to use it in creating Machine Learning models.
+What is TensorFlow? TensorFlow, developed by the Google Brain team for internal use, was open sourced in November 2015 under the Apache 2.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Interpretable Machine Learning on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Interpretable-Machine-Learning/</link>
+    <description>Recent content in Interpretable Machine Learning on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Interpretable-Machine-Learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interpretable Machine Learning: Advanced Techniques and Real-World Applications</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Interpretable_Machine_Learning_Advanced_Techniques_and_Real-World_Applications/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Interpretable_Machine_Learning_Advanced_Techniques_and_Real-World_Applications/</guid>
+      <description>Interpretable Machine Learning: Advanced Techniques and Real-World Applications In the fascinating world of data science and machine learning, the accuracy of predictive models often steals the spotlight. However, as these models find their way into various critical sectors, including healthcare, finance, and criminal justice, the importance of interpretability - understanding why a model makes a certain prediction - cannot be overstated. In this comprehensive guide, we&amp;rsquo;ll delve into advanced techniques and real-world applications of interpretable machine learning, catering not only to beginners but also to advanced users aiming to leverage these methods for more transparent, fair, and reliable models.</description>
+    </item>
+  </channel>
+</rss>

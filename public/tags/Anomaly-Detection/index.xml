@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Anomaly Detection on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Anomaly-Detection/</link>
+    <description>Recent content in Anomaly Detection on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Anomaly-Detection/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>In-Depth Guide to Anomaly Detection with Isolation Forests and Beyond</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/In-Depth_Guide_to_Anomaly_Detection_with_Isolation_Forests_and_Beyond/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/In-Depth_Guide_to_Anomaly_Detection_with_Isolation_Forests_and_Beyond/</guid>
+      <description>In-Depth Guide to Anomaly Detection with Isolation Forests and Beyond Anomaly detection is a pivotal task in data science, crucial for identifying fraud, network intrusions, and unusual patterns in data where precision is critical. With the rise of big data and complex datasets, traditional anomaly detection techniques often fall short, necessitating more advanced and efficient methods. One such innovative approach is the use of Isolation Forests, a method designed for high-dimensional datasets.</description>
+    </item>
+  </channel>
+</rss>

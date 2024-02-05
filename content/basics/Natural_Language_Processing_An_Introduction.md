@@ -1,3 +1,12 @@
+
+---
+title: "Natural Language Processing: An Introduction"
+date: 2024-02-05
+tags: ['Natural Language Processing', 'AI Algorithms', 'Data Science', 'Tutorial']
+categories: ["basics"]
+---
+
+
 # Natural Language Processing: An Introduction
 
 Natural Language Processing (NLP) has emerged as one of the most significant subfields in machine learning and data science. From auto-correct features in smartphones to voice-assistants like Alexa and Siri understanding and even predicting our speech patterns, NLP applications are relentlessly interweaved into our everyday lives. In this blog, we will venture into the world of NLP, illustrating its applications, techniques, and how it revolutionizes the way we interact with machines.

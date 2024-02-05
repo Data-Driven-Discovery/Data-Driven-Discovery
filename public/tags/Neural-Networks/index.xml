@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Neural Networks on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Neural-Networks/</link>
+    <description>Recent content in Neural Networks on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Neural-Networks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced Sequence Modeling: Beyond RNNs and LSTMs</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Advanced_Sequence_Modeling_Beyond_RNNs_and_LSTMs/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Advanced_Sequence_Modeling_Beyond_RNNs_and_LSTMs/</guid>
+      <description>Advanced Sequence Modeling: Beyond RNNs and LSTMs In the ever-evolving field of machine learning, staying abreast of the latest advancements is crucial for both beginners and advanced practitioners. Sequence modeling, a subfield that shines in understanding and generating sequences of data, has long been dominated by Recurrent Neural Networks (RNNs) and their more capable variant, Long Short-Term Memory networks (LSTMs). However, the landscape is rapidly changing with the introduction of newer, more efficient models that promise to outshine their predecessors.</description>
+    </item>
+    <item>
+      <title>The Power of Deep Learning in Data Analysis</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Power_of_Deep_Learning_in_Data_Analysis/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/basics/The_Power_of_Deep_Learning_in_Data_Analysis/</guid>
+      <description>The Power of Deep Learning in Data Analysis Machine Learning and Data Science have been transforming multiple industries dramatically in recent years. Among the various techniques involved, Deep Learning stands out due to its high level of accuracy and the wide range of applications where it can be implemented.
+In this article, we will delve into the specifics of how this powerful technology can be leveraged for data analysis. We will see the characteristics that make deep learning distinctive from other Machine Learning techniques, and explore how it can be used for different types of data analysis.</description>
+    </item>
+  </channel>
+</rss>

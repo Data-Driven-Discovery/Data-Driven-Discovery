@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Text Mining on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Text-Mining/</link>
+    <description>Recent content in Text Mining on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Text-Mining/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced Techniques in Text Mining: Dealing with Noise and Ambiguity</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Advanced_Techniques_in_Text_Mining_Dealing_with_Noise_and_Ambiguity/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Advanced_Techniques_in_Text_Mining_Dealing_with_Noise_and_Ambiguity/</guid>
+      <description>Advanced Techniques in Text Mining: Dealing with Noise and Ambiguity In the rapidly evolving field of data science, text mining has emerged as a crucial technique for extracting valuable information from unstructured text. However, as the volume of data grows, so does the complexity of the tasks involved. Noise and ambiguity in text data can significantly hinder the performance of text mining algorithms, leading to inaccurate results and conclusions. This article delves into advanced techniques for dealing effectively with noise and ambiguity in text mining, aiming at both beginners wishing to deepen their understanding and experienced practitioners looking for innovative solutions.</description>
+    </item>
+  </channel>
+</rss>

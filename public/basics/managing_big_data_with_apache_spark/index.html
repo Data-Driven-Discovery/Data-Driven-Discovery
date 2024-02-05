@@ -5,17 +5,17 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Data Driven Discovery - D3</title>
-<meta name="keywords" content="">
+<title>Managing Big Data with Apache Spark | Data Driven Discovery - D3</title>
+<meta name="keywords" content="Big Data, Apache Spark, Data Engineering">
 <meta name="description" content="Managing Big Data with Apache Spark In this digital age, virtually every aspect of our lives generates data. From our social media activities to our online shopping habits, data is being harvested and used in ways that we could hardly have imagined even a decade ago. Among the tools designed to handle big data analytics, Apache Spark stands out due to its speed, ease of use, and general-purpose processing power.">
 <meta name="author" content="">
-<link rel="canonical" href="http://example.org/basics/Managing_Big_Data_with_Apache_Spark/">
+<link rel="canonical" href="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Managing_Big_Data_with_Apache_Spark/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://example.org/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png">
-<link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg">
+<link rel="icon" href="https://lustrous-paprenjak-b7c3d8.netlify.app/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://lustrous-paprenjak-b7c3d8.netlify.app/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://lustrous-paprenjak-b7c3d8.netlify.app/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://lustrous-paprenjak-b7c3d8.netlify.app/apple-touch-icon.png">
+<link rel="mask-icon" href="https://lustrous-paprenjak-b7c3d8.netlify.app/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <noscript>
@@ -54,15 +54,15 @@
         }
 
     </style>
-</noscript><meta property="og:title" content="" />
+</noscript><meta property="og:title" content="Managing Big Data with Apache Spark" />
 <meta property="og:description" content="Managing Big Data with Apache Spark In this digital age, virtually every aspect of our lives generates data. From our social media activities to our online shopping habits, data is being harvested and used in ways that we could hardly have imagined even a decade ago. Among the tools designed to handle big data analytics, Apache Spark stands out due to its speed, ease of use, and general-purpose processing power." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://example.org/basics/Managing_Big_Data_with_Apache_Spark/" /><meta property="article:section" content="basics" />
-
-
+<meta property="og:url" content="https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Managing_Big_Data_with_Apache_Spark/" /><meta property="article:section" content="basics" />
+<meta property="article:published_time" content="2024-02-05T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-02-05T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
+<meta name="twitter:title" content="Managing Big Data with Apache Spark"/>
 <meta name="twitter:description" content="Managing Big Data with Apache Spark In this digital age, virtually every aspect of our lives generates data. From our social media activities to our online shopping habits, data is being harvested and used in ways that we could hardly have imagined even a decade ago. Among the tools designed to handle big data analytics, Apache Spark stands out due to its speed, ease of use, and general-purpose processing power."/>
 
 
@@ -75,13 +75,13 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Basics",
-      "item": "http://example.org/basics/"
+      "item": "https://lustrous-paprenjak-b7c3d8.netlify.app/basics/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "",
-      "item": "http://example.org/basics/Managing_Big_Data_with_Apache_Spark/"
+      "name": "Managing Big Data with Apache Spark",
+      "item": "https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Managing_Big_Data_with_Apache_Spark/"
     }
   ]
 }
@@ -90,27 +90,27 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "",
-  "name": "",
+  "headline": "Managing Big Data with Apache Spark",
+  "name": "Managing Big Data with Apache Spark",
   "description": "Managing Big Data with Apache Spark In this digital age, virtually every aspect of our lives generates data. From our social media activities to our online shopping habits, data is being harvested and used in ways that we could hardly have imagined even a decade ago. Among the tools designed to handle big data analytics, Apache Spark stands out due to its speed, ease of use, and general-purpose processing power.",
   "keywords": [
-    
+    "Big Data", "Apache Spark", "Data Engineering"
   ],
   "articleBody": "Managing Big Data with Apache Spark In this digital age, virtually every aspect of our lives generates data. From our social media activities to our online shopping habits, data is being harvested and used in ways that we could hardly have imagined even a decade ago. Among the tools designed to handle big data analytics, Apache Spark stands out due to its speed, ease of use, and general-purpose processing power.\nIntroduction Apache Spark is an open-source, distributed computing system used for big data processing and analytics. Thanks in part to its in-memory data processing capabilities, it has the ability to handle large-scale data efficiently. It allows developers to perform complex operations on large volumes of data across a distributed environment, whether that environment is in the cloud or on-premises.\nIn this article, we’re going to talk about how to manage big data with Apache Spark. We’ll delve into some code examples that demonstrate how to do data transformations, run SQL queries, and build machine learning models, all with Spark.\nMain Body Installing PySpark PySpark, the Python library for Spark, allows you to interface with Spark’s functionalities using Python. Before we get started, let’s install PySpark. You can do this with pip:\npip install pyspark Starting a SparkSession We’ll start by creating a SparkSession, which is the entry point to any Spark functionality.\nfrom pyspark.sql import SparkSession # start Spark session spark = SparkSession.builder.master(\"local\").appName(\"BigData\").getOrCreate() Data Transformation Suppose we have a dataset data\ndata = [('James','','Smith','1991-04-01','M',3000), ('Michael','Rose','','2000-05-19','M',4000), ('Robert','','Williams','1978-09-05','M',4000), ('Maria','Anne','Jones','1967-12-01','F',4000), ('Jen','Mary','Brown','1980-02-17','F',-1) ] columns = [\"firstname\",\"middlename\",\"lastname\",\"dob\",\"gender\",\"salary\"] # create pandas dataframe df = spark.createDataFrame(data=data, schema = columns) [INSERT IMAGE HERE] ![alt text](./image.png) Now that we have our dataframe, we can perform a simple transformation: select a couple of columns and calculate their average.\nfrom pyspark.sql import functions as F # calculate average salary df_agg = df.agg(F.avg('salary').alias('average_salary')) # show the result df_agg.show() # output: # +--------------+ # |average_salary| # +--------------+ # | 3000.0| # +--------------+ Running SQL Queries Spark SQL supports a variety of structured data sources, including Hive, Avro, Parquet, ORC, JSON, and JDBC.\n# register the DataFrame as a SQL temporary view df.createOrReplaceTempView(\"people\") # run an SQL query sql_query = \"SELECT gender, count(*) as count FROM people GROUP BY gender\" sql_results = spark.sql(sql_query) # show the results sql_results.show() # output: # +------+-----+ # |gender|count| # +------+-----+ # | F| 2| # | M| 3| # +------+-----+ Machine Learning with Spark In addition to managing big data processing, Spark also has integrated machine learning libraries. To illustrate, let’s start with a hypothetical DataFrame and run a simple linear regression model.\nfrom pyspark.ml.regression import LinearRegression # a hypothetical DataFrame, df_ml, with two columns: Features and Label # define the model lr = LinearRegression(featuresCol='Features', labelCol='Label') # fit the model lr_model = lr.fit(df_ml) # evaluate the model evaluation_summary = lr_model.evaluate(df_ml) print(\"Coefficients: \" + str(lr_model.coefficients)) print(\"RMSE: %f\" % evaluation_summary.rootMeanSquaredError) # output might look something like the following, depending of your input data: # Coefficients: [3.287, -9.283, 5.154, ...] # RMSE: 0.876543 Conclusion Apache Spark provides one of the most robust platforms for big data processing and analytics. It allows not only for efficient data transformations but also offers a host of machine learning libraries and the ability to run SQL queries on big data. Understanding how to use Spark’s wide range of capabilities is a necessary skill for any modern data professional. While we’ve only scratched the surface in this tutorial, we hope it serves as a starting point for your exploration with Apache Spark.\nWhether you’re a data scientist needing to handle large datasets, a data engineer designing big data pipelines, or an ML engineer working on training complex models, Spark offers tools and functions that can streamline and optimize your work.\n",
   "wordCount" : "614",
   "inLanguage": "en",
-  "datePublished": "0001-01-01T00:00:00Z",
-  "dateModified": "0001-01-01T00:00:00Z",
+  "datePublished": "2024-02-05T00:00:00Z",
+  "dateModified": "2024-02-05T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://example.org/basics/Managing_Big_Data_with_Apache_Spark/"
+    "@id": "https://lustrous-paprenjak-b7c3d8.netlify.app/basics/Managing_Big_Data_with_Apache_Spark/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Data Driven Discovery - D3",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://example.org/favicon.ico"
+      "url": "https://lustrous-paprenjak-b7c3d8.netlify.app/favicon.ico"
     }
   }
 }
@@ -132,7 +132,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://example.org/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <a href="https://lustrous-paprenjak-b7c3d8.netlify.app/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -166,9 +166,9 @@
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      
+      Managing Big Data with Apache Spark
     </h1>
-    <div class="post-meta">
+    <div class="post-meta"><span title='2024-02-05 00:00:00 +0000 UTC'>February 5, 2024</span>
 
 </div>
   </header> 
@@ -267,13 +267,16 @@
 
   <footer class="post-footer">
     <ul class="post-tags">
+      <li><a href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Big-Data/">Big Data</a></li>
+      <li><a href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Apache-Spark/">Apache Spark</a></li>
+      <li><a href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Data-Engineering/">Data Engineering</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="http://example.org/">Data Driven Discovery - D3</a></span>
+    <span>&copy; 2024 <a href="https://lustrous-paprenjak-b7c3d8.netlify.app/">Data Driven Discovery - D3</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

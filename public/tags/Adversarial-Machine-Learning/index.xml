@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Adversarial Machine Learning on Data Driven Discovery - D3</title>
+    <link>https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Adversarial-Machine-Learning/</link>
+    <description>Recent content in Adversarial Machine Learning on Data Driven Discovery - D3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lustrous-paprenjak-b7c3d8.netlify.app/tags/Adversarial-Machine-Learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Robust Machine Learning: Techniques for Dealing with Adversarial Attacks</title>
+      <link>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Robust_Machine_Learning_Techniques_for_Dealing_with_Adversarial_Attacks/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://lustrous-paprenjak-b7c3d8.netlify.app/advanced/Robust_Machine_Learning_Techniques_for_Dealing_with_Adversarial_Attacks/</guid>
+      <description>Robust Machine Learning: Techniques for Dealing with Adversarial Attacks In the evolving landscape of artificial intelligence, machine learning (ML) has triumphantly paved its way into numerous applications, reshaping industries with its ability to learn from data and make predictions. However, the growing reliance on ML models also introduces vulnerabilities—adversarial attacks, where slight, often imperceptible alterations to input data can deceive models into making incorrect predictions. This presents a significant challenge, particularly in sensitive domains such as cybersecurity, finance, and healthcare.</description>
+    </item>
+  </channel>
+</rss>
