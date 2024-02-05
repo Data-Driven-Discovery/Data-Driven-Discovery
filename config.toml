@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://lustrous-paprenjak-b7c3d8.netlify.app/'
 languageCode = 'en-us'
 title = 'Data Driven Discovery - D3'
 theme = 'PaperMod'
