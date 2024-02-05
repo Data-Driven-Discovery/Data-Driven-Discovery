@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Data Driven Discovery - D3</title>
+<meta name="keywords" content="">
+<meta name="description" content="Spark SQL: A ROMP Through the Basics Welcome to a beginner&rsquo;s guide to Spark SQL! If you find yourself frequenting the landscape of big data, knowing Spark and Spark SQL is an absolute necessity. In this article, we&rsquo;ll be delving into the main features, basic commands, and some practical examples of using Spark SQL.
+Apache Spark is an open-source cluster-computing framework that provides an interface for programming entire clusters with implicit data parallelism and fault tolerance.">
+<meta name="author" content="">
+<link rel="canonical" href="http://example.org/basics/Spark_SQL_A_ROMP_Through_the_Basics/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://example.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png">
+<link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="Spark SQL: A ROMP Through the Basics Welcome to a beginner&rsquo;s guide to Spark SQL! If you find yourself frequenting the landscape of big data, knowing Spark and Spark SQL is an absolute necessity. In this article, we&rsquo;ll be delving into the main features, basic commands, and some practical examples of using Spark SQL.
+Apache Spark is an open-source cluster-computing framework that provides an interface for programming entire clusters with implicit data parallelism and fault tolerance." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/basics/Spark_SQL_A_ROMP_Through_the_Basics/" /><meta property="article:section" content="basics" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Spark SQL: A ROMP Through the Basics Welcome to a beginner&rsquo;s guide to Spark SQL! If you find yourself frequenting the landscape of big data, knowing Spark and Spark SQL is an absolute necessity. In this article, we&rsquo;ll be delving into the main features, basic commands, and some practical examples of using Spark SQL.
+Apache Spark is an open-source cluster-computing framework that provides an interface for programming entire clusters with implicit data parallelism and fault tolerance."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Basics",
+      "item": "http://example.org/basics/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "http://example.org/basics/Spark_SQL_A_ROMP_Through_the_Basics/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "Spark SQL: A ROMP Through the Basics Welcome to a beginner\u0026rsquo;s guide to Spark SQL! If you find yourself frequenting the landscape of big data, knowing Spark and Spark SQL is an absolute necessity. In this article, we\u0026rsquo;ll be delving into the main features, basic commands, and some practical examples of using Spark SQL.\nApache Spark is an open-source cluster-computing framework that provides an interface for programming entire clusters with implicit data parallelism and fault tolerance.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Spark SQL: A ROMP Through the Basics Welcome to a beginner’s guide to Spark SQL! If you find yourself frequenting the landscape of big data, knowing Spark and Spark SQL is an absolute necessity. In this article, we’ll be delving into the main features, basic commands, and some practical examples of using Spark SQL.\nApache Spark is an open-source cluster-computing framework that provides an interface for programming entire clusters with implicit data parallelism and fault tolerance. In the field of data engineering, Apache Spark is widely used for processing and analysis of big data.\nOne of the components of Apache Spark is Spark SQL, which is used for processing structured and semi-structured data. It provides a programming interface, as well as an optimized engine for execution, and it supports querying data via SQL as well as the Apache Hive variant of SQL—HiveQL.\nPrimer on Spark SQL Before diving into the creative pool of code snippets and commands, let’s get familiar with the basic structure of Spark SQL.\nKey concepts of Spark SQL include:\nDataFrame: This is a distributed collection of data organized into named columns. Conceptually, it is equivalent to the data frame in Python and R, but with optimization for improving performance and scalability. DataSet: A distributed collection of data with strong type safety, optimized execution, and the benefits of dataframes. SQLContext: Entry point for working with structured and semi-structured data. Now, let’s start our coding journey with initiating a Spark Session.\nfrom pyspark.sql import SparkSession spark = SparkSession.builder \\ .appName('Start SparkSQL Session') \\ .getOrCreate() This block of code sets up a Spark SQL session. appName sets a name for the application, which will be displayed in the Spark web UI.\nNow with our Spark Session initiated, let’s see how we can load and interact with our data.\nLoad Data and Perform Basic Operations Let’s imagine we have an existing csv file containing data. Here’s how we can load this data into a DataFrame:\nfilePath = 'path_to_your_file.csv' dataframe = spark.read.csv(filePath, header=True, inferSchema=True) The spark.read.csv method reads a CSV file and returns the result as a DataFrame. By setting inferSchema=True, it automatically infers column types based on the data. The header option tells the reader whether the first line of files is a header line or not.\nOnce the data is loaded into a DataFrame, we can perform operations similar to SQL. Here’s a simple example of DataFrame operation:\ndataframe.show(5) This code will print the first five rows of the DataFrame.\nSubsequently, we can perform SQL operations. Before this, we need to register the DataFrame as a SQL temporary view.\ndataframe.createOrReplaceTempView('YourDataView') Once the temporary view is created, we can perform SQL queries :\nresults = spark.sql('SELECT * FROM YourDataView') results.show(5) This will display the same result as our early DataFrame operation.\nAdvanced SQL Operations Spark SQL also supports complex nested data types. For example, querying complex types (such as arrays) using SQL, applying all kinds of complex operations and transformations.\nfrom pyspark.sql import functions as F df = spark.createDataFrame([([\"A\", \"B\", \"C\"], ), ([\"D\", \"E\", \"F\"], )], [\"Values\"]) df.select(F.explode(df.Values).alias(\"Single Values\")).show() This script uses the explode function, which creates a new row (or multiple rows) for each element present in the given array or map column.\nConclusion With Spark SQL, you can query structured data as a distributed dataset (RDD), and it comes with powerful integration support with big data tools like Hadoop and Hive. This guide is just a stepping stone in the vast ocean of Spark SQL support and functionality, so do not stop here. Continue exploring and enhancing your data engineering skills.\nTo put this blog into perspective, Spark SQL bridges the gap between the two models, relational and procedural, bringing out the best of both worlds by seamlessly integrating SQL queries with Spark programs. That’s a powerful tool in your data arsenal. Keep learning and keep sharing!\n",
+  "wordCount" : "639",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://example.org/basics/Spark_SQL_A_ROMP_Through_the_Basics/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data Driven Discovery - D3",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://example.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://example.org/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="spark-sql-a-romp-through-the-basics">Spark SQL: A ROMP Through the Basics<a hidden class="anchor" aria-hidden="true" href="#spark-sql-a-romp-through-the-basics">#</a></h1>
+<p>Welcome to a beginner&rsquo;s guide to Spark SQL! If you find yourself frequenting the landscape of big data, knowing Spark and Spark SQL is an absolute necessity. In this article, we&rsquo;ll be delving into the main features, basic commands, and some practical examples of using Spark SQL.</p>
+<p>Apache Spark is an open-source cluster-computing framework that provides an interface for programming entire clusters with implicit data parallelism and fault tolerance. In the field of data engineering, Apache Spark is widely used for processing and analysis of big data.</p>
+<p>One of the components of Apache Spark is Spark SQL, which is used for processing structured and semi-structured data. It provides a programming interface, as well as an optimized engine for execution, and it supports querying data via SQL as well as the Apache Hive variant of SQL—HiveQL.</p>
+<h2 id="primer-on-spark-sql">Primer on Spark SQL<a hidden class="anchor" aria-hidden="true" href="#primer-on-spark-sql">#</a></h2>
+<p>Before diving into the creative pool of code snippets and commands, let&rsquo;s get familiar with the basic structure of Spark SQL.</p>
+<p>Key concepts of Spark SQL include:</p>
+<ul>
+<li><strong>DataFrame:</strong> This is a distributed collection of data organized into named columns. Conceptually, it is equivalent to the data frame in Python and R, but with optimization for improving performance and scalability.</li>
+<li><strong>DataSet:</strong> A distributed collection of data with strong type safety, optimized execution, and the benefits of dataframes.</li>
+<li><strong>SQLContext:</strong> Entry point for working with structured and semi-structured data.</li>
+</ul>
+<p>Now, let&rsquo;s start our coding journey with initiating a Spark Session.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pyspark.sql <span style="color:#f92672">import</span> SparkSession
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>spark <span style="color:#f92672">=</span> SparkSession<span style="color:#f92672">.</span>builder \
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">.</span>appName(<span style="color:#e6db74">&#39;Start SparkSQL Session&#39;</span>) \
+</span></span><span style="display:flex;"><span>                    <span style="color:#f92672">.</span>getOrCreate()
+</span></span></code></pre></div><p>This block of code sets up a Spark SQL session. <code>appName</code> sets a name for the application, which will be displayed in the Spark web UI.</p>
+<p>Now with our Spark Session initiated, let&rsquo;s see how we can load and interact with our data.</p>
+<h2 id="load-data-and-perform-basic-operations">Load Data and Perform Basic Operations<a hidden class="anchor" aria-hidden="true" href="#load-data-and-perform-basic-operations">#</a></h2>
+<p>Let&rsquo;s imagine we have an existing <code>csv</code> file containing data. Here&rsquo;s how we can load this data into a DataFrame:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>filePath <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;path_to_your_file.csv&#39;</span>
+</span></span><span style="display:flex;"><span>dataframe <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>read<span style="color:#f92672">.</span>csv(filePath, header<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, inferSchema<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span></code></pre></div><p>The <code>spark.read.csv</code> method reads a CSV file and returns the result as a DataFrame. By setting <code>inferSchema=True</code>, it automatically infers column types based on the data. The <code>header</code> option tells the reader whether the first line of files is a header line or not.</p>
+<p>Once the data is loaded into a DataFrame, we can perform operations similar to SQL. Here&rsquo;s a simple example of DataFrame operation:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dataframe<span style="color:#f92672">.</span>show(<span style="color:#ae81ff">5</span>)
+</span></span></code></pre></div><p>This code will print the first five rows of the DataFrame.</p>
+<p>Subsequently, we can perform SQL operations. Before this, we need to register the DataFrame as a SQL temporary view.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>dataframe<span style="color:#f92672">.</span>createOrReplaceTempView(<span style="color:#e6db74">&#39;YourDataView&#39;</span>)
+</span></span></code></pre></div><p>Once the temporary view is created, we can perform SQL queries :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>results <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>sql(<span style="color:#e6db74">&#39;SELECT * FROM YourDataView&#39;</span>)
+</span></span><span style="display:flex;"><span>results<span style="color:#f92672">.</span>show(<span style="color:#ae81ff">5</span>)
+</span></span></code></pre></div><p>This will display the same result as our early DataFrame operation.</p>
+<h2 id="advanced-sql-operations">Advanced SQL Operations<a hidden class="anchor" aria-hidden="true" href="#advanced-sql-operations">#</a></h2>
+<p>Spark SQL also supports complex nested data types. For example, querying complex types (such as arrays) using SQL, applying all kinds of complex operations and transformations.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pyspark.sql <span style="color:#f92672">import</span> functions <span style="color:#66d9ef">as</span> F
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> spark<span style="color:#f92672">.</span>createDataFrame([([<span style="color:#e6db74">&#34;A&#34;</span>, <span style="color:#e6db74">&#34;B&#34;</span>, <span style="color:#e6db74">&#34;C&#34;</span>], ), ([<span style="color:#e6db74">&#34;D&#34;</span>, <span style="color:#e6db74">&#34;E&#34;</span>, <span style="color:#e6db74">&#34;F&#34;</span>], )], [<span style="color:#e6db74">&#34;Values&#34;</span>])
+</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>select(F<span style="color:#f92672">.</span>explode(df<span style="color:#f92672">.</span>Values)<span style="color:#f92672">.</span>alias(<span style="color:#e6db74">&#34;Single Values&#34;</span>))<span style="color:#f92672">.</span>show()
+</span></span></code></pre></div><p>This script uses the <code>explode</code> function, which creates a new row (or multiple rows) for each element present in the given array or map column.</p>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>With Spark SQL, you can query structured data as a distributed dataset (RDD), and it comes with powerful integration support with big data tools like Hadoop and Hive. This guide is just a stepping stone in the vast ocean of Spark SQL support and functionality, so do not stop here. Continue exploring and enhancing your data engineering skills.</p>
+<p>To put this blog into perspective, Spark SQL bridges the gap between the two models, relational and procedural, bringing out the best of both worlds by seamlessly integrating SQL queries with Spark programs. That&rsquo;s a powerful tool in your data arsenal. Keep learning and keep sharing!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://example.org/">Data Driven Discovery - D3</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

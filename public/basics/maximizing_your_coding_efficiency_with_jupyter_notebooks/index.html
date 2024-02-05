@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Data Driven Discovery - D3</title>
+<meta name="keywords" content="">
+<meta name="description" content="Maximizing your Coding Efficiency with Jupyter Notebooks Jupyter Notebooks have become a staple in the toolkit of every Data Scientist, Data Engineer, and other data professionals. Its interactive and easy-to-use environment provides seamless experimentations, data cleaning operations, stats modeling, machine learning, and visualizations. In this article, we&rsquo;ll go over how you can truly maximize your coding efficiency with Jupyter notebooks.
+Introduction Jupyter Notebooks function as an electronic lab notebook for those working with data.">
+<meta name="author" content="">
+<link rel="canonical" href="http://example.org/basics/Maximizing_your_Coding_Efficiency_with_Jupyter_Notebooks/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://example.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png">
+<link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="Maximizing your Coding Efficiency with Jupyter Notebooks Jupyter Notebooks have become a staple in the toolkit of every Data Scientist, Data Engineer, and other data professionals. Its interactive and easy-to-use environment provides seamless experimentations, data cleaning operations, stats modeling, machine learning, and visualizations. In this article, we&rsquo;ll go over how you can truly maximize your coding efficiency with Jupyter notebooks.
+Introduction Jupyter Notebooks function as an electronic lab notebook for those working with data." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/basics/Maximizing_your_Coding_Efficiency_with_Jupyter_Notebooks/" /><meta property="article:section" content="basics" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Maximizing your Coding Efficiency with Jupyter Notebooks Jupyter Notebooks have become a staple in the toolkit of every Data Scientist, Data Engineer, and other data professionals. Its interactive and easy-to-use environment provides seamless experimentations, data cleaning operations, stats modeling, machine learning, and visualizations. In this article, we&rsquo;ll go over how you can truly maximize your coding efficiency with Jupyter notebooks.
+Introduction Jupyter Notebooks function as an electronic lab notebook for those working with data."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Basics",
+      "item": "http://example.org/basics/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "http://example.org/basics/Maximizing_your_Coding_Efficiency_with_Jupyter_Notebooks/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "Maximizing your Coding Efficiency with Jupyter Notebooks Jupyter Notebooks have become a staple in the toolkit of every Data Scientist, Data Engineer, and other data professionals. Its interactive and easy-to-use environment provides seamless experimentations, data cleaning operations, stats modeling, machine learning, and visualizations. In this article, we\u0026rsquo;ll go over how you can truly maximize your coding efficiency with Jupyter notebooks.\nIntroduction Jupyter Notebooks function as an electronic lab notebook for those working with data.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Maximizing your Coding Efficiency with Jupyter Notebooks Jupyter Notebooks have become a staple in the toolkit of every Data Scientist, Data Engineer, and other data professionals. Its interactive and easy-to-use environment provides seamless experimentations, data cleaning operations, stats modeling, machine learning, and visualizations. In this article, we’ll go over how you can truly maximize your coding efficiency with Jupyter notebooks.\nIntroduction Jupyter Notebooks function as an electronic lab notebook for those working with data. They are open-source, support more than 40 programming languages, and integrate well with common data science libraries like pandas, scikit-learn, tensorflow, and matplotlib.\nThe secret of its popularity lies in its ease of sharing, reproducing analysis, and teaching others about your work.\nIn the following sections, we’ll discuss how best to leverage Jupyter Notebooks and introduce some tips and tricks along the way.\nMastering the basics Before getting into the advanced tricks, let’s ensure we have nailed the fundamentals. Jupyter notebooks are made up of cells, which can contain code or markdown text for documentation.\n# Code cell - Python print(\"Hello, Jupyter!\") Output:\nHello, Jupyter! You can include an introduction or explanation of your codes using Markdown as below:\n# This is a markdown cell This is an example of markdown cell. Keyboard Shortcuts Keyboard shortcuts are a guaranteed way to enhance your efficiency. Some of the most frequently used ones are:\nShift+Enter: Run the current cell and select below Ctrl+Enter: Run selected cells Alt+Enter: Run the current cell and insert below Esc+M: Convert cell to Markdown Esc+Y: Convert cell to Code Magic Commands Magic commands are enhanced functionalities that give you control beyond typical Python code. They are denoted by a %.\n# Timing a line of code - use one '%' %timeit L = [n ** 2 for n in range(1000)] Output:\n1000 loops, best of 5: 248 µs per loop If you want timing information for the entire cell, use two %%.\n%%timeit L = [] for n in range(1000): L.append(n ** 2) Output:\n1000 loops, best of 5: 297 µs per loop Profiling and debugging There are magic commands like %prun for function profiling %pdb for automatic debugging.\ndef f(x): return x**2 %prun f(1000) Output:\n3 function calls in 0.000 seconds Ordered by: internal time ncalls tottime percall cumtime percall filename:lineno(function) 1 0.000 0.000 0.000 0.000 {built-in method builtins.exec} 1 0.000 0.000 0.000 0.000 :1(f) 1 0.000 0.000 0.000 0.000 {method 'disable' of '_lsprof.Profiler' objects} Visualizations Jupyter notebooks integrate nicely with visualization libraries like matplotlib and seaborn. You only have to use the magic command %matplotlib inline to ensure your graphs are rendered within the notebook.\nimport matplotlib.pyplot as plt import numpy as np x = np.linspace(0, 10, 100) y = np.sin(x) plt.plot(x, y) plt.show() [INSERT IMAGE HERE]\n![Insert matplotlib graph](./image.png) Version Control with Git You can run git commands using !, which lets you run shell commands. This is a powerful feature that lets you do version control without leaving the notebook\n!git status Conclusion Maximizing efficiency with Jupyter notebooks isn’t difficult. It’s about knowing some of the enhanced features provided by the platform and using them methodically. With magic commands, version control, interactive visualizations, and the markdown functionalities, Jupyter notebooks have redefined data analysis and report-building. As you routinely work with them, you’ll keep discovering more ways to make your work more efficient and insightful.\n",
+  "wordCount" : "555",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://example.org/basics/Maximizing_your_Coding_Efficiency_with_Jupyter_Notebooks/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data Driven Discovery - D3",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://example.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://example.org/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="maximizing-your-coding-efficiency-with-jupyter-notebooks">Maximizing your Coding Efficiency with Jupyter Notebooks<a hidden class="anchor" aria-hidden="true" href="#maximizing-your-coding-efficiency-with-jupyter-notebooks">#</a></h1>
+<p>Jupyter Notebooks have become a staple in the toolkit of every Data Scientist, Data Engineer, and other data professionals. Its interactive and easy-to-use environment provides seamless experimentations, data cleaning operations, stats modeling, machine learning, and visualizations. In this article, we&rsquo;ll go over how you can truly maximize your coding efficiency with Jupyter notebooks.</p>
+<h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>Jupyter Notebooks function as an electronic lab notebook for those working with data. They are open-source, support more than 40 programming languages, and integrate well with common data science libraries like pandas, scikit-learn, tensorflow, and matplotlib.</p>
+<p>The secret of its popularity lies in its ease of sharing, reproducing analysis, and teaching others about your work.</p>
+<p>In the following sections, we&rsquo;ll discuss how best to leverage Jupyter Notebooks and introduce some tips and tricks along the way.</p>
+<h2 id="mastering-the-basics">Mastering the basics<a hidden class="anchor" aria-hidden="true" href="#mastering-the-basics">#</a></h2>
+<p>Before getting into the advanced tricks, let&rsquo;s ensure we have nailed the fundamentals. Jupyter notebooks are made up of cells, which can contain code or markdown text for documentation.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Code cell - Python</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Hello, Jupyter!&#34;</span>)
+</span></span></code></pre></div><p>Output:</p>
+<pre tabindex="0"><code>Hello, Jupyter!
+</code></pre><p>You can include an introduction or explanation of your codes using Markdown as below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span># This is a markdown cell
+</span></span><span style="display:flex;"><span>This is an example of markdown cell.
+</span></span></code></pre></div><h2 id="keyboard-shortcuts">Keyboard Shortcuts<a hidden class="anchor" aria-hidden="true" href="#keyboard-shortcuts">#</a></h2>
+<p>Keyboard shortcuts are a guaranteed way to enhance your efficiency. Some of the most frequently used ones are:</p>
+<ul>
+<li>Shift+Enter: Run the current cell and select below</li>
+<li>Ctrl+Enter: Run selected cells</li>
+<li>Alt+Enter: Run the current cell and insert below</li>
+<li>Esc+M: Convert cell to Markdown</li>
+<li>Esc+Y: Convert cell to Code</li>
+</ul>
+<h2 id="magic-commands">Magic Commands<a hidden class="anchor" aria-hidden="true" href="#magic-commands">#</a></h2>
+<p>Magic commands are enhanced functionalities that give you control beyond typical Python code. They are denoted by a <code>%</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Timing a line of code - use one &#39;%&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">%</span>timeit L <span style="color:#f92672">=</span> [n <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span> <span style="color:#66d9ef">for</span> n <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1000</span>)]
+</span></span></code></pre></div><p>Output:</p>
+<pre tabindex="0"><code>1000 loops, best of 5: 248 µs per loop
+</code></pre><p>If you want timing information for the entire cell, use two <code>%%</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">%%</span>timeit
+</span></span><span style="display:flex;"><span>L <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> n <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1000</span>):
+</span></span><span style="display:flex;"><span>    L<span style="color:#f92672">.</span>append(n <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>)
+</span></span></code></pre></div><p>Output:</p>
+<pre tabindex="0"><code>1000 loops, best of 5: 297 µs per loop
+</code></pre><h2 id="profiling-and-debugging">Profiling and debugging<a hidden class="anchor" aria-hidden="true" href="#profiling-and-debugging">#</a></h2>
+<p>There are magic commands like <code>%prun</code> for function profiling <code>%pdb</code> for automatic debugging.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">f</span>(x):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> x<span style="color:#f92672">**</span><span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">%</span>prun f(<span style="color:#ae81ff">1000</span>)
+</span></span></code></pre></div><p>Output:</p>
+<pre tabindex="0"><code>         3 function calls in 0.000 seconds
+
+   Ordered by: internal time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.exec}
+        1    0.000    0.000    0.000    0.000 &lt;ipython-input-6-84cacfc1e11d&gt;:1(f)
+        1    0.000    0.000    0.000    0.000 {method &#39;disable&#39; of &#39;_lsprof.Profiler&#39; objects}
+</code></pre><h2 id="visualizations">Visualizations<a hidden class="anchor" aria-hidden="true" href="#visualizations">#</a></h2>
+<p>Jupyter notebooks integrate nicely with visualization libraries like matplotlib and seaborn. You only have to use the magic command <code>%matplotlib inline</code> to ensure your graphs are rendered within the notebook.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>x <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">100</span>)
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>sin(x)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(x, y)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
+</span></span></code></pre></div><p>[INSERT IMAGE HERE]</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>![<span style="color:#f92672">Insert matplotlib graph</span>](<span style="color:#a6e22e">./image.png</span>)
+</span></span></code></pre></div><h2 id="version-control-with-git">Version Control with Git<a hidden class="anchor" aria-hidden="true" href="#version-control-with-git">#</a></h2>
+<p>You can run git commands using <code>!</code>, which lets you run shell commands. This is a powerful feature that lets you do version control without leaving the notebook</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>!git status
+</span></span></code></pre></div><h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Maximizing efficiency with Jupyter notebooks isn&rsquo;t difficult. It&rsquo;s about knowing some of the enhanced features provided by the platform and using them methodically. With magic commands, version control, interactive visualizations, and the markdown functionalities, Jupyter notebooks have redefined data analysis and report-building. As you routinely work with them, you&rsquo;ll keep discovering more ways to make your work more efficient and insightful.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://example.org/">Data Driven Discovery - D3</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

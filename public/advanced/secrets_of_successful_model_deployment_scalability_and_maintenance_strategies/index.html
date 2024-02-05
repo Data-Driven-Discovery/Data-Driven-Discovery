@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Data Driven Discovery - D3</title>
+<meta name="keywords" content="">
+<meta name="description" content="Secrets of Successful Model Deployment: Scalability and Maintenance Strategies Deploying machine learning models into production is a critical step in the lifecycle of any data-driven application. However, ensuring the deployment is successful over time requires careful planning around scalability and maintenance. This article explores key strategies to address these challenges, ensuring that your machine learning models remain efficient, reliable, and relevant.
+Introduction Deploying machine learning models is more than just making your model available for use.">
+<meta name="author" content="">
+<link rel="canonical" href="http://example.org/advanced/Secrets_of_Successful_Model_Deployment_Scalability_and_Maintenance_Strategies/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://example.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png">
+<link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="Secrets of Successful Model Deployment: Scalability and Maintenance Strategies Deploying machine learning models into production is a critical step in the lifecycle of any data-driven application. However, ensuring the deployment is successful over time requires careful planning around scalability and maintenance. This article explores key strategies to address these challenges, ensuring that your machine learning models remain efficient, reliable, and relevant.
+Introduction Deploying machine learning models is more than just making your model available for use." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/advanced/Secrets_of_Successful_Model_Deployment_Scalability_and_Maintenance_Strategies/" /><meta property="article:section" content="advanced" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Secrets of Successful Model Deployment: Scalability and Maintenance Strategies Deploying machine learning models into production is a critical step in the lifecycle of any data-driven application. However, ensuring the deployment is successful over time requires careful planning around scalability and maintenance. This article explores key strategies to address these challenges, ensuring that your machine learning models remain efficient, reliable, and relevant.
+Introduction Deploying machine learning models is more than just making your model available for use."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Advanceds",
+      "item": "http://example.org/advanced/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "http://example.org/advanced/Secrets_of_Successful_Model_Deployment_Scalability_and_Maintenance_Strategies/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "Secrets of Successful Model Deployment: Scalability and Maintenance Strategies Deploying machine learning models into production is a critical step in the lifecycle of any data-driven application. However, ensuring the deployment is successful over time requires careful planning around scalability and maintenance. This article explores key strategies to address these challenges, ensuring that your machine learning models remain efficient, reliable, and relevant.\nIntroduction Deploying machine learning models is more than just making your model available for use.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Secrets of Successful Model Deployment: Scalability and Maintenance Strategies Deploying machine learning models into production is a critical step in the lifecycle of any data-driven application. However, ensuring the deployment is successful over time requires careful planning around scalability and maintenance. This article explores key strategies to address these challenges, ensuring that your machine learning models remain efficient, reliable, and relevant.\nIntroduction Deploying machine learning models is more than just making your model available for use. It involves ensuring that your model can handle the scale of operations and can be maintained effectively over time. Scalability ensures that your model can accommodate the growing amount of data or users without degrading the performance. Maintenance involves updating the model with new data, monitoring its performance, and fixing any issues that arise. Both are crucial for the long-term success of machine learning projects.\nMain Body Understanding Scalability Challenges Scalability can be a considerable challenge, especially in dynamic environments where the number of requests to the machine learning model can fluctuate widely. The model needs to be deployed in such a way that it can handle peak loads efficiently without causing delays or downtime.\nStrategies for Scalability Load Balancing: Distributing incoming requests across multiple instances of the model to prevent any single instance from being overwhelmed.\nAuto-Scaling: Automatically adjusting the number of instances based on the load. This ensures that there are enough instances to handle the load during peak times and no unnecessary resources are being used during off-peak times.\nModel Optimization: Optimizing the model itself can also help in handling more requests with the same resources. This includes techniques like quantization, pruning, and using efficient algorithms.\nfrom sklearn.ensemble import RandomForestClassifier from sklearn.datasets import make_classification from sklearn.model_selection import train_test_split from sklearn.metrics import accuracy_score # Generating a sample dataset X, y = make_classification(n_samples=1000, n_features=20, n_classes=2, random_state=42) X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42) # Training a basic RandomForest Classifier clf = RandomForestClassifier(n_estimators=100, random_state=42) clf.fit(X_train, y_train) # Predicting and Evaluating predictions = clf.predict(X_test) accuracy = accuracy_score(y_test, predictions) print(f'Accuracy: {accuracy*100:.2f}%') Output:\nAccuracy: 94.50% Maintenance Strategies Keeping a model in production valuable and accurate over time requires periodic maintenance. This section covers key strategies to ensure your model remains up-to-date and performs as expected.\nContinuous Monitoring: Implementing logging and monitoring tools to track the performance of the model in real-time. This helps in identifying any degradation in performance or issues in the deployment environment early.\nRegular Updating: Models can drift over time as the data they were trained on becomes less representative of the current situation. Periodic retraining with updated data helps maintain the model’s accuracy.\nAutomated Testing: Automating the testing process ensures that any changes made to the model or its environment do not break its functionality. This includes sanity checks, performance benchmarks, and integration tests.\n# Example of monitoring a model's performance over time import pandas as pd import numpy as np performance_log = pd.DataFrame({ 'date': pd.date_range(start='2023-01-01', periods=30, freq='D'), 'accuracy': np.random.normal(loc=0.95, scale=0.01, size=30) }) # Visualizing the performance over time import matplotlib.pyplot as plt plt.figure(figsize=(10, 6)) plt.plot(performance_log['date'], performance_log['accuracy'], marker='o') plt.title('Model Accuracy Over Time') plt.xlabel('Date') plt.ylabel('Accuracy') plt.ylim(0.9, 1.0) plt.show() [INSERT IMAGE HERE]\nConsidering MLOps for Scalability and Maintenance MLOps, or Machine Learning Operations, is an essential practice for managing the deployment, monitoring, and maintenance of machine learning models. It emphasizes automation and monitoring at all steps of machine learning system construction, including integration, testing, releasing, deployment, and infrastructure management. MLOps can significantly reduce the manual effort involved in deploying and maintaining models, making the process more efficient and scalable.\nConclusion Successfully deploying a machine learning model requires careful consideration of scalability and maintenance. Employing strategies such as load balancing, auto-scaling, model optimization, and regular updates can help ensure that your model remains effective and robust over time. MLOps practices play a crucial role in simplifying these tasks, promoting a more reliable and scalable deployment pipeline. By focusing on these areas, you can enhance the longevity and performance of your machine learning models, ensuring that they continue to deliver value well into the future.\n",
+  "wordCount" : "670",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://example.org/advanced/Secrets_of_Successful_Model_Deployment_Scalability_and_Maintenance_Strategies/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data Driven Discovery - D3",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://example.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://example.org/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="secrets-of-successful-model-deployment-scalability-and-maintenance-strategies">Secrets of Successful Model Deployment: Scalability and Maintenance Strategies<a hidden class="anchor" aria-hidden="true" href="#secrets-of-successful-model-deployment-scalability-and-maintenance-strategies">#</a></h1>
+<p>Deploying machine learning models into production is a critical step in the lifecycle of any data-driven application. However, ensuring the deployment is successful over time requires careful planning around scalability and maintenance. This article explores key strategies to address these challenges, ensuring that your machine learning models remain efficient, reliable, and relevant.</p>
+<h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>Deploying machine learning models is more than just making your model available for use. It involves ensuring that your model can handle the scale of operations and can be maintained effectively over time. Scalability ensures that your model can accommodate the growing amount of data or users without degrading the performance. Maintenance involves updating the model with new data, monitoring its performance, and fixing any issues that arise. Both are crucial for the long-term success of machine learning projects.</p>
+<h2 id="main-body">Main Body<a hidden class="anchor" aria-hidden="true" href="#main-body">#</a></h2>
+<h3 id="understanding-scalability-challenges">Understanding Scalability Challenges<a hidden class="anchor" aria-hidden="true" href="#understanding-scalability-challenges">#</a></h3>
+<p>Scalability can be a considerable challenge, especially in dynamic environments where the number of requests to the machine learning model can fluctuate widely. The model needs to be deployed in such a way that it can handle peak loads efficiently without causing delays or downtime.</p>
+<h4 id="strategies-for-scalability">Strategies for Scalability<a hidden class="anchor" aria-hidden="true" href="#strategies-for-scalability">#</a></h4>
+<ol>
+<li>
+<p><strong>Load Balancing:</strong> Distributing incoming requests across multiple instances of the model to prevent any single instance from being overwhelmed.</p>
+</li>
+<li>
+<p><strong>Auto-Scaling:</strong> Automatically adjusting the number of instances based on the load. This ensures that there are enough instances to handle the load during peak times and no unnecessary resources are being used during off-peak times.</p>
+</li>
+<li>
+<p><strong>Model Optimization:</strong> Optimizing the model itself can also help in handling more requests with the same resources. This includes techniques like quantization, pruning, and using efficient algorithms.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.ensemble <span style="color:#f92672">import</span> RandomForestClassifier
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.datasets <span style="color:#f92672">import</span> make_classification
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> train_test_split
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.metrics <span style="color:#f92672">import</span> accuracy_score
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Generating a sample dataset</span>
+</span></span><span style="display:flex;"><span>X, y <span style="color:#f92672">=</span> make_classification(n_samples<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>, n_features<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>, n_classes<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+</span></span><span style="display:flex;"><span>X_train, X_test, y_train, y_test <span style="color:#f92672">=</span> train_test_split(X, y, test_size<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Training a basic RandomForest Classifier</span>
+</span></span><span style="display:flex;"><span>clf <span style="color:#f92672">=</span> RandomForestClassifier(n_estimators<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+</span></span><span style="display:flex;"><span>clf<span style="color:#f92672">.</span>fit(X_train, y_train)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Predicting and Evaluating</span>
+</span></span><span style="display:flex;"><span>predictions <span style="color:#f92672">=</span> clf<span style="color:#f92672">.</span>predict(X_test)
+</span></span><span style="display:flex;"><span>accuracy <span style="color:#f92672">=</span> accuracy_score(y_test, predictions)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;Accuracy: </span><span style="color:#e6db74">{</span>accuracy<span style="color:#f92672">*</span><span style="color:#ae81ff">100</span><span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">%&#39;</span>)
+</span></span></code></pre></div><p><strong>Output:</strong></p>
+<pre tabindex="0"><code>Accuracy: 94.50%
+</code></pre><h3 id="maintenance-strategies">Maintenance Strategies<a hidden class="anchor" aria-hidden="true" href="#maintenance-strategies">#</a></h3>
+<p>Keeping a model in production valuable and accurate over time requires periodic maintenance. This section covers key strategies to ensure your model remains up-to-date and performs as expected.</p>
+<ol>
+<li>
+<p><strong>Continuous Monitoring:</strong> Implementing logging and monitoring tools to track the performance of the model in real-time. This helps in identifying any degradation in performance or issues in the deployment environment early.</p>
+</li>
+<li>
+<p><strong>Regular Updating:</strong> Models can drift over time as the data they were trained on becomes less representative of the current situation. Periodic retraining with updated data helps maintain the model&rsquo;s accuracy.</p>
+</li>
+<li>
+<p><strong>Automated Testing:</strong> Automating the testing process ensures that any changes made to the model or its environment do not break its functionality. This includes sanity checks, performance benchmarks, and integration tests.</p>
+</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Example of monitoring a model&#39;s performance over time</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>performance_log <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;date&#39;</span>: pd<span style="color:#f92672">.</span>date_range(start<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;2023-01-01&#39;</span>, periods<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span>, freq<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;D&#39;</span>),
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;accuracy&#39;</span>: np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>normal(loc<span style="color:#f92672">=</span><span style="color:#ae81ff">0.95</span>, scale<span style="color:#f92672">=</span><span style="color:#ae81ff">0.01</span>, size<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span>)
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Visualizing the performance over time</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>figure(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">6</span>))
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>plot(performance_log[<span style="color:#e6db74">&#39;date&#39;</span>], performance_log[<span style="color:#e6db74">&#39;accuracy&#39;</span>], marker<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;o&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Model Accuracy Over Time&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>xlabel(<span style="color:#e6db74">&#39;Date&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylabel(<span style="color:#e6db74">&#39;Accuracy&#39;</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>ylim(<span style="color:#ae81ff">0.9</span>, <span style="color:#ae81ff">1.0</span>)
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
+</span></span></code></pre></div><p><strong>[INSERT IMAGE HERE]</strong></p>
+<h3 id="considering-mlops-for-scalability-and-maintenance">Considering MLOps for Scalability and Maintenance<a hidden class="anchor" aria-hidden="true" href="#considering-mlops-for-scalability-and-maintenance">#</a></h3>
+<p>MLOps, or Machine Learning Operations, is an essential practice for managing the deployment, monitoring, and maintenance of machine learning models. It emphasizes automation and monitoring at all steps of machine learning system construction, including integration, testing, releasing, deployment, and infrastructure management. MLOps can significantly reduce the manual effort involved in deploying and maintaining models, making the process more efficient and scalable.</p>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Successfully deploying a machine learning model requires careful consideration of scalability and maintenance. Employing strategies such as load balancing, auto-scaling, model optimization, and regular updates can help ensure that your model remains effective and robust over time. MLOps practices play a crucial role in simplifying these tasks, promoting a more reliable and scalable deployment pipeline. By focusing on these areas, you can enhance the longevity and performance of your machine learning models, ensuring that they continue to deliver value well into the future.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://example.org/">Data Driven Discovery - D3</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

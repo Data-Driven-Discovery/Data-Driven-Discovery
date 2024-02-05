@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Data Driven Discovery - D3</title>
+<meta name="keywords" content="">
+<meta name="description" content="Statistical Analysis in Python: A Progressing Tool for Data Analysis Introduction Statistical analysis is a fundamental component of data science. Besides it being the backbone of Machine Learning, its techniques allow us to get a clear picture of what data is trying to convey. Python, owing to its simplicity and extensive capabilities, has become a popular language for data analysis. It offers an array of libraries for performing statistical analysis, including Pandas, Numpy, Scipy, etc.">
+<meta name="author" content="">
+<link rel="canonical" href="http://example.org/basics/Statistical_Analysis_in_Python/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://example.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png">
+<link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="Statistical Analysis in Python: A Progressing Tool for Data Analysis Introduction Statistical analysis is a fundamental component of data science. Besides it being the backbone of Machine Learning, its techniques allow us to get a clear picture of what data is trying to convey. Python, owing to its simplicity and extensive capabilities, has become a popular language for data analysis. It offers an array of libraries for performing statistical analysis, including Pandas, Numpy, Scipy, etc." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/basics/Statistical_Analysis_in_Python/" /><meta property="article:section" content="basics" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Statistical Analysis in Python: A Progressing Tool for Data Analysis Introduction Statistical analysis is a fundamental component of data science. Besides it being the backbone of Machine Learning, its techniques allow us to get a clear picture of what data is trying to convey. Python, owing to its simplicity and extensive capabilities, has become a popular language for data analysis. It offers an array of libraries for performing statistical analysis, including Pandas, Numpy, Scipy, etc."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Basics",
+      "item": "http://example.org/basics/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "http://example.org/basics/Statistical_Analysis_in_Python/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "Statistical Analysis in Python: A Progressing Tool for Data Analysis Introduction Statistical analysis is a fundamental component of data science. Besides it being the backbone of Machine Learning, its techniques allow us to get a clear picture of what data is trying to convey. Python, owing to its simplicity and extensive capabilities, has become a popular language for data analysis. It offers an array of libraries for performing statistical analysis, including Pandas, Numpy, Scipy, etc.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Statistical Analysis in Python: A Progressing Tool for Data Analysis Introduction Statistical analysis is a fundamental component of data science. Besides it being the backbone of Machine Learning, its techniques allow us to get a clear picture of what data is trying to convey. Python, owing to its simplicity and extensive capabilities, has become a popular language for data analysis. It offers an array of libraries for performing statistical analysis, including Pandas, Numpy, Scipy, etc.\nIn this article, we will explore how to use Python to perform statistical analysis. We will cover basics such as measures of centrality, dispersion while gradually moving to more complex aspects, like Statistical Hypothesis Tests.\nGetting Started Firstly, we will need to install necessary libraries. Pandas, Numpy, Scipy all come with the Anaconda Python Distribution. If you’re not using Anaconda, execute the following commands to install them:\npip install pandas pip install numpy pip install scipy Next, let’s import the necessary libraries:\nimport pandas as pd import numpy as np from scipy import stats Descriptive Statistics We begin with descriptive statistics - a method to describe the basic features of the data and provide short summaries about the sample. Our focus will be on measures of central tendency, dispersion, and shape.\nMeasures of Central Tendency Let’s create a pandas DataFrame for understanding.\n# Creating a pandas DataFrame. data = pd.DataFrame({ 'A': np.random.normal(60, 10, 500), 'B': np.random.normal(25, 5, 500), 'C': np.random.normal(30, 7, 500) }) data.head() Output:\n[INSERT IMAGE HERE]\n‘./images/data_head_out.png’\nLet’s calculate mean, median, and mode for each column.\n# Mean mean = data.mean() print(\"Mean:\\n\", mean) # Median median = data.median() print(\"\\nMedian:\\n\", median) # Mode mode = data.mode() print(\"\\nMode:\\n\", mode) The output showcases the average values for each column, providing insights into each dataset’s behavior.\nMeasures of Dispersion We’ll now focus on the standard deviation, variance, and the interquartile range (IQR) - defining the spread of the data.\n# Standard Deviation std_dev = data.std() print(\"Standard Deviation:\\n\", std_dev) # Variance variance = data.var() print(\"\\nVariance:\\n\", variance) # Interquartile Range Q1 = data.quantile(0.25) Q3 = data.quantile(0.75) IQR = Q3 - Q1 print(\"\\nIQR:\\n\", IQR) Higher measures of dispersion would imply high variability in the data.\nSkewness and Kurtosis These measure the shape of the probability distribution of a variable.\n# Skewness skewness = data.skew() print(\"\\nSkewness:\\n\", skewness) # Kurtosis kurtosis = data.kurtosis() print(\"\\nKurtosis:\\n\", kurtosis) Statistical Hypothesis Testing Statistical Hypothesis Tests are used to infer the results of a hypothesis performed on sample data from a larger population. We’ll perform the Student’s t-test.\nStudent’s t-test # Generating random Data: np.random.seed(11) data1 = 5 * np.random.randn(100) + 50 data2 = 5 * np.random.randn(100) + 51 # Perform t-test : t_stat, p_val = stats.ttest_ind(data1, data2) print(\"t-statistic :\\n\", t_stat) print(\"\\np-value :\\n\", p_val) A p-value smaller than 0.05 means we can reject the null hypothesis.\nConclusion Python’s simplicity, readability, and vast functionality make it an optimal language for performing statistical analysis in Data Science. With a basic understanding of Python, one can leverage the statistical libraries available to carry out extensive data analysis. With Python’s enriched ecosystem and widespread community support, it will continue to be an asset for data professionals.\nRemember the interpretation of these statistical measures hinges heavily on the context of the problem at hand. This article has covered the tip of the iceberg when it comes to the capabilities of Python in statistical analysis, and there’s a lot more to explore and learn!\n",
+  "wordCount" : "561",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://example.org/basics/Statistical_Analysis_in_Python/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data Driven Discovery - D3",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://example.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://example.org/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="statistical-analysis-in-python-a-progressing-tool-for-data-analysis">Statistical Analysis in Python: A Progressing Tool for Data Analysis<a hidden class="anchor" aria-hidden="true" href="#statistical-analysis-in-python-a-progressing-tool-for-data-analysis">#</a></h1>
+<h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>Statistical analysis is a fundamental component of data science. Besides it being the backbone of Machine Learning, its techniques allow us to get a clear picture of what data is trying to convey. Python, owing to its simplicity and extensive capabilities, has become a popular language for data analysis. It offers an array of libraries for performing statistical analysis, including Pandas, Numpy, Scipy, etc.</p>
+<p>In this article, we will explore how to use Python to perform statistical analysis. We will cover basics such as measures of centrality, dispersion while gradually moving to more complex aspects, like Statistical Hypothesis Tests.</p>
+<h2 id="getting-started">Getting Started<a hidden class="anchor" aria-hidden="true" href="#getting-started">#</a></h2>
+<p>Firstly, we will need to install necessary libraries. Pandas, Numpy, Scipy all come with the Anaconda Python Distribution. If you&rsquo;re not using Anaconda, execute the following commands to install them:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install pandas
+</span></span><span style="display:flex;"><span>pip install numpy
+</span></span><span style="display:flex;"><span>pip install scipy
+</span></span></code></pre></div><p>Next, let&rsquo;s import the necessary libraries:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> scipy <span style="color:#f92672">import</span> stats
+</span></span></code></pre></div><h2 id="descriptive-statistics">Descriptive Statistics<a hidden class="anchor" aria-hidden="true" href="#descriptive-statistics">#</a></h2>
+<p>We begin with descriptive statistics - a method to describe the basic features of the data and provide short summaries about the sample. Our focus will be on measures of central tendency, dispersion, and shape.</p>
+<h3 id="measures-of-central-tendency">Measures of Central Tendency<a hidden class="anchor" aria-hidden="true" href="#measures-of-central-tendency">#</a></h3>
+<p>Let&rsquo;s create a pandas DataFrame for understanding.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Creating a pandas DataFrame.</span>
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;A&#39;</span>: np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>normal(<span style="color:#ae81ff">60</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">500</span>),
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;B&#39;</span>: np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>normal(<span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">500</span>),
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;C&#39;</span>: np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>normal(<span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">500</span>)
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>data<span style="color:#f92672">.</span>head()
+</span></span></code></pre></div><p>Output:</p>
+<p>[INSERT IMAGE HERE]</p>
+<p>&lsquo;./images/data_head_out.png&rsquo;</p>
+<p>Let&rsquo;s calculate mean, median, and mode for each column.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Mean</span>
+</span></span><span style="display:flex;"><span>mean <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>mean()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Mean:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, mean) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Median</span>
+</span></span><span style="display:flex;"><span>median <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>median()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Median:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, median)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Mode</span>
+</span></span><span style="display:flex;"><span>mode <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>mode()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Mode:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, mode)
+</span></span></code></pre></div><p>The output showcases the average values for each column, providing insights into each dataset&rsquo;s behavior.</p>
+<h3 id="measures-of-dispersion">Measures of Dispersion<a hidden class="anchor" aria-hidden="true" href="#measures-of-dispersion">#</a></h3>
+<p>We&rsquo;ll now focus on the standard deviation, variance, and the interquartile range (IQR) - defining the spread of the data.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Standard Deviation</span>
+</span></span><span style="display:flex;"><span>std_dev <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>std()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Standard Deviation:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, std_dev) 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Variance</span>
+</span></span><span style="display:flex;"><span>variance <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>var()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Variance:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, variance)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Interquartile Range</span>
+</span></span><span style="display:flex;"><span>Q1 <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>quantile(<span style="color:#ae81ff">0.25</span>)
+</span></span><span style="display:flex;"><span>Q3 <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>quantile(<span style="color:#ae81ff">0.75</span>)
+</span></span><span style="display:flex;"><span>IQR <span style="color:#f92672">=</span> Q3 <span style="color:#f92672">-</span> Q1
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">IQR:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, IQR)
+</span></span></code></pre></div><p>Higher measures of dispersion would imply high variability in the data.</p>
+<h3 id="skewness-and-kurtosis">Skewness and Kurtosis<a hidden class="anchor" aria-hidden="true" href="#skewness-and-kurtosis">#</a></h3>
+<p>These measure the shape of the probability distribution of a variable.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Skewness</span>
+</span></span><span style="display:flex;"><span>skewness <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>skew()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Skewness:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, skewness)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Kurtosis</span>
+</span></span><span style="display:flex;"><span>kurtosis <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>kurtosis()
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Kurtosis:</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, kurtosis)
+</span></span></code></pre></div><h2 id="statistical-hypothesis-testing">Statistical Hypothesis Testing<a hidden class="anchor" aria-hidden="true" href="#statistical-hypothesis-testing">#</a></h2>
+<p>Statistical Hypothesis Tests are used to infer the results of a hypothesis performed on sample data from a larger population. We&rsquo;ll perform the Student&rsquo;s t-test.</p>
+<h3 id="students-t-test">Student&rsquo;s t-test<a hidden class="anchor" aria-hidden="true" href="#students-t-test">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Generating random Data:</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>seed(<span style="color:#ae81ff">11</span>)
+</span></span><span style="display:flex;"><span>data1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">*</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>randn(<span style="color:#ae81ff">100</span>) <span style="color:#f92672">+</span> <span style="color:#ae81ff">50</span>
+</span></span><span style="display:flex;"><span>data2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span> <span style="color:#f92672">*</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>randn(<span style="color:#ae81ff">100</span>) <span style="color:#f92672">+</span> <span style="color:#ae81ff">51</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Perform t-test :</span>
+</span></span><span style="display:flex;"><span>t_stat, p_val <span style="color:#f92672">=</span> stats<span style="color:#f92672">.</span>ttest_ind(data1, data2)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;t-statistic :</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, t_stat)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">p-value :</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, p_val)
+</span></span></code></pre></div><p>A p-value smaller than 0.05 means we can reject the null hypothesis.</p>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Python&rsquo;s simplicity, readability, and vast functionality make it an optimal language for performing statistical analysis in Data Science. With a basic understanding of Python, one can leverage the statistical libraries available to carry out extensive data analysis. With Python&rsquo;s enriched ecosystem and widespread community support, it will continue to be an asset for data professionals.</p>
+<p>Remember the interpretation of these statistical measures hinges heavily on the context of the problem at hand. This article has covered the tip of the iceberg when it comes to the capabilities of Python in statistical analysis, and there&rsquo;s a lot more to explore and learn!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://example.org/">Data Driven Discovery - D3</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Data Driven Discovery - D3</title>
+<meta name="keywords" content="">
+<meta name="description" content="Advanced Multi-Task Learning: Balancing Trade-offs and Maximizing Performance Multi-task learning (MTL) is a burgeoning field in machine learning that aims at improving the learning efficiency and prediction accuracy of models by learning multiple tasks simultaneously. It leverages the commonalities and differences across tasks, thereby enabling the sharing of representations and leading to better generalization. In this article, we delve into advanced strategies and considerations for implementing multi-task learning, providing insights for both beginners and advanced practitioners.">
+<meta name="author" content="">
+<link rel="canonical" href="http://example.org/advanced/Advanced_Multi-Task_Learning_Balancing_Trade-offs_and_Maximizing_Performance/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://example.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png">
+<link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="Advanced Multi-Task Learning: Balancing Trade-offs and Maximizing Performance Multi-task learning (MTL) is a burgeoning field in machine learning that aims at improving the learning efficiency and prediction accuracy of models by learning multiple tasks simultaneously. It leverages the commonalities and differences across tasks, thereby enabling the sharing of representations and leading to better generalization. In this article, we delve into advanced strategies and considerations for implementing multi-task learning, providing insights for both beginners and advanced practitioners." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/advanced/Advanced_Multi-Task_Learning_Balancing_Trade-offs_and_Maximizing_Performance/" /><meta property="article:section" content="advanced" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Advanced Multi-Task Learning: Balancing Trade-offs and Maximizing Performance Multi-task learning (MTL) is a burgeoning field in machine learning that aims at improving the learning efficiency and prediction accuracy of models by learning multiple tasks simultaneously. It leverages the commonalities and differences across tasks, thereby enabling the sharing of representations and leading to better generalization. In this article, we delve into advanced strategies and considerations for implementing multi-task learning, providing insights for both beginners and advanced practitioners."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Advanceds",
+      "item": "http://example.org/advanced/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "http://example.org/advanced/Advanced_Multi-Task_Learning_Balancing_Trade-offs_and_Maximizing_Performance/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "Advanced Multi-Task Learning: Balancing Trade-offs and Maximizing Performance Multi-task learning (MTL) is a burgeoning field in machine learning that aims at improving the learning efficiency and prediction accuracy of models by learning multiple tasks simultaneously. It leverages the commonalities and differences across tasks, thereby enabling the sharing of representations and leading to better generalization. In this article, we delve into advanced strategies and considerations for implementing multi-task learning, providing insights for both beginners and advanced practitioners.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Advanced Multi-Task Learning: Balancing Trade-offs and Maximizing Performance Multi-task learning (MTL) is a burgeoning field in machine learning that aims at improving the learning efficiency and prediction accuracy of models by learning multiple tasks simultaneously. It leverages the commonalities and differences across tasks, thereby enabling the sharing of representations and leading to better generalization. In this article, we delve into advanced strategies and considerations for implementing multi-task learning, providing insights for both beginners and advanced practitioners. By the end of this read, you will understand how to balance trade-offs and maximize performance in multi-task learning projects.\nIntroduction to Multi-Task Learning In traditional machine learning approaches, models are trained on a single task, optimizing for a specific goal. However, this single-minded focus can lead to overfitting and ignores the potential benefits of leveraging the structure and relationships across related tasks. Multi-task learning addresses this by jointly learning multiple tasks, under the premise that learning tasks together rather than in isolation enhances model performance.\nDespite its advantages, MTL introduces complexity, particularly in balancing the trade-offs between tasks and optimizing shared and task-specific parameters. Successful implementation of MTL therefore requires thoughtful consideration of architecture, task relationships, and balancing mechanisms.\nMain Body Understanding Task Relationships The foundation of successful MTL lies in understanding the relationships between tasks. Tasks can be highly related, loosely related, or even negatively correlated. Identifying these relationships informs the architecture of the MTL model and the strategy for sharing information between tasks.\nMTL Architectures There are multiple architectures for multi-task learning, each with its advantages and use cases. The most common include hard parameter sharing and soft parameter sharing. Hard parameter sharing involves sharing layers between tasks, while keeping some task-specific output layers. Soft parameter sharing, on the other hand, allows each task to have its own model, but regularizes the models to encourage similarity in their learned parameters.\nImplementing Hard Parameter Sharing in TensorFlow Let’s dive into an example of implementing a simple hard parameter shared model using TensorFlow:\nimport tensorflow as tf from tensorflow.keras.layers import Dense, Input from tensorflow.keras.models import Model # Input layer inputs = Input(shape=(100,)) # Shared layers shared_layer = Dense(64, activation='relu')(inputs) # Task-specific layers task1_output = Dense(1, activation='sigmoid', name='task1_output')(shared_layer) task2_output = Dense(1, activation='sigmoid', name='task2_output')(shared_layer) # Define model model = Model(inputs=inputs, outputs=[task1_output, task2_output]) # Compile model model.compile(optimizer='adam', loss={'task1_output': 'binary_crossentropy', 'task2_output': 'binary_crossentropy'}, metrics={'task1_output': ['accuracy'], 'task2_output': ['accuracy']}) # Model summary model.summary() This code snippet defines a simple neural network with shared layers that branch into two task-specific output layers. It’s a typical example of hard parameter sharing in multi-task learning.\nBalancing Trade-offs One of the crucial aspects of MTL is balancing the trade-offs between tasks. Not all tasks are equally important, and their learning rates and loss magnitudes can differ significantly. Several techniques exist to manage these trade-offs:\nTask Weighting: Assigns different weights to the losses of each task, emphasizing more critical tasks. Gradient Normalization: Normalizes gradients across tasks to prevent any single task from dominating the learning. Dynamic Weighting: Implements adaptive weighting mechanisms based on task importance or difficulty. Task Weighting Example Here’s how you could implement task weighting in our previous TensorFlow model example:\n# Compile model with task weighting model.compile(optimizer='adam', loss={'task1_output': 'binary_crossentropy', 'task2_output': 'binary_crossentropy'}, loss_weights={'task1_output': 0.7, 'task2_output': 0.3}, metrics={'task1_output': ['accuracy'], 'task2_output': ['accuracy']}) By adjusting the loss_weights parameter, you can control the importance of each task’s loss in the overall training process.\nEvaluating MTL Models Evaluation of MTL models goes beyond looking at the aggregate performance; it requires analyzing the performance on each task and understanding the trade-offs. Monitoring task-specific performance and loss during training can provide insights into how well the model balances learning across tasks.\nConclusion Advanced multi-task learning offers a powerful framework for leveraging shared knowledge across tasks, leading to more efficient and generalized models. However, its implementation is fraught with challenges, primarily in balancing the trade-offs and optimizing performance across tasks. By understanding task relationships, carefully designing MTL architectures, and implementing strategic balancing mechanisms, practitioners can harness the full potential of multi-task learning.\nEffective multi-task learning is as much an art as it is a science, requiring nuanced decision-making and constant iteration. By staying informed on best practices and continually experimenting with architectures and balancing techniques, you can unlock novel capabilities and achieve superior performance in your machine learning projects.\nRemember, the key to successful MTL is not just in mastering the technical complexities, but also in understanding the unique characteristics and requirements of each task you aim to learn simultaneously.\n",
+  "wordCount" : "739",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://example.org/advanced/Advanced_Multi-Task_Learning_Balancing_Trade-offs_and_Maximizing_Performance/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data Driven Discovery - D3",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://example.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://example.org/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="advanced-multi-task-learning-balancing-trade-offs-and-maximizing-performance">Advanced Multi-Task Learning: Balancing Trade-offs and Maximizing Performance<a hidden class="anchor" aria-hidden="true" href="#advanced-multi-task-learning-balancing-trade-offs-and-maximizing-performance">#</a></h1>
+<p>Multi-task learning (MTL) is a burgeoning field in machine learning that aims at improving the learning efficiency and prediction accuracy of models by learning multiple tasks simultaneously. It leverages the commonalities and differences across tasks, thereby enabling the sharing of representations and leading to better generalization. In this article, we delve into advanced strategies and considerations for implementing multi-task learning, providing insights for both beginners and advanced practitioners. By the end of this read, you will understand how to balance trade-offs and maximize performance in multi-task learning projects.</p>
+<h2 id="introduction-to-multi-task-learning">Introduction to Multi-Task Learning<a hidden class="anchor" aria-hidden="true" href="#introduction-to-multi-task-learning">#</a></h2>
+<p>In traditional machine learning approaches, models are trained on a single task, optimizing for a specific goal. However, this single-minded focus can lead to overfitting and ignores the potential benefits of leveraging the structure and relationships across related tasks. Multi-task learning addresses this by jointly learning multiple tasks, under the premise that learning tasks together rather than in isolation enhances model performance.</p>
+<p>Despite its advantages, MTL introduces complexity, particularly in balancing the trade-offs between tasks and optimizing shared and task-specific parameters. Successful implementation of MTL therefore requires thoughtful consideration of architecture, task relationships, and balancing mechanisms.</p>
+<h2 id="main-body">Main Body<a hidden class="anchor" aria-hidden="true" href="#main-body">#</a></h2>
+<h3 id="understanding-task-relationships">Understanding Task Relationships<a hidden class="anchor" aria-hidden="true" href="#understanding-task-relationships">#</a></h3>
+<p>The foundation of successful MTL lies in understanding the relationships between tasks. Tasks can be highly related, loosely related, or even negatively correlated. Identifying these relationships informs the architecture of the MTL model and the strategy for sharing information between tasks.</p>
+<h3 id="mtl-architectures">MTL Architectures<a hidden class="anchor" aria-hidden="true" href="#mtl-architectures">#</a></h3>
+<p>There are multiple architectures for multi-task learning, each with its advantages and use cases. The most common include hard parameter sharing and soft parameter sharing. Hard parameter sharing involves sharing layers between tasks, while keeping some task-specific output layers. Soft parameter sharing, on the other hand, allows each task to have its own model, but regularizes the models to encourage similarity in their learned parameters.</p>
+<h4 id="implementing-hard-parameter-sharing-in-tensorflow">Implementing Hard Parameter Sharing in TensorFlow<a hidden class="anchor" aria-hidden="true" href="#implementing-hard-parameter-sharing-in-tensorflow">#</a></h4>
+<p>Let&rsquo;s dive into an example of implementing a simple hard parameter shared model using TensorFlow:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> tensorflow <span style="color:#66d9ef">as</span> tf
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> tensorflow.keras.layers <span style="color:#f92672">import</span> Dense, Input
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> tensorflow.keras.models <span style="color:#f92672">import</span> Model
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Input layer</span>
+</span></span><span style="display:flex;"><span>inputs <span style="color:#f92672">=</span> Input(shape<span style="color:#f92672">=</span>(<span style="color:#ae81ff">100</span>,))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Shared layers</span>
+</span></span><span style="display:flex;"><span>shared_layer <span style="color:#f92672">=</span> Dense(<span style="color:#ae81ff">64</span>, activation<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;relu&#39;</span>)(inputs)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Task-specific layers</span>
+</span></span><span style="display:flex;"><span>task1_output <span style="color:#f92672">=</span> Dense(<span style="color:#ae81ff">1</span>, activation<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;sigmoid&#39;</span>, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;task1_output&#39;</span>)(shared_layer)
+</span></span><span style="display:flex;"><span>task2_output <span style="color:#f92672">=</span> Dense(<span style="color:#ae81ff">1</span>, activation<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;sigmoid&#39;</span>, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;task2_output&#39;</span>)(shared_layer)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define model</span>
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> Model(inputs<span style="color:#f92672">=</span>inputs, outputs<span style="color:#f92672">=</span>[task1_output, task2_output])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Compile model</span>
+</span></span><span style="display:flex;"><span>model<span style="color:#f92672">.</span>compile(optimizer<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;adam&#39;</span>,
+</span></span><span style="display:flex;"><span>              loss<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;task1_output&#39;</span>: <span style="color:#e6db74">&#39;binary_crossentropy&#39;</span>, <span style="color:#e6db74">&#39;task2_output&#39;</span>: <span style="color:#e6db74">&#39;binary_crossentropy&#39;</span>},
+</span></span><span style="display:flex;"><span>              metrics<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;task1_output&#39;</span>: [<span style="color:#e6db74">&#39;accuracy&#39;</span>], <span style="color:#e6db74">&#39;task2_output&#39;</span>: [<span style="color:#e6db74">&#39;accuracy&#39;</span>]})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Model summary</span>
+</span></span><span style="display:flex;"><span>model<span style="color:#f92672">.</span>summary()
+</span></span></code></pre></div><p>This code snippet defines a simple neural network with shared layers that branch into two task-specific output layers. It&rsquo;s a typical example of hard parameter sharing in multi-task learning.</p>
+<h3 id="balancing-trade-offs">Balancing Trade-offs<a hidden class="anchor" aria-hidden="true" href="#balancing-trade-offs">#</a></h3>
+<p>One of the crucial aspects of MTL is balancing the trade-offs between tasks. Not all tasks are equally important, and their learning rates and loss magnitudes can differ significantly. Several techniques exist to manage these trade-offs:</p>
+<ul>
+<li><strong>Task Weighting</strong>: Assigns different weights to the losses of each task, emphasizing more critical tasks.</li>
+<li><strong>Gradient Normalization</strong>: Normalizes gradients across tasks to prevent any single task from dominating the learning.</li>
+<li><strong>Dynamic Weighting</strong>: Implements adaptive weighting mechanisms based on task importance or difficulty.</li>
+</ul>
+<h4 id="task-weighting-example">Task Weighting Example<a hidden class="anchor" aria-hidden="true" href="#task-weighting-example">#</a></h4>
+<p>Here’s how you could implement task weighting in our previous TensorFlow model example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Compile model with task weighting</span>
+</span></span><span style="display:flex;"><span>model<span style="color:#f92672">.</span>compile(optimizer<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;adam&#39;</span>,
+</span></span><span style="display:flex;"><span>              loss<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;task1_output&#39;</span>: <span style="color:#e6db74">&#39;binary_crossentropy&#39;</span>, <span style="color:#e6db74">&#39;task2_output&#39;</span>: <span style="color:#e6db74">&#39;binary_crossentropy&#39;</span>},
+</span></span><span style="display:flex;"><span>              loss_weights<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;task1_output&#39;</span>: <span style="color:#ae81ff">0.7</span>, <span style="color:#e6db74">&#39;task2_output&#39;</span>: <span style="color:#ae81ff">0.3</span>},
+</span></span><span style="display:flex;"><span>              metrics<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;task1_output&#39;</span>: [<span style="color:#e6db74">&#39;accuracy&#39;</span>], <span style="color:#e6db74">&#39;task2_output&#39;</span>: [<span style="color:#e6db74">&#39;accuracy&#39;</span>]})
+</span></span></code></pre></div><p>By adjusting the <code>loss_weights</code> parameter, you can control the importance of each task’s loss in the overall training process.</p>
+<h3 id="evaluating-mtl-models">Evaluating MTL Models<a hidden class="anchor" aria-hidden="true" href="#evaluating-mtl-models">#</a></h3>
+<p>Evaluation of MTL models goes beyond looking at the aggregate performance; it requires analyzing the performance on each task and understanding the trade-offs. Monitoring task-specific performance and loss during training can provide insights into how well the model balances learning across tasks.</p>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Advanced multi-task learning offers a powerful framework for leveraging shared knowledge across tasks, leading to more efficient and generalized models. However, its implementation is fraught with challenges, primarily in balancing the trade-offs and optimizing performance across tasks. By understanding task relationships, carefully designing MTL architectures, and implementing strategic balancing mechanisms, practitioners can harness the full potential of multi-task learning.</p>
+<p>Effective multi-task learning is as much an art as it is a science, requiring nuanced decision-making and constant iteration. By staying informed on best practices and continually experimenting with architectures and balancing techniques, you can unlock novel capabilities and achieve superior performance in your machine learning projects.</p>
+<p>Remember, the key to successful MTL is not just in mastering the technical complexities, but also in understanding the unique characteristics and requirements of each task you aim to learn simultaneously.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://example.org/">Data Driven Discovery - D3</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Data Driven Discovery - D3</title>
+<meta name="keywords" content="">
+<meta name="description" content="Understanding the Basics of Artificial Intelligence Hello reader, whether you&rsquo;re a data enthusiast, a machine learning developer, or someone looking to dip their toes into the exciting world of artificial intelligence(AI), you&rsquo;ve come to the right place. In this article, we will provide a comprehensive overview of AI, including its origins, core concepts, and step-by-step instructions (with Python source code) on how to build a simplistic AI model.
+Introduction Artificial Intelligence has been a fascinating concept of science fiction for decades; it has now become a day-to-day reality.">
+<meta name="author" content="">
+<link rel="canonical" href="http://example.org/basics/Understanding_the_Basics_of_Artificial_Intelligence/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://example.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png">
+<link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="Understanding the Basics of Artificial Intelligence Hello reader, whether you&rsquo;re a data enthusiast, a machine learning developer, or someone looking to dip their toes into the exciting world of artificial intelligence(AI), you&rsquo;ve come to the right place. In this article, we will provide a comprehensive overview of AI, including its origins, core concepts, and step-by-step instructions (with Python source code) on how to build a simplistic AI model.
+Introduction Artificial Intelligence has been a fascinating concept of science fiction for decades; it has now become a day-to-day reality." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/basics/Understanding_the_Basics_of_Artificial_Intelligence/" /><meta property="article:section" content="basics" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Understanding the Basics of Artificial Intelligence Hello reader, whether you&rsquo;re a data enthusiast, a machine learning developer, or someone looking to dip their toes into the exciting world of artificial intelligence(AI), you&rsquo;ve come to the right place. In this article, we will provide a comprehensive overview of AI, including its origins, core concepts, and step-by-step instructions (with Python source code) on how to build a simplistic AI model.
+Introduction Artificial Intelligence has been a fascinating concept of science fiction for decades; it has now become a day-to-day reality."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Basics",
+      "item": "http://example.org/basics/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "http://example.org/basics/Understanding_the_Basics_of_Artificial_Intelligence/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "Understanding the Basics of Artificial Intelligence Hello reader, whether you\u0026rsquo;re a data enthusiast, a machine learning developer, or someone looking to dip their toes into the exciting world of artificial intelligence(AI), you\u0026rsquo;ve come to the right place. In this article, we will provide a comprehensive overview of AI, including its origins, core concepts, and step-by-step instructions (with Python source code) on how to build a simplistic AI model.\nIntroduction Artificial Intelligence has been a fascinating concept of science fiction for decades; it has now become a day-to-day reality.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Understanding the Basics of Artificial Intelligence Hello reader, whether you’re a data enthusiast, a machine learning developer, or someone looking to dip their toes into the exciting world of artificial intelligence(AI), you’ve come to the right place. In this article, we will provide a comprehensive overview of AI, including its origins, core concepts, and step-by-step instructions (with Python source code) on how to build a simplistic AI model.\nIntroduction Artificial Intelligence has been a fascinating concept of science fiction for decades; it has now become a day-to-day reality. Sophisticated technologies like self-driving cars, AI chatbots, recommendation systems, and voice assistants like Alexa and Siri – all are powerful manifestations of AI. AI allows devices to act smartly by learning from experiences, reshaping themselves and exhibiting human-like tasks.\n[INSERT IMAGE HERE]\nThe image represents a typical data flow in an AI system, showing the integration of various components like data, machine learning, and deep learning, leading to AI.\nBrief Overview of AI AI is a branch of computer science that aims to create systems capable of monitoring, learning, reasoning, problem-solving, perception, and language understanding. It involves programming computers to use characteristics of human intelligence. It divides mainly into two branches:\nNarrow AI: Systems designed to perform specific tasks such as voice recognition. General AI: Systems which can handle any intellectual task a human can do. AI and Machine Learning Machine Learning (ML), an essential part of AI, is a method of data analysis that automates analytical model building. Leveraging algorithms that iteratively learn from data, ML allows systems to learn from experience. Here is a simple example of a Python script that employs the K-Nearest Neighbor (KNN) classifier from sklearn, a popular machine learning library.\n# Importing necessary libraries from sklearn import datasets from sklearn.model_selection import train_test_split from sklearn.preprocessing import StandardScaler from sklearn.neighbors import KNeighborsClassifier # Loading breast cancer dataset cancer = datasets.load_breast_cancer() # Preprocessing the data scaler = StandardScaler() data = scaler.fit_transform(cancer.data) # Splitting the data into training and test sets X_train, X_test, Y_train, Y_test = train_test_split( data, cancer.target, test_size=0.3, random_state=42) # Using KNN classifier knn = KNeighborsClassifier(n_neighbors=7) knn.fit(X_train, Y_train) # Displaying the score print('Score: ', knn.score(X_test, Y_test)) By running the above script in Python, we’d see the model accuracy as output. This would be something similar to:\nScore: 0.9649122807017544 This means our simplistic AI model achieved ~96% accuracy in making predictions – something unachievable without machine learning algorithms.\nDeep Learning: A Subset of Machine Learning Deep Learning, a subset of ML, makes the computation of multi-layer neural networks feasible. It takes inspiration from the human brain’s workings, creating patterns used for decision making. It’s the key technology behind driverless cars, voice control systems, and image recognition. Here’s a simple example of a deep learning model in Python using the TensorFlow library.\n# Importing necessary libraries import tensorflow as tf from tensorflow import keras from tensorflow.keras.datasets import mnist # Data (train_images, train_labels), (test_images, test_labels) = mnist.load_data() # Preprocessing the data train_images = train_images / 255.0 test_images = test_images / 255.0 # Creating the model model = keras.Sequential([ keras.layers.Flatten(input_shape=(28, 28)), keras.layers.Dense(128, activation=tf.nn.relu), keras.layers.Dense(10, activation=tf.nn.softmax) ]) # Compiling the model model.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy']) # Training the model model.fit(train_images, train_labels, epochs=5) # Evaluating the model test_loss, test_acc = model.evaluate(test_images, test_labels) print('Test accuracy:', test_acc) After executing this script, we’d get something like this:\nEpoch 1/5 1875/1875 [==============================] - 2s 904us/step - loss: 0.2590 - accuracy: 0.9254 Epoch 2/5 1875/1875 [==============================] - 2s 892us/step - loss: 0.1143 - accuracy: 0.9660 Epoch 3/5 1875/1875 [==============================] - 2s 882us/step - loss: 0.0788 - accuracy: 0.9761 Epoch 4/5 1875/1875 [==============================] - 2s 881us/step - loss: 0.0588 - accuracy: 0.9819 Epoch 5/5 1875/1875 [==============================] - 2s 882us/step - loss: 0.0465 - accuracy: 0.9855 313/313 [==============================] - 0s 589us/step - loss: 0.0802 - accuracy: 0.9753 Test accuracy: 0.9753000140190125 As you see, our deep learning model achieved an accuracy of ~98% on the MNIST dataset - highly effective in recognizing handwritten digits.\nConclusion Artificial Intelligence, an exciting and transformative field, opens the doors to countless revolutionizing possibilities. While still in its infancy, AI promises brilliantly sophisticated solutions for problems globally. If you’re a data professional willing to ride on this AI wave, understanding the basics of AI, machine learning, and deep learning is your first step. Who knows, the next big thing in AI could be your creation. Dive into the world of AI, machine learning, and deep learning. Happy AI journey!\n",
+  "wordCount" : "731",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://example.org/basics/Understanding_the_Basics_of_Artificial_Intelligence/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data Driven Discovery - D3",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://example.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://example.org/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="understanding-the-basics-of-artificial-intelligence">Understanding the Basics of Artificial Intelligence<a hidden class="anchor" aria-hidden="true" href="#understanding-the-basics-of-artificial-intelligence">#</a></h1>
+<p>Hello reader, whether you&rsquo;re a data enthusiast, a machine learning developer, or someone looking to dip their toes into the exciting world of artificial intelligence(AI), you&rsquo;ve come to the right place. In this article, we will provide a comprehensive overview of AI, including its origins, core concepts, and step-by-step instructions (with Python source code) on how to build a simplistic AI model.</p>
+<h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>Artificial Intelligence has been a fascinating concept of science fiction for decades; it has now become a day-to-day reality. Sophisticated technologies like self-driving cars, AI chatbots, recommendation systems, and voice assistants like Alexa and Siri – all are powerful manifestations of AI. AI allows devices to act smartly by learning from experiences, reshaping themselves and exhibiting human-like tasks.</p>
+<p>[INSERT IMAGE HERE]</p>
+<p>The image represents a typical data flow in an AI system, showing the integration of various components like data, machine learning, and deep learning, leading to AI.</p>
+<h2 id="brief-overview-of-ai">Brief Overview of AI<a hidden class="anchor" aria-hidden="true" href="#brief-overview-of-ai">#</a></h2>
+<p>AI is a branch of computer science that aims to create systems capable of monitoring, learning, reasoning, problem-solving, perception, and language understanding. It involves programming computers to use characteristics of human intelligence. It divides mainly into two branches:</p>
+<ul>
+<li>Narrow AI: Systems designed to perform specific tasks such as voice recognition.</li>
+<li>General AI: Systems which can handle any intellectual task a human can do.</li>
+</ul>
+<h2 id="aiand-machine-learning">AI and Machine Learning<a hidden class="anchor" aria-hidden="true" href="#aiand-machine-learning">#</a></h2>
+<p>Machine Learning (ML), an essential part of AI, is a method of data analysis that automates analytical model building. Leveraging algorithms that iteratively learn from data, ML allows systems to learn from experience. Here is a simple example of a Python script that employs the K-Nearest Neighbor (KNN) classifier from sklearn, a popular machine learning library.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Importing necessary libraries</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> datasets
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> train_test_split
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.preprocessing <span style="color:#f92672">import</span> StandardScaler
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.neighbors <span style="color:#f92672">import</span> KNeighborsClassifier
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Loading breast cancer dataset</span>
+</span></span><span style="display:flex;"><span>cancer <span style="color:#f92672">=</span> datasets<span style="color:#f92672">.</span>load_breast_cancer()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Preprocessing the data</span>
+</span></span><span style="display:flex;"><span>scaler <span style="color:#f92672">=</span> StandardScaler()
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> scaler<span style="color:#f92672">.</span>fit_transform(cancer<span style="color:#f92672">.</span>data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Splitting the data into training and test sets</span>
+</span></span><span style="display:flex;"><span>X_train, X_test, Y_train, Y_test <span style="color:#f92672">=</span> train_test_split(
+</span></span><span style="display:flex;"><span>    data, cancer<span style="color:#f92672">.</span>target, test_size<span style="color:#f92672">=</span><span style="color:#ae81ff">0.3</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Using KNN classifier</span>
+</span></span><span style="display:flex;"><span>knn <span style="color:#f92672">=</span> KNeighborsClassifier(n_neighbors<span style="color:#f92672">=</span><span style="color:#ae81ff">7</span>)
+</span></span><span style="display:flex;"><span>knn<span style="color:#f92672">.</span>fit(X_train, Y_train)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Displaying the score</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;Score: &#39;</span>, knn<span style="color:#f92672">.</span>score(X_test, Y_test))
+</span></span></code></pre></div><p>By running the above script in Python, we&rsquo;d see the model accuracy as output. This would be something similar to:</p>
+<pre tabindex="0"><code>Score:  0.9649122807017544
+</code></pre><p>This means our simplistic AI model achieved ~96% accuracy in making predictions – something unachievable without machine learning algorithms.</p>
+<h2 id="deep-learning-a-subset-of-machine-learning">Deep Learning: A Subset of Machine Learning<a hidden class="anchor" aria-hidden="true" href="#deep-learning-a-subset-of-machine-learning">#</a></h2>
+<p>Deep Learning, a subset of ML, makes the computation of multi-layer neural networks feasible. It takes inspiration from the human brain&rsquo;s workings, creating patterns used for decision making. It&rsquo;s the key technology behind driverless cars, voice control systems, and image recognition. Here&rsquo;s a simple example of a deep learning model in Python using the TensorFlow library.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Importing necessary libraries</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> tensorflow <span style="color:#66d9ef">as</span> tf
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> tensorflow <span style="color:#f92672">import</span> keras
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> tensorflow.keras.datasets <span style="color:#f92672">import</span> mnist
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Data</span>
+</span></span><span style="display:flex;"><span>(train_images, train_labels), (test_images, test_labels) <span style="color:#f92672">=</span> mnist<span style="color:#f92672">.</span>load_data()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Preprocessing the data</span>
+</span></span><span style="display:flex;"><span>train_images <span style="color:#f92672">=</span> train_images <span style="color:#f92672">/</span> <span style="color:#ae81ff">255.0</span>
+</span></span><span style="display:flex;"><span>test_images <span style="color:#f92672">=</span> test_images <span style="color:#f92672">/</span> <span style="color:#ae81ff">255.0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Creating the model</span>
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> keras<span style="color:#f92672">.</span>Sequential([
+</span></span><span style="display:flex;"><span>    keras<span style="color:#f92672">.</span>layers<span style="color:#f92672">.</span>Flatten(input_shape<span style="color:#f92672">=</span>(<span style="color:#ae81ff">28</span>, <span style="color:#ae81ff">28</span>)),
+</span></span><span style="display:flex;"><span>    keras<span style="color:#f92672">.</span>layers<span style="color:#f92672">.</span>Dense(<span style="color:#ae81ff">128</span>, activation<span style="color:#f92672">=</span>tf<span style="color:#f92672">.</span>nn<span style="color:#f92672">.</span>relu),
+</span></span><span style="display:flex;"><span>    keras<span style="color:#f92672">.</span>layers<span style="color:#f92672">.</span>Dense(<span style="color:#ae81ff">10</span>, activation<span style="color:#f92672">=</span>tf<span style="color:#f92672">.</span>nn<span style="color:#f92672">.</span>softmax)
+</span></span><span style="display:flex;"><span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Compiling the model</span>
+</span></span><span style="display:flex;"><span>model<span style="color:#f92672">.</span>compile(optimizer<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;adam&#39;</span>, 
+</span></span><span style="display:flex;"><span>              loss<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;sparse_categorical_crossentropy&#39;</span>,
+</span></span><span style="display:flex;"><span>              metrics<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;accuracy&#39;</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Training the model</span>
+</span></span><span style="display:flex;"><span>model<span style="color:#f92672">.</span>fit(train_images, train_labels, epochs<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Evaluating the model</span>
+</span></span><span style="display:flex;"><span>test_loss, test_acc <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>evaluate(test_images, test_labels)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#39;Test accuracy:&#39;</span>, test_acc)
+</span></span></code></pre></div><p>After executing this script, we&rsquo;d get something like this:</p>
+<pre tabindex="0"><code>Epoch 1/5
+1875/1875 [==============================] - 2s 904us/step - loss: 0.2590 - accuracy: 0.9254
+Epoch 2/5
+1875/1875 [==============================] - 2s 892us/step - loss: 0.1143 - accuracy: 0.9660
+Epoch 3/5
+1875/1875 [==============================] - 2s 882us/step - loss: 0.0788 - accuracy: 0.9761
+Epoch 4/5
+1875/1875 [==============================] - 2s 881us/step - loss: 0.0588 - accuracy: 0.9819
+Epoch 5/5
+1875/1875 [==============================] - 2s 882us/step - loss: 0.0465 - accuracy: 0.9855
+313/313 [==============================] - 0s 589us/step - loss: 0.0802 - accuracy: 0.9753
+Test accuracy: 0.9753000140190125
+</code></pre><p>As you see, our deep learning model achieved an accuracy of ~98% on the MNIST dataset - highly effective in recognizing handwritten digits.</p>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Artificial Intelligence, an exciting and transformative field, opens the doors to countless revolutionizing possibilities. While still in its infancy, AI promises brilliantly sophisticated solutions for problems globally. If you&rsquo;re a data professional willing to ride on this AI wave, understanding the basics of AI, machine learning, and deep learning is your first step. Who knows, the next big thing in AI could be your creation. Dive into the world of AI, machine learning, and deep learning. Happy AI journey!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://example.org/">Data Driven Discovery - D3</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

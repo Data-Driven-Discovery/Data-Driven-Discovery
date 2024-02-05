@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Data Driven Discovery - D3</title>
+<meta name="keywords" content="">
+<meta name="description" content="Running High-Performance Computing with Scala In the data world, performance and speed when processing large-scale datasets is a top priority. The trend has inclined towards language tools that offer both functionality and efficiency. While Python has been a front-runner in data science, Scala is captivating a large number of developers and data professionals due to its high performance, functional programming capability, and adaptability with Big Data tools like Apache Spark.">
+<meta name="author" content="">
+<link rel="canonical" href="http://example.org/basics/Running_High-Performance_Computing_with_Scala/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://example.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png">
+<link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="Running High-Performance Computing with Scala In the data world, performance and speed when processing large-scale datasets is a top priority. The trend has inclined towards language tools that offer both functionality and efficiency. While Python has been a front-runner in data science, Scala is captivating a large number of developers and data professionals due to its high performance, functional programming capability, and adaptability with Big Data tools like Apache Spark." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/basics/Running_High-Performance_Computing_with_Scala/" /><meta property="article:section" content="basics" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Running High-Performance Computing with Scala In the data world, performance and speed when processing large-scale datasets is a top priority. The trend has inclined towards language tools that offer both functionality and efficiency. While Python has been a front-runner in data science, Scala is captivating a large number of developers and data professionals due to its high performance, functional programming capability, and adaptability with Big Data tools like Apache Spark."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Basics",
+      "item": "http://example.org/basics/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "http://example.org/basics/Running_High-Performance_Computing_with_Scala/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "Running High-Performance Computing with Scala In the data world, performance and speed when processing large-scale datasets is a top priority. The trend has inclined towards language tools that offer both functionality and efficiency. While Python has been a front-runner in data science, Scala is captivating a large number of developers and data professionals due to its high performance, functional programming capability, and adaptability with Big Data tools like Apache Spark.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Running High-Performance Computing with Scala In the data world, performance and speed when processing large-scale datasets is a top priority. The trend has inclined towards language tools that offer both functionality and efficiency. While Python has been a front-runner in data science, Scala is captivating a large number of developers and data professionals due to its high performance, functional programming capability, and adaptability with Big Data tools like Apache Spark.\nIn this article, we will delve into Scala’s potential for High-Performance Computing (HPC), understand why it has become so popular amongst data engineers, and see some code snippets that demonstrate its prowess.\nIntroduction to Scala Scala, which stands for “scalable language”, is a statically typed language that runs on the Java Virtual Machine (JVM). It was designed for high performance, type safety and seamless Java interoperability. Scala allows for both Object-Oriented as well as Functional Programming, which makes it a versatile language, favorable in the data processing landscape.\n// A simple Scala program object HelloWorld { def main(args: Array[String]): Unit = { println(\"Hello, world!\") } } When you execute the above program, it would print:\nHello, world! Scala in High Performance Computing (HPC) The ability of Scala to handle large data-sets efficiently stems from its design on the JVM. JVM is not limited by the Global Interpreter Lock like Python and can execute threads in parallel which significantly boosts performance.\nFurthermore, Scala’s static typing allows it to handle computations at speed comparable to Java, often faster. Three aspects that stand out in Scala’s potential for high-performance computing are:\nConcurrency: Java’s threading model allows Scala to implement concurrency, significantly multiplying its ability to handle heavy loads. Functional Programming: Encouragement of immutability, higher-order functions and tail recursion makes Scala desirable for mathematical and algorithmic computations. Interoperability with Java and JVM Libraries: Running on the JVM, Scala has access to the entire Java ecosystem. Let’s dig in deeper and understand via code examples.\n// Concurrency example in Scala object ThreadExample extends App { val thread = new Thread(new Runnable { def run(): Unit = println(\"This is concurrently executed\") }) thread.start() println(\"This is main thread\") } Running this code would result in the two threads executed concurrently:\nThis is main thread This is concurrently executed In contrast, implementing multithreading in many languages like Python is either complicated or leads to performance degradation due to the Global Interpreter Lock.\nScala with Apache Spark One of the main reasons Scala has become popular in the data world is due to Apache Spark. Spark being written in Scala gives it an edge, especially for performance-critical operations such as transformations and actions on RDDs. Operational efficiency is amplified when compared to PySpark, the Python API for Spark.\nimport org.apache.spark.SparkContext import org.apache.spark.SparkConf object SparkExample { def main(args: Array[String]) { val conf = new SparkConf().setAppName(\"Spark Example\").setMaster(\"local\") val sc = new SparkContext(conf) val data = Array(1, 2, 3, 4, 5) val distData = sc.parallelize(data) } } The code above initializes an Apache Spark context and parallelizes data, showcasing Scala’s strength in handling big data tasks.\nConclusion Scala has proven its potential for high-performance computing due to its design and interoperability with Java ecosystem. It shines particularly well in the Big Data landscape due to Apache Spark.\nTo cement the foundation and gain practical proficiency in Scala, understanding Java will be a huge advantage. Scala’s versatility and impressive execution speed make it desirable to data professionals across various industries, suggesting a promising future in the realm of data processing and computing.\nSo if you’re into Data Engineering or any kind of large scale data processing, giving Scala a try might just be what accelerates your computing performance to new limits!\n",
+  "wordCount" : "608",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://example.org/basics/Running_High-Performance_Computing_with_Scala/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data Driven Discovery - D3",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://example.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://example.org/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="running-high-performance-computing-with-scala">Running High-Performance Computing with Scala<a hidden class="anchor" aria-hidden="true" href="#running-high-performance-computing-with-scala">#</a></h1>
+<p>In the data world, performance and speed when processing large-scale datasets is a top priority. The trend has inclined towards language tools that offer both functionality and efficiency. While Python has been a front-runner in data science, Scala is captivating a large number of developers and data professionals due to its high performance, functional programming capability, and adaptability with Big Data tools like Apache Spark.</p>
+<p>In this article, we will delve into Scala&rsquo;s potential for High-Performance Computing (HPC), understand why it has become so popular amongst data engineers, and see some code snippets that demonstrate its prowess.</p>
+<h2 id="introduction-to-scala">Introduction to Scala<a hidden class="anchor" aria-hidden="true" href="#introduction-to-scala">#</a></h2>
+<p>Scala, which stands for &ldquo;scalable language&rdquo;, is a statically typed language that runs on the Java Virtual Machine (JVM). It was designed for high performance, type safety and seamless Java interoperability. Scala allows for both Object-Oriented as well as Functional Programming, which makes it a versatile language, favorable in the data processing landscape.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#75715e">// A simple Scala program
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">object</span> <span style="color:#a6e22e">HelloWorld</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> main<span style="color:#f92672">(</span>args<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Array</span><span style="color:#f92672">[</span><span style="color:#66d9ef">String</span><span style="color:#f92672">])</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Unit</span> <span style="color:#f92672">=</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        println<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello, world!&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>When you execute the above program, it would print:</p>
+<pre tabindex="0"><code>Hello, world!
+</code></pre><h2 id="scala-in-high-performance-computing-hpc">Scala in High Performance Computing (HPC)<a hidden class="anchor" aria-hidden="true" href="#scala-in-high-performance-computing-hpc">#</a></h2>
+<p>The ability of Scala to handle large data-sets efficiently stems from its design on the JVM. JVM is not limited by the Global Interpreter Lock like Python and can execute threads in parallel which significantly boosts performance.</p>
+<p>Furthermore, Scala&rsquo;s static typing allows it to handle computations at speed comparable to Java, often faster. Three aspects that stand out in Scala&rsquo;s potential for high-performance computing are:</p>
+<ol>
+<li><strong>Concurrency</strong>: Java&rsquo;s threading model allows Scala to implement concurrency, significantly multiplying its ability to handle heavy loads.</li>
+<li><strong>Functional Programming</strong>: Encouragement of immutability, higher-order functions and tail recursion makes Scala desirable for mathematical and algorithmic computations.</li>
+<li><strong>Interoperability with Java and JVM Libraries</strong>: Running on the JVM, Scala has access to the entire Java ecosystem.</li>
+</ol>
+<p>Let&rsquo;s dig in deeper and understand via code examples.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#75715e">// Concurrency example in Scala
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">object</span> <span style="color:#a6e22e">ThreadExample</span> <span style="color:#66d9ef">extends</span> <span style="color:#a6e22e">App</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">val</span> thread <span style="color:#66d9ef">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Thread</span><span style="color:#f92672">(</span><span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Runnable</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> run<span style="color:#f92672">()</span><span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Unit</span> <span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>      println<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;This is concurrently executed&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">})</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  thread<span style="color:#f92672">.</span>start<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>  println<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;This is main thread&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>Running this code would result in the two threads executed concurrently:</p>
+<pre tabindex="0"><code>This is main thread
+This is concurrently executed
+</code></pre><p>In contrast, implementing multithreading in many languages like Python is either complicated or leads to performance degradation due to the Global Interpreter Lock.</p>
+<h2 id="scala-with-apache-spark">Scala with Apache Spark<a hidden class="anchor" aria-hidden="true" href="#scala-with-apache-spark">#</a></h2>
+<p>One of the main reasons Scala has become popular in the data world is due to Apache Spark. Spark being written in Scala gives it an edge, especially for performance-critical operations such as transformations and actions on RDDs. Operational efficiency is amplified when compared to PySpark, the Python API for Spark.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-scala" data-lang="scala"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> org.apache.spark.SparkContext
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> org.apache.spark.SparkConf
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">object</span> <span style="color:#a6e22e">SparkExample</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> main<span style="color:#f92672">(</span>args<span style="color:#66d9ef">:</span> <span style="color:#66d9ef">Array</span><span style="color:#f92672">[</span><span style="color:#66d9ef">String</span><span style="color:#f92672">])</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">val</span> conf <span style="color:#66d9ef">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">SparkConf</span><span style="color:#f92672">().</span>setAppName<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Spark Example&#34;</span><span style="color:#f92672">).</span>setMaster<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;local&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">val</span> sc <span style="color:#66d9ef">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">SparkContext</span><span style="color:#f92672">(</span>conf<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">val</span> data <span style="color:#66d9ef">=</span> <span style="color:#a6e22e">Array</span><span style="color:#f92672">(</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">3</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">5</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">val</span> distData <span style="color:#66d9ef">=</span> sc<span style="color:#f92672">.</span>parallelize<span style="color:#f92672">(</span>data<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>The code above initializes an Apache Spark context and parallelizes data, showcasing Scala&rsquo;s strength in handling big data tasks.</p>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Scala has proven its potential for high-performance computing due to its design and interoperability with Java ecosystem. It shines particularly well in the Big Data landscape due to Apache Spark.</p>
+<p>To cement the foundation and gain practical proficiency in Scala, understanding Java will be a huge advantage. Scala&rsquo;s versatility and impressive execution speed make it desirable to data professionals across various industries, suggesting a promising future in the realm of data processing and computing.</p>
+<p>So if you&rsquo;re into Data Engineering or any kind of large scale data processing, giving Scala a try might just be what accelerates your computing performance to new limits!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://example.org/">Data Driven Discovery - D3</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

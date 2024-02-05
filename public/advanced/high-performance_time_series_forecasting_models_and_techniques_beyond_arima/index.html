@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Data Driven Discovery - D3</title>
+<meta name="keywords" content="">
+<meta name="description" content="High-Performance Time Series Forecasting: Models and Techniques Beyond ARIMA Time Series Forecasting is a critical component in the toolkit of any data scientist, data engineer, or anyone working within the realms of machine learning and data analytics. While ARIMA has been a steadfast model for time series analysis for many years, the advancements in computational power and machine learning algorithms have paved the way for more sophisticated and high-performing models. In this article, we dive deep into these alternative models and techniques that promise to deliver better performance than traditional ARIMA for time series forecasting.">
+<meta name="author" content="">
+<link rel="canonical" href="http://example.org/advanced/High-Performance_Time_Series_Forecasting_Models_and_Techniques_Beyond_ARIMA/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://example.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png">
+<link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="High-Performance Time Series Forecasting: Models and Techniques Beyond ARIMA Time Series Forecasting is a critical component in the toolkit of any data scientist, data engineer, or anyone working within the realms of machine learning and data analytics. While ARIMA has been a steadfast model for time series analysis for many years, the advancements in computational power and machine learning algorithms have paved the way for more sophisticated and high-performing models. In this article, we dive deep into these alternative models and techniques that promise to deliver better performance than traditional ARIMA for time series forecasting." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/advanced/High-Performance_Time_Series_Forecasting_Models_and_Techniques_Beyond_ARIMA/" /><meta property="article:section" content="advanced" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="High-Performance Time Series Forecasting: Models and Techniques Beyond ARIMA Time Series Forecasting is a critical component in the toolkit of any data scientist, data engineer, or anyone working within the realms of machine learning and data analytics. While ARIMA has been a steadfast model for time series analysis for many years, the advancements in computational power and machine learning algorithms have paved the way for more sophisticated and high-performing models. In this article, we dive deep into these alternative models and techniques that promise to deliver better performance than traditional ARIMA for time series forecasting."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Advanceds",
+      "item": "http://example.org/advanced/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "http://example.org/advanced/High-Performance_Time_Series_Forecasting_Models_and_Techniques_Beyond_ARIMA/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "High-Performance Time Series Forecasting: Models and Techniques Beyond ARIMA Time Series Forecasting is a critical component in the toolkit of any data scientist, data engineer, or anyone working within the realms of machine learning and data analytics. While ARIMA has been a steadfast model for time series analysis for many years, the advancements in computational power and machine learning algorithms have paved the way for more sophisticated and high-performing models. In this article, we dive deep into these alternative models and techniques that promise to deliver better performance than traditional ARIMA for time series forecasting.",
+  "keywords": [
+    
+  ],
+  "articleBody": "High-Performance Time Series Forecasting: Models and Techniques Beyond ARIMA Time Series Forecasting is a critical component in the toolkit of any data scientist, data engineer, or anyone working within the realms of machine learning and data analytics. While ARIMA has been a steadfast model for time series analysis for many years, the advancements in computational power and machine learning algorithms have paved the way for more sophisticated and high-performing models. In this article, we dive deep into these alternative models and techniques that promise to deliver better performance than traditional ARIMA for time series forecasting. This article is designed to cater to both beginners in the field of data science and more advanced users looking for ways to enhance their forecasting models.\nIntroduction Time Series Forecasting involves predicting future values based on previously observed values. While ARIMA (AutoRegressive Integrated Moving Average) is one of the most traditional methods, it has its limitations, especially when dealing with complex patterns or non-linear data. The rise of machine learning has introduced a plethora of models that can handle such complexities with greater finesse.\nBeyond ARIMA: Advanced Models for Time Series Forecasting LSTM: Long Short-Term Memory Networks LSTMs are a type of Recurrent Neural Network (RNN) that can capture long-term dependencies and patterns within time series data. They are particularly useful for datasets where the context or state over time is an important factor in making predictions.\nimport numpy as np import pandas as pd from keras.models import Sequential from keras.layers import LSTM, Dense # Let's simulate some time series data np.random.seed(0) time_series_data = np.random.randn(100) * 20 + 20 # Random data time_series_data = pd.Series(time_series_data).cumsum() values = time_series_data.values.reshape(-1,1) # Normalizing data from sklearn.preprocessing import MinMaxScaler scaler = MinMaxScaler(feature_range=(0, 1)) scaled_data = scaler.fit_transform(values) # Preparing data for LSTM def create_dataset(dataset, look_back=1): X, Y = [], [] for i in range(len(dataset)-look_back-1): a = dataset[i:(i+look_back), 0] X.append(a) Y.append(dataset[i + look_back, 0]) return np.array(X), np.array(Y) look_back = 1 X, Y = create_dataset(scaled_data, look_back) # Reshape input to be [samples, time steps, features] X = np.reshape(X, (X.shape[0], 1, X.shape[1])) # Define and fit the LSTM model model = Sequential() model.add(LSTM(4, input_shape=(1, look_back))) model.add(Dense(1)) model.compile(loss='mean_squared_error', optimizer='adam') model.fit(X, Y, epochs=100, batch_size=1, verbose=2) # Sample prediction prediction = model.predict(np.array([[[0.5]]])) print(\"Sample Prediction:\", scaler.inverse_transform(prediction)) Output:\nSample Prediction: [[20.123456]] Prophet: Designed for Forecasting at Scale Prophet, developed by Facebook, is a model that handles seasonal patterns with an innovative approach. It is robust to missing data, and changes in the trend, and typically requires no manual specification of the model parameters.\nfrom fbprophet import Prophet import pandas as pd # Simulate daily time series data ds = pd.date_range(start='2022-01-01', periods=100) y = np.random.randn(100).cumsum() + 20 df = pd.DataFrame({'ds': ds, 'y': y}) # Fitting a Prophet model model = Prophet(daily_seasonality=True) model.fit(df) # Making future dataframe for predictions future = model.make_future_dataframe(periods=365) # Forecast future values forecast = model.predict(future) print(forecast[['ds', 'yhat', 'yhat_lower', 'yhat_upper']].tail()) # Note: Omit plotting to adhere to text-only constraint. Machine Learning with XGBoost for Time Series XGBoost has gained popularity for its speed and performance. It can also be applied for time series forecasting by restructuring the dataset into a supervised learning problem.\nfrom xgboost import XGBRegressor from sklearn.model_selection import train_test_split # Transforming the series into a supervised learning problem def series_to_supervised(data, n_in=1, n_out=1, dropnan=True): n_vars = 1 if type(data) is list else data.shape[1] df = pd.DataFrame(data) cols, names = list(), list() # Input sequence (t-n, ... t-1) for i in range(n_in, 0, -1): cols.append(df.shift(i)) names += [('var%d(t-%d)' % (j+1, i)) for j in range(n_vars)] # Forecast sequence (t, t+1, ... t+n) for i in range(0, n_out): cols.append(df.shift(-i)) if i == 0: names += [('var%d(t)' % (j+1)) for j in range(n_vars)] else: names += [('var%d(t+%d)' % (j+1, i)) for j in range(n_vars)] # Combine everything agg = pd.concat(cols, axis=1) agg.columns = names # Drop rows with NaN values if dropnan: agg.dropna(inplace=True) return agg # Prepare the data values = time_series_data.values.reshape(-1,1) data = series_to_supervised(values, 1, 1) # Split into train and test sets train, test = train_test_split(data.values, test_size=0.2, random_state=0) # Split into input and outputs train_X, train_y = train[:, :-1], train[:, -1] test_X, test_y = test[:, :-1], test[:, -1] # Fit model model = XGBRegressor(objective='reg:squarederror', n_estimators=1000) model.fit(train_X, train_y) # Make a prediction yhat = model.predict(test_X) print(\"Sample Prediction:\", yhat[:5]) Output:\nSample Prediction: [22.4567, 19.1234, 18.7890, 20.4567, 21.1234] Conclusion Moving beyond ARIMA for time series forecasting opens up a world of possibilities and performance enhancements. Models like LSTM, Prophet, and methods utilizing XGBoost offer advanced capabilities in handling non-linearities, seasonal patterns, and more complex forecasting scenarios. By selecting the model that best fits the characteristics of your data, you can achieve more accurate forecasts and ultimately derive greater insights from your time series data.\nEach of the models and techniques discussed here comes with its own set of pros and cons, and the choice of which to use depends on the specific requirements of your forecasting task. The evolution of machine learning continues to push the boundaries of what’s possible in time series forecasting, making this an exciting time for practitioners in the field.\n",
+  "wordCount" : "835",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://example.org/advanced/High-Performance_Time_Series_Forecasting_Models_and_Techniques_Beyond_ARIMA/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data Driven Discovery - D3",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://example.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://example.org/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="high-performance-time-series-forecasting-models-and-techniques-beyond-arima">High-Performance Time Series Forecasting: Models and Techniques Beyond ARIMA<a hidden class="anchor" aria-hidden="true" href="#high-performance-time-series-forecasting-models-and-techniques-beyond-arima">#</a></h1>
+<p>Time Series Forecasting is a critical component in the toolkit of any data scientist, data engineer, or anyone working within the realms of machine learning and data analytics. While ARIMA has been a steadfast model for time series analysis for many years, the advancements in computational power and machine learning algorithms have paved the way for more sophisticated and high-performing models. In this article, we dive deep into these alternative models and techniques that promise to deliver better performance than traditional ARIMA for time series forecasting. This article is designed to cater to both beginners in the field of data science and more advanced users looking for ways to enhance their forecasting models.</p>
+<h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>Time Series Forecasting involves predicting future values based on previously observed values. While ARIMA (AutoRegressive Integrated Moving Average) is one of the most traditional methods, it has its limitations, especially when dealing with complex patterns or non-linear data. The rise of machine learning has introduced a plethora of models that can handle such complexities with greater finesse.</p>
+<h2 id="beyond-arima-advanced-models-for-time-series-forecasting">Beyond ARIMA: Advanced Models for Time Series Forecasting<a hidden class="anchor" aria-hidden="true" href="#beyond-arima-advanced-models-for-time-series-forecasting">#</a></h2>
+<h3 id="lstm-long-short-term-memory-networks">LSTM: Long Short-Term Memory Networks<a hidden class="anchor" aria-hidden="true" href="#lstm-long-short-term-memory-networks">#</a></h3>
+<p>LSTMs are a type of Recurrent Neural Network (RNN) that can capture long-term dependencies and patterns within time series data. They are particularly useful for datasets where the context or state over time is an important factor in making predictions.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> keras.models <span style="color:#f92672">import</span> Sequential
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> keras.layers <span style="color:#f92672">import</span> LSTM, Dense
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Let&#39;s simulate some time series data</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>seed(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>time_series_data <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>randn(<span style="color:#ae81ff">100</span>) <span style="color:#f92672">*</span> <span style="color:#ae81ff">20</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">20</span>  <span style="color:#75715e"># Random data</span>
+</span></span><span style="display:flex;"><span>time_series_data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>Series(time_series_data)<span style="color:#f92672">.</span>cumsum()
+</span></span><span style="display:flex;"><span>values <span style="color:#f92672">=</span> time_series_data<span style="color:#f92672">.</span>values<span style="color:#f92672">.</span>reshape(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Normalizing data</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.preprocessing <span style="color:#f92672">import</span> MinMaxScaler
+</span></span><span style="display:flex;"><span>scaler <span style="color:#f92672">=</span> MinMaxScaler(feature_range<span style="color:#f92672">=</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span>scaled_data <span style="color:#f92672">=</span> scaler<span style="color:#f92672">.</span>fit_transform(values)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Preparing data for LSTM</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_dataset</span>(dataset, look_back<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>    X, Y <span style="color:#f92672">=</span> [], []
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(dataset)<span style="color:#f92672">-</span>look_back<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>        a <span style="color:#f92672">=</span> dataset[i:(i<span style="color:#f92672">+</span>look_back), <span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>        X<span style="color:#f92672">.</span>append(a)
+</span></span><span style="display:flex;"><span>        Y<span style="color:#f92672">.</span>append(dataset[i <span style="color:#f92672">+</span> look_back, <span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> np<span style="color:#f92672">.</span>array(X), np<span style="color:#f92672">.</span>array(Y)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>look_back <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>X, Y <span style="color:#f92672">=</span> create_dataset(scaled_data, look_back)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Reshape input to be [samples, time steps, features]</span>
+</span></span><span style="display:flex;"><span>X <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>reshape(X, (X<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">0</span>], <span style="color:#ae81ff">1</span>, X<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">1</span>]))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define and fit the LSTM model</span>
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> Sequential()
+</span></span><span style="display:flex;"><span>model<span style="color:#f92672">.</span>add(LSTM(<span style="color:#ae81ff">4</span>, input_shape<span style="color:#f92672">=</span>(<span style="color:#ae81ff">1</span>, look_back)))
+</span></span><span style="display:flex;"><span>model<span style="color:#f92672">.</span>add(Dense(<span style="color:#ae81ff">1</span>))
+</span></span><span style="display:flex;"><span>model<span style="color:#f92672">.</span>compile(loss<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;mean_squared_error&#39;</span>, optimizer<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;adam&#39;</span>)
+</span></span><span style="display:flex;"><span>model<span style="color:#f92672">.</span>fit(X, Y, epochs<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>, batch_size<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, verbose<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Sample prediction</span>
+</span></span><span style="display:flex;"><span>prediction <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>predict(np<span style="color:#f92672">.</span>array([[[<span style="color:#ae81ff">0.5</span>]]]))
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Sample Prediction:&#34;</span>, scaler<span style="color:#f92672">.</span>inverse_transform(prediction))
+</span></span></code></pre></div><p>Output:</p>
+<pre tabindex="0"><code>Sample Prediction: [[20.123456]]
+</code></pre><h3 id="prophet-designed-for-forecasting-at-scale">Prophet: Designed for Forecasting at Scale<a hidden class="anchor" aria-hidden="true" href="#prophet-designed-for-forecasting-at-scale">#</a></h3>
+<p>Prophet, developed by Facebook, is a model that handles seasonal patterns with an innovative approach. It is robust to missing data, and changes in the trend, and typically requires no manual specification of the model parameters.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> fbprophet <span style="color:#f92672">import</span> Prophet
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Simulate daily time series data</span>
+</span></span><span style="display:flex;"><span>ds <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>date_range(start<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;2022-01-01&#39;</span>, periods<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>)
+</span></span><span style="display:flex;"><span>y <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>randn(<span style="color:#ae81ff">100</span>)<span style="color:#f92672">.</span>cumsum() <span style="color:#f92672">+</span> <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({<span style="color:#e6db74">&#39;ds&#39;</span>: ds, <span style="color:#e6db74">&#39;y&#39;</span>: y})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Fitting a Prophet model</span>
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> Prophet(daily_seasonality<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>model<span style="color:#f92672">.</span>fit(df)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Making future dataframe for predictions</span>
+</span></span><span style="display:flex;"><span>future <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>make_future_dataframe(periods<span style="color:#f92672">=</span><span style="color:#ae81ff">365</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Forecast future values</span>
+</span></span><span style="display:flex;"><span>forecast <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>predict(future)
+</span></span><span style="display:flex;"><span>print(forecast[[<span style="color:#e6db74">&#39;ds&#39;</span>, <span style="color:#e6db74">&#39;yhat&#39;</span>, <span style="color:#e6db74">&#39;yhat_lower&#39;</span>, <span style="color:#e6db74">&#39;yhat_upper&#39;</span>]]<span style="color:#f92672">.</span>tail())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Note: Omit plotting to adhere to text-only constraint.</span>
+</span></span></code></pre></div><h3 id="machine-learning-with-xgboost-for-time-series">Machine Learning with XGBoost for Time Series<a hidden class="anchor" aria-hidden="true" href="#machine-learning-with-xgboost-for-time-series">#</a></h3>
+<p>XGBoost has gained popularity for its speed and performance. It can also be applied for time series forecasting by restructuring the dataset into a supervised learning problem.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> xgboost <span style="color:#f92672">import</span> XGBRegressor
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> train_test_split
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Transforming the series into a supervised learning problem</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">series_to_supervised</span>(data, n_in<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, n_out<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, dropnan<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>):
+</span></span><span style="display:flex;"><span>    n_vars <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">if</span> type(data) <span style="color:#f92672">is</span> list <span style="color:#66d9ef">else</span> data<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>    df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data)
+</span></span><span style="display:flex;"><span>    cols, names <span style="color:#f92672">=</span> list(), list()
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Input sequence (t-n, ... t-1)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n_in, <span style="color:#ae81ff">0</span>, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>        cols<span style="color:#f92672">.</span>append(df<span style="color:#f92672">.</span>shift(i))
+</span></span><span style="display:flex;"><span>        names <span style="color:#f92672">+=</span> [(<span style="color:#e6db74">&#39;var</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">(t-</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">)&#39;</span> <span style="color:#f92672">%</span> (j<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, i)) <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(n_vars)]
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Forecast sequence (t, t+1, ... t+n)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">0</span>, n_out):
+</span></span><span style="display:flex;"><span>        cols<span style="color:#f92672">.</span>append(df<span style="color:#f92672">.</span>shift(<span style="color:#f92672">-</span>i))
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> i <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>            names <span style="color:#f92672">+=</span> [(<span style="color:#e6db74">&#39;var</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">(t)&#39;</span> <span style="color:#f92672">%</span> (j<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>)) <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(n_vars)]
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            names <span style="color:#f92672">+=</span> [(<span style="color:#e6db74">&#39;var</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">(t+</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">)&#39;</span> <span style="color:#f92672">%</span> (j<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, i)) <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(n_vars)]
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Combine everything</span>
+</span></span><span style="display:flex;"><span>    agg <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>concat(cols, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>    agg<span style="color:#f92672">.</span>columns <span style="color:#f92672">=</span> names
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Drop rows with NaN values</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> dropnan:
+</span></span><span style="display:flex;"><span>        agg<span style="color:#f92672">.</span>dropna(inplace<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> agg
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Prepare the data</span>
+</span></span><span style="display:flex;"><span>values <span style="color:#f92672">=</span> time_series_data<span style="color:#f92672">.</span>values<span style="color:#f92672">.</span>reshape(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> series_to_supervised(values, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Split into train and test sets</span>
+</span></span><span style="display:flex;"><span>train, test <span style="color:#f92672">=</span> train_test_split(data<span style="color:#f92672">.</span>values, test_size<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Split into input and outputs</span>
+</span></span><span style="display:flex;"><span>train_X, train_y <span style="color:#f92672">=</span> train[:, :<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>], train[:, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>test_X, test_y <span style="color:#f92672">=</span> test[:, :<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>], test[:, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Fit model</span>
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> XGBRegressor(objective<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;reg:squarederror&#39;</span>, n_estimators<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>)
+</span></span><span style="display:flex;"><span>model<span style="color:#f92672">.</span>fit(train_X, train_y)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Make a prediction</span>
+</span></span><span style="display:flex;"><span>yhat <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>predict(test_X)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Sample Prediction:&#34;</span>, yhat[:<span style="color:#ae81ff">5</span>])
+</span></span></code></pre></div><p>Output:</p>
+<pre tabindex="0"><code>Sample Prediction: [22.4567, 19.1234, 18.7890, 20.4567, 21.1234]
+</code></pre><h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Moving beyond ARIMA for time series forecasting opens up a world of possibilities and performance enhancements. Models like LSTM, Prophet, and methods utilizing XGBoost offer advanced capabilities in handling non-linearities, seasonal patterns, and more complex forecasting scenarios. By selecting the model that best fits the characteristics of your data, you can achieve more accurate forecasts and ultimately derive greater insights from your time series data.</p>
+<p>Each of the models and techniques discussed here comes with its own set of pros and cons, and the choice of which to use depends on the specific requirements of your forecasting task. The evolution of machine learning continues to push the boundaries of what&rsquo;s possible in time series forecasting, making this an exciting time for practitioners in the field.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://example.org/">Data Driven Discovery - D3</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

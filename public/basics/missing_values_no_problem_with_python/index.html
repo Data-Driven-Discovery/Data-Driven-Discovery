@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Data Driven Discovery - D3</title>
+<meta name="keywords" content="">
+<meta name="description" content="Missing Values? No Problem with Python Data is becoming the lifeblood of virtually all industries. In the era of big data, the quality of your dataset is crucial to the success of your predictive models. One of the frequent challenges faced by data scientists in preparing their data is dealing with missing values. Missing values are nothing but the absence of data values in a column. To be put simply, when there is no information, it&rsquo;s a missing value.">
+<meta name="author" content="">
+<link rel="canonical" href="http://example.org/basics/Missing_Values_No_Problem_with_Python/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://example.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png">
+<link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="Missing Values? No Problem with Python Data is becoming the lifeblood of virtually all industries. In the era of big data, the quality of your dataset is crucial to the success of your predictive models. One of the frequent challenges faced by data scientists in preparing their data is dealing with missing values. Missing values are nothing but the absence of data values in a column. To be put simply, when there is no information, it&rsquo;s a missing value." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/basics/Missing_Values_No_Problem_with_Python/" /><meta property="article:section" content="basics" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Missing Values? No Problem with Python Data is becoming the lifeblood of virtually all industries. In the era of big data, the quality of your dataset is crucial to the success of your predictive models. One of the frequent challenges faced by data scientists in preparing their data is dealing with missing values. Missing values are nothing but the absence of data values in a column. To be put simply, when there is no information, it&rsquo;s a missing value."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Basics",
+      "item": "http://example.org/basics/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "http://example.org/basics/Missing_Values_No_Problem_with_Python/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "Missing Values? No Problem with Python Data is becoming the lifeblood of virtually all industries. In the era of big data, the quality of your dataset is crucial to the success of your predictive models. One of the frequent challenges faced by data scientists in preparing their data is dealing with missing values. Missing values are nothing but the absence of data values in a column. To be put simply, when there is no information, it\u0026rsquo;s a missing value.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Missing Values? No Problem with Python Data is becoming the lifeblood of virtually all industries. In the era of big data, the quality of your dataset is crucial to the success of your predictive models. One of the frequent challenges faced by data scientists in preparing their data is dealing with missing values. Missing values are nothing but the absence of data values in a column. To be put simply, when there is no information, it’s a missing value. In this article, we will navigate through handling missing values in python using various techniques and libraries including Pandas, NumPy, and scikit-learn.\nIntroduction A dataset might contain missing values for a multitude of reasons including human errors during data collection, interruptions in the data flow, or sometimes certain features are only available for a portion of the population. Whatever the reason might be, missing values can lead to biased or incorrect results when not handled correctly.\nIn python, there are various ways to check for and handle missing values. Let’s start with a simple example:\nimport pandas as pd import numpy as np # creating a simple dataframe with missing values data = {'A':[1, 2, np.nan], 'B':[5, np.nan, np.nan], 'C':[1, 2, 3]} df = pd.DataFrame(data) print(df) Output:\nA B C 0 1.0 5.0 1 1 2.0 NaN 2 2 NaN NaN 3 Handling Missing Values In the above output NaN, stands for Not a Number, and it is the missing value indicator in python. Now, let’s see how we can handle these missing values.\nDrop missing values The most simple solution to the missing values is to drop the rows or the entire column. Pandas library provides dropna() for that purpose.\ndf.dropna() Output:\nA B C 0 1.0 5.0 1 In the above case, dropna() drops all the rows with any column having null/no value.\nFilling the missing values Another regular method of dealing with missing values is imputation - replacing missing values with substituted values. With the help of pandas fillna(), one can replace NaN values with the value they want.\ndf.fillna(value='FILL VALUE') Output:\nA B C 0 1 5 1 1 2 FILL VALUE 2 2 FILL VALUE FILL VALUE 3 Also, we can fill missing values in a specified column with its mean value.\ndf['A'].fillna(value=df['A'].mean()) Output:\n0 1.0 1 2.0 2 1.5 Name: A, dtype: float64 Using Scikit-learn Scikit-learn also provides various ways to impute missing values. SimpleImputer is a 2-step transformation i.e., first it fits to the data and then it transforms. It provides basic strategies for imputing missing values.\nfrom sklearn.impute import SimpleImputer imp = SimpleImputer(missing_values=np.nan, strategy='mean') imp.fit([[1, 2], [np.nan, 3], [7, 6]]) SimpleImputer() X = [[np.nan, 2], [6, np.nan], [7, 6]] print(imp.transform(X)) Output:\narray([[4. , 2. ], [6. , 3.66666667], [7. , 6. ]]) Conclusion Although dropping or filling missing values can be beneficial for preliminary data analysis, it is merely a simplistic approach and might not be the best option for handling missing values depending on the complexity of the dataset and the ML model. Further understanding of the underlying data is necessary in most cases. An understanding of the reasons behind the missing data may provide insight into how it can best be treated: for example, data may be missing due to equipment malfunction, in which case it may be appropriate to interpolate between data points, or perhaps to use the mean or median value.\nRemember, the ultimate goal is to create a predictive model that generalizes well to new unseen data. Therefore, it’s not only about filling in missing values, but doing it in a manner that reflects the intricacies within your data.\nIn conclusion, the handling of missing values is one of the essential steps of the preprocessing data. Python offers an array of techniques to deal with missing data from Listwise or Pairwise deletion, to imputing with predictive models. The technique you choose should be primarily based on the nature of your data and the missingness.\n",
+  "wordCount" : "656",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://example.org/basics/Missing_Values_No_Problem_with_Python/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data Driven Discovery - D3",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://example.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://example.org/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="missing-values-no-problem-with-python">Missing Values? No Problem with Python<a hidden class="anchor" aria-hidden="true" href="#missing-values-no-problem-with-python">#</a></h1>
+<p>Data is becoming the lifeblood of virtually all industries. In the era of big data, the quality of your dataset is crucial to the success of your predictive models. One of the frequent challenges faced by data scientists in preparing their data is dealing with missing values. Missing values are nothing but the absence of data values in a column. To be put simply, when there is no information, it&rsquo;s a missing value. In this article, we will navigate through handling missing values in python using various techniques and libraries including Pandas, NumPy, and scikit-learn.</p>
+<h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>A dataset might contain missing values for a multitude of reasons including human errors during data collection, interruptions in the data flow, or sometimes certain features are only available for a portion of the population. Whatever the reason might be, missing values can lead to biased or incorrect results when not handled correctly.</p>
+<p>In python, there are various ways to check for and handle missing values. Let&rsquo;s start with a simple example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># creating a simple dataframe with missing values</span>
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;A&#39;</span>:[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, np<span style="color:#f92672">.</span>nan], <span style="color:#e6db74">&#39;B&#39;</span>:[<span style="color:#ae81ff">5</span>, np<span style="color:#f92672">.</span>nan, np<span style="color:#f92672">.</span>nan], <span style="color:#e6db74">&#39;C&#39;</span>:[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]}
+</span></span><span style="display:flex;"><span>df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(df)
+</span></span></code></pre></div><p>Output:</p>
+<pre tabindex="0"><code>     A    B  C
+0  1.0  5.0  1
+1  2.0  NaN  2
+2  NaN  NaN  3
+</code></pre><h2 id="handling-missing-values">Handling Missing Values<a hidden class="anchor" aria-hidden="true" href="#handling-missing-values">#</a></h2>
+<p>In the above output NaN, stands for Not a Number, and it is the missing value indicator in python. Now, let&rsquo;s see how we can handle these missing values.</p>
+<h3 id="drop-missing-values">Drop missing values<a hidden class="anchor" aria-hidden="true" href="#drop-missing-values">#</a></h3>
+<p>The most simple solution to the missing values is to drop the rows or the entire column. <strong>Pandas</strong> library provides <strong>dropna()</strong> for that purpose.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df<span style="color:#f92672">.</span>dropna()
+</span></span></code></pre></div><p>Output:</p>
+<pre tabindex="0"><code>     A    B  C
+0  1.0  5.0  1
+</code></pre><p>In the above case, <strong>dropna()</strong> drops all the rows with any column having null/no value.</p>
+<h3 id="filling-the-missing-values">Filling the missing values<a hidden class="anchor" aria-hidden="true" href="#filling-the-missing-values">#</a></h3>
+<p>Another regular method of dealing with missing values is imputation - replacing missing values with substituted values. With the help of pandas <strong>fillna()</strong>, one can replace NaN values with the value they want.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df<span style="color:#f92672">.</span>fillna(value<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;FILL VALUE&#39;</span>)
+</span></span></code></pre></div><p>Output:</p>
+<pre tabindex="0"><code>           A          B  C
+0          1          5  1
+1          2  FILL VALUE  2
+2  FILL VALUE  FILL VALUE  3
+</code></pre><p>Also, we can fill missing values in a specified column with its mean value.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>df[<span style="color:#e6db74">&#39;A&#39;</span>]<span style="color:#f92672">.</span>fillna(value<span style="color:#f92672">=</span>df[<span style="color:#e6db74">&#39;A&#39;</span>]<span style="color:#f92672">.</span>mean())
+</span></span></code></pre></div><p>Output:</p>
+<pre tabindex="0"><code>0    1.0
+1    2.0
+2    1.5
+Name: A, dtype: float64
+</code></pre><h3 id="using-scikit-learn">Using Scikit-learn<a hidden class="anchor" aria-hidden="true" href="#using-scikit-learn">#</a></h3>
+<p>Scikit-learn also provides various ways to impute missing values. <code>SimpleImputer</code> is a 2-step transformation i.e., first it fits to the data and then it transforms. It provides basic strategies for imputing missing values.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.impute <span style="color:#f92672">import</span> SimpleImputer
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>imp <span style="color:#f92672">=</span> SimpleImputer(missing_values<span style="color:#f92672">=</span>np<span style="color:#f92672">.</span>nan, strategy<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;mean&#39;</span>)
+</span></span><span style="display:flex;"><span>imp<span style="color:#f92672">.</span>fit([[<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>], [np<span style="color:#f92672">.</span>nan, <span style="color:#ae81ff">3</span>], [<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">6</span>]])
+</span></span><span style="display:flex;"><span>SimpleImputer()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>X <span style="color:#f92672">=</span> [[np<span style="color:#f92672">.</span>nan, <span style="color:#ae81ff">2</span>], [<span style="color:#ae81ff">6</span>, np<span style="color:#f92672">.</span>nan], [<span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">6</span>]]
+</span></span><span style="display:flex;"><span>print(imp<span style="color:#f92672">.</span>transform(X))
+</span></span></code></pre></div><p>Output:</p>
+<pre tabindex="0"><code>array([[4. , 2. ],
+       [6. , 3.66666667],
+       [7. , 6. ]])
+</code></pre><h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Although dropping or filling missing values can be beneficial for preliminary data analysis, it is merely a simplistic approach and might not be the best option for handling missing values depending on the complexity of the dataset and the ML model. Further understanding of the underlying data is necessary in most cases. An understanding of the reasons behind the missing data may provide insight into how it can best be treated: for example, data may be missing due to equipment malfunction, in which case it may be appropriate to interpolate between data points, or perhaps to use the mean or median value.</p>
+<p>Remember, the ultimate goal is to create a predictive model that generalizes well to new unseen data. Therefore, it&rsquo;s not only about filling in missing values, but doing it in a manner that reflects the intricacies within your data.</p>
+<p>In conclusion, the handling of missing values is one of the essential steps of the preprocessing data. Python offers an array of techniques to deal with missing data from Listwise or Pairwise deletion, to imputing with predictive models. The technique you choose should be primarily based on the nature of your data and the missingness.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://example.org/">Data Driven Discovery - D3</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

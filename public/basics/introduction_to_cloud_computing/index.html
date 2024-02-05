@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Data Driven Discovery - D3</title>
+<meta name="keywords" content="">
+<meta name="description" content="Introduction to Cloud Computing This article aims to give you a clear understanding about cloud computing and its importance in the world of Data Science, Machine Learning, and MLOps. As data professionals, we&rsquo;re surrounded by terms like &lsquo;software as a service&rsquo; and &lsquo;infrastructure as a service&rsquo;: rooted in cloud computing. This article is a highly-readable primer: introducing you to these technologies, why they&rsquo;re important, and how they reshape how we work with data.">
+<meta name="author" content="">
+<link rel="canonical" href="http://example.org/basics/Introduction_to_Cloud_Computing/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://example.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png">
+<link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="Introduction to Cloud Computing This article aims to give you a clear understanding about cloud computing and its importance in the world of Data Science, Machine Learning, and MLOps. As data professionals, we&rsquo;re surrounded by terms like &lsquo;software as a service&rsquo; and &lsquo;infrastructure as a service&rsquo;: rooted in cloud computing. This article is a highly-readable primer: introducing you to these technologies, why they&rsquo;re important, and how they reshape how we work with data." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/basics/Introduction_to_Cloud_Computing/" /><meta property="article:section" content="basics" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Introduction to Cloud Computing This article aims to give you a clear understanding about cloud computing and its importance in the world of Data Science, Machine Learning, and MLOps. As data professionals, we&rsquo;re surrounded by terms like &lsquo;software as a service&rsquo; and &lsquo;infrastructure as a service&rsquo;: rooted in cloud computing. This article is a highly-readable primer: introducing you to these technologies, why they&rsquo;re important, and how they reshape how we work with data."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Basics",
+      "item": "http://example.org/basics/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "http://example.org/basics/Introduction_to_Cloud_Computing/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "Introduction to Cloud Computing This article aims to give you a clear understanding about cloud computing and its importance in the world of Data Science, Machine Learning, and MLOps. As data professionals, we\u0026rsquo;re surrounded by terms like \u0026lsquo;software as a service\u0026rsquo; and \u0026lsquo;infrastructure as a service\u0026rsquo;: rooted in cloud computing. This article is a highly-readable primer: introducing you to these technologies, why they\u0026rsquo;re important, and how they reshape how we work with data.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Introduction to Cloud Computing This article aims to give you a clear understanding about cloud computing and its importance in the world of Data Science, Machine Learning, and MLOps. As data professionals, we’re surrounded by terms like ‘software as a service’ and ‘infrastructure as a service’: rooted in cloud computing. This article is a highly-readable primer: introducing you to these technologies, why they’re important, and how they reshape how we work with data.\nWhat is Cloud Computing? Cloud computing is ’the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet (“the cloud”) to offer faster innovation, flexible resources, and economies of scale.’Microsoft.\nCloud providers like Google Cloud, Amazon Web Services (AWS), and Microsoft Azure have revolutionized how companies operate, especially within the realm of data science and engineering.\n# Accessing AWS cloud service using AWS CLI $ aws s3 ls (Output will list all the S3 buckets in your AWS account)\nIn other words, cloud computing enables us to access vast computational resources on demand, without local storage or hardware limitations. This approach can streamline your operations and increase efficiency, scaling as needed with your project demands.\nWhy is Cloud Computing Important in Data Science and Machine Learning? Data Science projects often deal with vast amounts of data require substantial computational resources. Similarly, training machine learning models can be resource-intensive. Cloud computing allows us to bypass these potential roadblocks, offering scalable resources that adjust to our project’s needs.\nAdditionally, cloud platforms often offer specific services tailored for data science and machine learning tasks. For example, Google Cloud’s BigQuery for big data analytics or AWS’s SageMaker for building, training and deploying machine learning models.\n# Assume you have pandas dataframe 'df' # You can save this dataframe into BigQuery Table from google.cloud import bigquery client = bigquery.Client() table_id = 'your-project.your_dataset.your_table' df.to_gbq(table_id, project_id='your-project', if_exists='replace') MLOps and Cloud Computing MLOps is an ML engineering culture and practice that aims at unifying ML system development and system operations. In simpler terms, MLOps combines the development and IT operations within the machine learning lifecycle. Cloud computing plays a crucial role in operationalizing machine learning models.\nCloud providers do not only offer computational resources, many provide a full suite of MLOps tools like data storage, data versioning, model training, and deployment resources. As a result, organizations avoid the overhead of managing their model lifecycle, they scale models as the demands grow and costs reduce when the demands are less.\n# For instance, to use AWS Sagemaker, you first install it using pip $ pip install sagemaker # You can then import it in your Python scripts import sagemaker # You can then access features for machine learning model building, training, and deployment. Cost of Cloud Computing While cloud computing offers scalability and flexibility, it operates on a pay-as-you-go pricing structure. While resources are freed when not in use, poorly managed resources can quickly become expensive.\nSuch costs are vastly outweighed by the advantages and, with careful resource management, cloud computing is typically more cost-effective than on-premise solutions.\nConclusion In this article, we have explored the concept of cloud computing, its importance to data science and machine learning, and how it’s at the heart of operationalizing ML models. Understanding and leveraging cloud computing is a necessity for all data professionals.\nIf you are in the world of Data Science, Data Engineering, MLOps, cloud computing should be on your list of skills to master: offering on-demand resources, flexibility, and an array of tools designed for tasks like big data analytics and machine learning.\nINSERT IMAGE HERE\n",
+  "wordCount" : "593",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://example.org/basics/Introduction_to_Cloud_Computing/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data Driven Discovery - D3",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://example.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://example.org/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="introduction-to-cloud-computing">Introduction to Cloud Computing<a hidden class="anchor" aria-hidden="true" href="#introduction-to-cloud-computing">#</a></h1>
+<p>This article aims to give you a clear understanding about cloud computing and its importance in the world of Data Science, Machine Learning, and MLOps. As data professionals, we&rsquo;re surrounded by terms like &lsquo;software as a service&rsquo; and &lsquo;infrastructure as a service&rsquo;: rooted in cloud computing. This article is a highly-readable primer: introducing you to these technologies, why they&rsquo;re important, and how they reshape how we work with data.</p>
+<h2 id="what-is-cloud-computing">What is Cloud Computing?<a hidden class="anchor" aria-hidden="true" href="#what-is-cloud-computing">#</a></h2>
+<p>Cloud computing is &rsquo;the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet (“the cloud”) to offer faster innovation, flexible resources, and economies of scale.&rsquo;<a href="https://azure.microsoft.com/en-us/overview/what-is-cloud-computing/%5D">Microsoft</a>.</p>
+<p>Cloud providers like Google Cloud, Amazon Web Services (AWS), and Microsoft Azure have revolutionized how companies operate, especially within the realm of data science and engineering.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Accessing AWS cloud service using AWS CLI</span>
+</span></span><span style="display:flex;"><span>$ aws s3 ls
+</span></span></code></pre></div><p>(Output will list all the S3 buckets in your AWS account)</p>
+<p>In other words, cloud computing enables us to access vast computational resources on demand, without local storage or hardware limitations. This approach can streamline your operations and increase efficiency, scaling as needed with your project demands.</p>
+<h2 id="why-is-cloud-computing-important-in-data-science-and-machine-learning">Why is Cloud Computing Important in Data Science and Machine Learning?<a hidden class="anchor" aria-hidden="true" href="#why-is-cloud-computing-important-in-data-science-and-machine-learning">#</a></h2>
+<p>Data Science projects often deal with vast amounts of data require substantial computational resources. Similarly, training machine learning models can be resource-intensive. Cloud computing allows us to bypass these potential roadblocks, offering scalable resources that adjust to our project&rsquo;s needs.</p>
+<p>Additionally, cloud platforms often offer specific services tailored for data science and machine learning tasks. For example, Google Cloud&rsquo;s BigQuery for big data analytics or AWS&rsquo;s SageMaker for building, training and deploying machine learning models.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Assume you have pandas dataframe &#39;df&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># You can save this dataframe into BigQuery Table</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> google.cloud <span style="color:#f92672">import</span> bigquery
+</span></span><span style="display:flex;"><span>client <span style="color:#f92672">=</span> bigquery<span style="color:#f92672">.</span>Client()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>table_id <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;your-project.your_dataset.your_table&#39;</span>
+</span></span><span style="display:flex;"><span>df<span style="color:#f92672">.</span>to_gbq(table_id, project_id<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;your-project&#39;</span>, if_exists<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;replace&#39;</span>)
+</span></span></code></pre></div><h2 id="mlops-and-cloud-computing">MLOps and Cloud Computing<a hidden class="anchor" aria-hidden="true" href="#mlops-and-cloud-computing">#</a></h2>
+<p><a href="https://cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning">MLOps</a> is an ML engineering culture and practice that aims at unifying ML system development and system operations. In simpler terms, MLOps combines the development and IT operations within the machine learning lifecycle. Cloud computing plays a crucial role in operationalizing machine learning models.</p>
+<p>Cloud providers do not only offer computational resources, many provide a full suite of MLOps tools like data storage, data versioning, model training, and deployment resources. As a result, organizations avoid the overhead of managing their model lifecycle, they scale models as the demands grow and costs reduce when the demands are less.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># For instance, to use AWS Sagemaker, you first install it using pip</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$ pip install sagemaker
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># You can then import it in your Python scripts</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>import sagemaker
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># You can then access features for machine learning model building, training, and deployment.</span>
+</span></span></code></pre></div><h2 id="cost-of-cloud-computing">Cost of Cloud Computing<a hidden class="anchor" aria-hidden="true" href="#cost-of-cloud-computing">#</a></h2>
+<p>While cloud computing offers scalability and flexibility, it operates on a pay-as-you-go pricing structure. While resources are freed when not in use, poorly managed resources can quickly become expensive.</p>
+<p>Such costs are vastly outweighed by the advantages and, with careful resource management, cloud computing is typically more cost-effective than on-premise solutions.</p>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>In this article, we have explored the concept of cloud computing, its importance to data science and machine learning, and how it’s at the heart of operationalizing ML models. Understanding and leveraging cloud computing is a necessity for all data professionals.</p>
+<p>If you are in the world of Data Science, Data Engineering, MLOps, cloud computing should be on your list of skills to master: offering on-demand resources, flexibility, and an array of tools designed for tasks like big data analytics and machine learning.</p>
+<p><a href="%60%60%60./image.png%60%60%60">INSERT IMAGE HERE</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://example.org/">Data Driven Discovery - D3</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

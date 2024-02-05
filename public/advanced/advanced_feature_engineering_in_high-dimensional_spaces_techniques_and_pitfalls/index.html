@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Data Driven Discovery - D3</title>
+<meta name="keywords" content="">
+<meta name="description" content="Advanced Feature Engineering in High-Dimensional Spaces: Techniques and Pitfalls In the evolving landscape of machine learning and data science, feature engineering remains a cornerstone for building robust and predictive models. However, as we venture into the realm of high-dimensional spaces, the complexity of feature engineering magnifies. This article aims to demystify advanced feature engineering techniques tailored for high-dimensional data, while also warning against common pitfalls. Whether you&rsquo;re a beginner eager to leap forward or an advanced practitioner refining your craft, these insights will elevate your data processing game.">
+<meta name="author" content="">
+<link rel="canonical" href="http://example.org/advanced/Advanced_Feature_Engineering_in_High-Dimensional_Spaces_Techniques_and_Pitfalls/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://example.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png">
+<link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="Advanced Feature Engineering in High-Dimensional Spaces: Techniques and Pitfalls In the evolving landscape of machine learning and data science, feature engineering remains a cornerstone for building robust and predictive models. However, as we venture into the realm of high-dimensional spaces, the complexity of feature engineering magnifies. This article aims to demystify advanced feature engineering techniques tailored for high-dimensional data, while also warning against common pitfalls. Whether you&rsquo;re a beginner eager to leap forward or an advanced practitioner refining your craft, these insights will elevate your data processing game." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/advanced/Advanced_Feature_Engineering_in_High-Dimensional_Spaces_Techniques_and_Pitfalls/" /><meta property="article:section" content="advanced" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Advanced Feature Engineering in High-Dimensional Spaces: Techniques and Pitfalls In the evolving landscape of machine learning and data science, feature engineering remains a cornerstone for building robust and predictive models. However, as we venture into the realm of high-dimensional spaces, the complexity of feature engineering magnifies. This article aims to demystify advanced feature engineering techniques tailored for high-dimensional data, while also warning against common pitfalls. Whether you&rsquo;re a beginner eager to leap forward or an advanced practitioner refining your craft, these insights will elevate your data processing game."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Advanceds",
+      "item": "http://example.org/advanced/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "http://example.org/advanced/Advanced_Feature_Engineering_in_High-Dimensional_Spaces_Techniques_and_Pitfalls/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "Advanced Feature Engineering in High-Dimensional Spaces: Techniques and Pitfalls In the evolving landscape of machine learning and data science, feature engineering remains a cornerstone for building robust and predictive models. However, as we venture into the realm of high-dimensional spaces, the complexity of feature engineering magnifies. This article aims to demystify advanced feature engineering techniques tailored for high-dimensional data, while also warning against common pitfalls. Whether you\u0026rsquo;re a beginner eager to leap forward or an advanced practitioner refining your craft, these insights will elevate your data processing game.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Advanced Feature Engineering in High-Dimensional Spaces: Techniques and Pitfalls In the evolving landscape of machine learning and data science, feature engineering remains a cornerstone for building robust and predictive models. However, as we venture into the realm of high-dimensional spaces, the complexity of feature engineering magnifies. This article aims to demystify advanced feature engineering techniques tailored for high-dimensional data, while also warning against common pitfalls. Whether you’re a beginner eager to leap forward or an advanced practitioner refining your craft, these insights will elevate your data processing game.\nIntroduction High-dimensional spaces, often referred to as the “curse of dimensionality,” present unique challenges in feature engineering. The increase in dimensions can lead to overfitting, computational inefficiency, and a daunting search for relevant features among a sea of possibilities. Yet, navigating this complexity is essential for applications like image processing, natural language processing (NLP), and genomic data analysis. This guide will introduce you to cutting-edge techniques for feature engineering in these complex spaces and offer practical advice on avoiding common mistakes.\nMain Body Dimensionality Reduction: A Starting Point Dimensionality reduction is often your first defense against the curse of dimensionality. Techniques like Principal Component Analysis (PCA) and t-Distributed Stochastic Neighbor Embedding (t-SNE) can compress information into fewer dimensions, retaining essential features while reducing noise.\nPCA in Action from sklearn.decomposition import PCA import numpy as np # Generate mock high-dimensional data np.random.seed(42) high_dim_data = np.random.rand(100, 50) # 100 samples, 50 features # Apply PCA to reduce to 10 dimensions pca = PCA(n_components=10) reduced_data = pca.fit_transform(high_dim_data) print(reduced_data.shape) Output:\n(100, 10) This snippet demonstrates how PCA can compress high-dimensional data into a more manageable form, providing a powerful starting point for further feature engineering.\nFeature Selection: The Art of Choosing Wisely Not all features are created equal, especially in high dimensions. Techniques like mutual information, wrapper methods, and embedded methods help identify the most informative features, reducing dimensionality while preserving model accuracy.\nFeature Selection Example Using Mutual Information from sklearn.feature_selection import SelectKBest, mutual_info_regression from sklearn.datasets import make_regression # Generate synthetic regression data X, y = make_regression(n_samples=100, n_features=50, n_informative=10, random_state=42) # Select the top 10 informative features selector = SelectKBest(mutual_info_regression, k=10) X_selected = selector.fit_transform(X, y) print(X_selected.shape) Output:\n(100, 10) This example showcases using mutual information to hone in on the top 10 features that contribute most to predicting the target variable.\nEncoding and Transformation: Unlocking Non-Linear Relationships In high-dimensional spaces, linear relationships between features and the target may not suffice. Techniques like kernel transformations and autoencoders can unveil intricate patterns, allowing models to capture deeper insights.\nKernel PCA for Non-Linear Dimensionality Reduction from sklearn.decomposition import KernelPCA # Apply Kernel PCA with the Radial Basis Function (RBF) kernel kpca = KernelPCA(n_components=10, kernel='rbf') X_kpca = kpca.fit_transform(high_dim_data) print(X_kpca.shape) Output:\n(100, 10) This example illustrates how Kernel PCA can uncover non-linear relationships, offering a nuanced lens to view your data.\nPitfalls to Avoid Feature engineering in high-dimensional spaces is fraught with risks. Overfitting looms large when too many features vie for attention, while overly aggressive dimensionality reduction can strip away meaningful information. Here’s how to strike a balance:\nBeware of Overfitting: Regularization techniques and cross-validation are your allies in preventing models from memorizing the noise. Mind the Information Loss: Always evaluate the impact of dimensionality reduction on model performance. It’s a balancing act between simplicity and accuracy. Computational Cost: Some techniques are computationally intense. Opt for incremental approaches and scalable algorithms when dealing with very high-dimensional data. Conclusion Mastering feature engineering in high-dimensional spaces hinges on a deep understanding of both the tools at your disposal and the potential pitfalls. By judiciously applying dimensionality reduction, feature selection, and transformation techniques, you can unearth the salient features hidden within complex datasets. However, caution is paramount—to avoid overfitting and information loss, balance sophistication with simplicity. Embrace these advanced strategies with a critical eye, and elevate your machine learning models to new heights of accuracy and efficiency.\n",
+  "wordCount" : "644",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://example.org/advanced/Advanced_Feature_Engineering_in_High-Dimensional_Spaces_Techniques_and_Pitfalls/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data Driven Discovery - D3",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://example.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://example.org/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="advanced-feature-engineering-in-high-dimensional-spaces-techniques-and-pitfalls">Advanced Feature Engineering in High-Dimensional Spaces: Techniques and Pitfalls<a hidden class="anchor" aria-hidden="true" href="#advanced-feature-engineering-in-high-dimensional-spaces-techniques-and-pitfalls">#</a></h1>
+<p>In the evolving landscape of machine learning and data science, feature engineering remains a cornerstone for building robust and predictive models. However, as we venture into the realm of high-dimensional spaces, the complexity of feature engineering magnifies. This article aims to demystify advanced feature engineering techniques tailored for high-dimensional data, while also warning against common pitfalls. Whether you&rsquo;re a beginner eager to leap forward or an advanced practitioner refining your craft, these insights will elevate your data processing game.</p>
+<h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>High-dimensional spaces, often referred to as the &ldquo;curse of dimensionality,&rdquo; present unique challenges in feature engineering. The increase in dimensions can lead to overfitting, computational inefficiency, and a daunting search for relevant features among a sea of possibilities. Yet, navigating this complexity is essential for applications like image processing, natural language processing (NLP), and genomic data analysis. This guide will introduce you to cutting-edge techniques for feature engineering in these complex spaces and offer practical advice on avoiding common mistakes.</p>
+<h2 id="main-body">Main Body<a hidden class="anchor" aria-hidden="true" href="#main-body">#</a></h2>
+<h3 id="dimensionality-reduction-a-starting-point">Dimensionality Reduction: A Starting Point<a hidden class="anchor" aria-hidden="true" href="#dimensionality-reduction-a-starting-point">#</a></h3>
+<p>Dimensionality reduction is often your first defense against the curse of dimensionality. Techniques like Principal Component Analysis (PCA) and t-Distributed Stochastic Neighbor Embedding (t-SNE) can compress information into fewer dimensions, retaining essential features while reducing noise.</p>
+<h4 id="pca-in-action">PCA in Action<a hidden class="anchor" aria-hidden="true" href="#pca-in-action">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.decomposition <span style="color:#f92672">import</span> PCA
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Generate mock high-dimensional data</span>
+</span></span><span style="display:flex;"><span>np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>seed(<span style="color:#ae81ff">42</span>)
+</span></span><span style="display:flex;"><span>high_dim_data <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>random<span style="color:#f92672">.</span>rand(<span style="color:#ae81ff">100</span>, <span style="color:#ae81ff">50</span>) <span style="color:#75715e"># 100 samples, 50 features</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Apply PCA to reduce to 10 dimensions</span>
+</span></span><span style="display:flex;"><span>pca <span style="color:#f92672">=</span> PCA(n_components<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span>reduced_data <span style="color:#f92672">=</span> pca<span style="color:#f92672">.</span>fit_transform(high_dim_data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(reduced_data<span style="color:#f92672">.</span>shape)
+</span></span></code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>(100, 10)
+</span></span></code></pre></div><p>This snippet demonstrates how PCA can compress high-dimensional data into a more manageable form, providing a powerful starting point for further feature engineering.</p>
+<h3 id="feature-selection-the-art-of-choosing-wisely">Feature Selection: The Art of Choosing Wisely<a hidden class="anchor" aria-hidden="true" href="#feature-selection-the-art-of-choosing-wisely">#</a></h3>
+<p>Not all features are created equal, especially in high dimensions. Techniques like mutual information, wrapper methods, and embedded methods help identify the most informative features, reducing dimensionality while preserving model accuracy.</p>
+<h4 id="feature-selection-example-using-mutual-information">Feature Selection Example Using Mutual Information<a hidden class="anchor" aria-hidden="true" href="#feature-selection-example-using-mutual-information">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.feature_selection <span style="color:#f92672">import</span> SelectKBest, mutual_info_regression
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.datasets <span style="color:#f92672">import</span> make_regression
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Generate synthetic regression data</span>
+</span></span><span style="display:flex;"><span>X, y <span style="color:#f92672">=</span> make_regression(n_samples<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>, n_features<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span>, n_informative<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Select the top 10 informative features</span>
+</span></span><span style="display:flex;"><span>selector <span style="color:#f92672">=</span> SelectKBest(mutual_info_regression, k<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)
+</span></span><span style="display:flex;"><span>X_selected <span style="color:#f92672">=</span> selector<span style="color:#f92672">.</span>fit_transform(X, y)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(X_selected<span style="color:#f92672">.</span>shape)
+</span></span></code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>(100, 10)
+</span></span></code></pre></div><p>This example showcases using mutual information to hone in on the top 10 features that contribute most to predicting the target variable.</p>
+<h3 id="encoding-and-transformation-unlocking-non-linear-relationships">Encoding and Transformation: Unlocking Non-Linear Relationships<a hidden class="anchor" aria-hidden="true" href="#encoding-and-transformation-unlocking-non-linear-relationships">#</a></h3>
+<p>In high-dimensional spaces, linear relationships between features and the target may not suffice. Techniques like kernel transformations and autoencoders can unveil intricate patterns, allowing models to capture deeper insights.</p>
+<h4 id="kernel-pca-for-non-linear-dimensionality-reduction">Kernel PCA for Non-Linear Dimensionality Reduction<a hidden class="anchor" aria-hidden="true" href="#kernel-pca-for-non-linear-dimensionality-reduction">#</a></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.decomposition <span style="color:#f92672">import</span> KernelPCA
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Apply Kernel PCA with the Radial Basis Function (RBF) kernel</span>
+</span></span><span style="display:flex;"><span>kpca <span style="color:#f92672">=</span> KernelPCA(n_components<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>, kernel<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;rbf&#39;</span>)
+</span></span><span style="display:flex;"><span>X_kpca <span style="color:#f92672">=</span> kpca<span style="color:#f92672">.</span>fit_transform(high_dim_data)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(X_kpca<span style="color:#f92672">.</span>shape)
+</span></span></code></pre></div><p><strong>Output:</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plaintext" data-lang="plaintext"><span style="display:flex;"><span>(100, 10)
+</span></span></code></pre></div><p>This example illustrates how Kernel PCA can uncover non-linear relationships, offering a nuanced lens to view your data.</p>
+<h3 id="pitfalls-to-avoid">Pitfalls to Avoid<a hidden class="anchor" aria-hidden="true" href="#pitfalls-to-avoid">#</a></h3>
+<p>Feature engineering in high-dimensional spaces is fraught with risks. Overfitting looms large when too many features vie for attention, while overly aggressive dimensionality reduction can strip away meaningful information. Here&rsquo;s how to strike a balance:</p>
+<ul>
+<li><strong>Beware of Overfitting:</strong> Regularization techniques and cross-validation are your allies in preventing models from memorizing the noise.</li>
+<li><strong>Mind the Information Loss:</strong> Always evaluate the impact of dimensionality reduction on model performance. It&rsquo;s a balancing act between simplicity and accuracy.</li>
+<li><strong>Computational Cost:</strong> Some techniques are computationally intense. Opt for incremental approaches and scalable algorithms when dealing with very high-dimensional data.</li>
+</ul>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Mastering feature engineering in high-dimensional spaces hinges on a deep understanding of both the tools at your disposal and the potential pitfalls. By judiciously applying dimensionality reduction, feature selection, and transformation techniques, you can unearth the salient features hidden within complex datasets. However, caution is paramount—to avoid overfitting and information loss, balance sophistication with simplicity. Embrace these advanced strategies with a critical eye, and elevate your machine learning models to new heights of accuracy and efficiency.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://example.org/">Data Driven Discovery - D3</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

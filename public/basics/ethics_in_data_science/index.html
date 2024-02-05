@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Data Driven Discovery - D3</title>
+<meta name="keywords" content="">
+<meta name="description" content="Ethics in Data Science With the proliferation of big data, the field of data science has been thrust into the spotlight. This increase in data availability and computational power has enabled businesses and organizations worldwide to leverage data to enhance operational efficiency, drive innovation and even pioneer new technological domains. Yet, as we propel further into this data-driven era, we mustn&rsquo;t disregard the ethical implications.
+In this article, we examine the ethics surrounding the practice of data science, why they&rsquo;re important, how they impact our day-to-day lives and how we can address them.">
+<meta name="author" content="">
+<link rel="canonical" href="http://example.org/basics/Ethics_in_Data_Science/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://example.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png">
+<link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="Ethics in Data Science With the proliferation of big data, the field of data science has been thrust into the spotlight. This increase in data availability and computational power has enabled businesses and organizations worldwide to leverage data to enhance operational efficiency, drive innovation and even pioneer new technological domains. Yet, as we propel further into this data-driven era, we mustn&rsquo;t disregard the ethical implications.
+In this article, we examine the ethics surrounding the practice of data science, why they&rsquo;re important, how they impact our day-to-day lives and how we can address them." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/basics/Ethics_in_Data_Science/" /><meta property="article:section" content="basics" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Ethics in Data Science With the proliferation of big data, the field of data science has been thrust into the spotlight. This increase in data availability and computational power has enabled businesses and organizations worldwide to leverage data to enhance operational efficiency, drive innovation and even pioneer new technological domains. Yet, as we propel further into this data-driven era, we mustn&rsquo;t disregard the ethical implications.
+In this article, we examine the ethics surrounding the practice of data science, why they&rsquo;re important, how they impact our day-to-day lives and how we can address them."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Basics",
+      "item": "http://example.org/basics/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "http://example.org/basics/Ethics_in_Data_Science/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "Ethics in Data Science With the proliferation of big data, the field of data science has been thrust into the spotlight. This increase in data availability and computational power has enabled businesses and organizations worldwide to leverage data to enhance operational efficiency, drive innovation and even pioneer new technological domains. Yet, as we propel further into this data-driven era, we mustn\u0026rsquo;t disregard the ethical implications.\nIn this article, we examine the ethics surrounding the practice of data science, why they\u0026rsquo;re important, how they impact our day-to-day lives and how we can address them.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Ethics in Data Science With the proliferation of big data, the field of data science has been thrust into the spotlight. This increase in data availability and computational power has enabled businesses and organizations worldwide to leverage data to enhance operational efficiency, drive innovation and even pioneer new technological domains. Yet, as we propel further into this data-driven era, we mustn’t disregard the ethical implications.\nIn this article, we examine the ethics surrounding the practice of data science, why they’re important, how they impact our day-to-day lives and how we can address them.\nIntroduction to Ethics in Data Science Ethical considerations in data science are paramount and should persist at all stages - from data acquisition to the deployment of data insights. They’re not just normative ethics where we define what’s right or wrong. They even encompass professional ethics that guide us in our quest to build models that are both fair and unbiased.\nThe ethical concerns can be divided into various categories such as data privacy, consent, bias, fairness, transparency and accountability.\nUnderstanding the Ethical Implications in Data Science Let’s consider a few examples to illustrate the ethical issues that often emerge in Data Science.\nData Privacy In today’s digital age, data privacy is becoming increasingly crucial. Yet, countless examples of data breaches remind us of the importance of data privacy.\nOne way to address this is by anonymizing sensitive data using Python’s Faker library.\nfrom faker import Faker fake = Faker() # Assume we have a user's real name user_real_name = 'John Doe' # Generate a fake name to preserve privacy user_fake_name = fake.name() print(user_fake_name) If you run this code, it could output something like:\nMatthew Johnson Data Bias \u0026 Fairness Bias is another significant ethical implication in data science. Models trained on biased data can make biased predictions, leading to unfair outcomes.\nimport pandas as pd from sklearn.model_selection import train_test_split from sklearn.ensemble import RandomForestClassifier from sklearn.metrics import accuracy_score # Assume we have a dataset with a binary target variable and two features (age and gender) data = pd.DataFrame({ 'age': [25, 30, 35, 40, 45, 50, 55, 60, 65, 70], 'gender': ['M', 'F', 'M', 'F', 'M', 'F', 'M', 'F', 'M', 'F'], 'target': [0, 1, 0, 1, 0, 1, 0, 1, 0, 1] }) data['gender'] = data['gender'].map({'M': 0, 'F': 1}) # Split the data X_train, X_test, y_train, y_test = train_test_split(data.drop('target', axis=1), data['target'], test_size=0.2, random_state=42) # Train a simple model model = RandomForestClassifier(random_state=42) model.fit(X_train, y_train) # Predict on the test set preds = model.predict(X_test) # Display prediction accuracy accuracy = accuracy_score(y_test, preds) print(f'The prediction accuracy of the model is {accuracy:.2f}') This script might return a high prediction accuracy. However, if the ‘gender’ feature dominates in the model decision process and we use this model to make a decision (like loan approval), it could end up generating unethical, biased decisions.\nTransparency and Accountability Ensuring transparency and accountability in AI systems can help determine whether these systems operate as expected and how their predictions/decisions are made.\nFor example, the use of SHAP (SHapley Additive exPlanations) helps to explain the output of any machine learning model.\nTo do this, you’ll need to install the SHAP library:\npip install shap And then use it in your data science projects:\nimport shap # Let's use the model trained above explainer = shap.TreeExplainer(model) shap_values = explainer.shap_values(X_train) # Visualize the SHAP values for the first prediction shap.summary_plot(shap_values, X_train, plot_type=\"bar\") Running this code will generate a visualization explaining how each feature contributed to the prediction, where [INSERT IMAGE HERE] will be the SHAP summary plot, helping us understand the model better.\nConclusion Data science ethics isn’t an add-on. It should be an inherent component of any data science ecosystem - from data collection to prediction interpretation. As data professionals, it’s our responsibility to ensure that models we build are fair, unbiased, transparent and respect users’ privacy. There might not be a one-size-fits-all solution for all ethical concerns, but a good starting point is being aware of these implications and tirelessly striving to minimize their effects.\n",
+  "wordCount" : "667",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://example.org/basics/Ethics_in_Data_Science/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data Driven Discovery - D3",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://example.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://example.org/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="ethics-in-data-science">Ethics in Data Science<a hidden class="anchor" aria-hidden="true" href="#ethics-in-data-science">#</a></h1>
+<p>With the proliferation of big data, the field of data science has been thrust into the spotlight. This increase in data availability and computational power has enabled businesses and organizations worldwide to leverage data to enhance operational efficiency, drive innovation and even pioneer new technological domains. Yet, as we propel further into this data-driven era, we mustn&rsquo;t disregard the ethical implications.</p>
+<p>In this article, we examine the ethics surrounding the practice of data science, why they&rsquo;re important, how they impact our day-to-day lives and how we can address them.</p>
+<h2 id="introduction-to-ethics-in-data-science">Introduction to Ethics in Data Science<a hidden class="anchor" aria-hidden="true" href="#introduction-to-ethics-in-data-science">#</a></h2>
+<p>Ethical considerations in data science are paramount and should persist at all stages - from data acquisition to the deployment of data insights. They&rsquo;re not just normative ethics where we define what&rsquo;s right or wrong. They even encompass professional ethics that guide us in our quest to build models that are both fair and unbiased.</p>
+<p>The ethical concerns can be divided into various categories such as data privacy, consent, bias, fairness, transparency and accountability.</p>
+<h2 id="understanding-the-ethical-implications-in-data-science">Understanding the Ethical Implications in Data Science<a hidden class="anchor" aria-hidden="true" href="#understanding-the-ethical-implications-in-data-science">#</a></h2>
+<p>Let&rsquo;s consider a few examples to illustrate the ethical issues that often emerge in Data Science.</p>
+<h3 id="data-privacy">Data Privacy<a hidden class="anchor" aria-hidden="true" href="#data-privacy">#</a></h3>
+<p>In today&rsquo;s digital age, data privacy is becoming increasingly crucial. Yet, countless examples of data breaches remind us of the importance of data privacy.</p>
+<p>One way to address this is by anonymizing sensitive data using Python&rsquo;s Faker library.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> faker <span style="color:#f92672">import</span> Faker
+</span></span><span style="display:flex;"><span>fake <span style="color:#f92672">=</span> Faker()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Assume we have a user&#39;s real name</span>
+</span></span><span style="display:flex;"><span>user_real_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;John Doe&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Generate a fake name to preserve privacy</span>
+</span></span><span style="display:flex;"><span>user_fake_name <span style="color:#f92672">=</span> fake<span style="color:#f92672">.</span>name()
+</span></span><span style="display:flex;"><span>print(user_fake_name)
+</span></span></code></pre></div><p>If you run this code, it could output something like:</p>
+<pre tabindex="0"><code>Matthew Johnson
+</code></pre><h3 id="data-bias--fairness">Data Bias &amp; Fairness<a hidden class="anchor" aria-hidden="true" href="#data-bias--fairness">#</a></h3>
+<p>Bias is another significant ethical implication in data science. Models trained on biased data can make biased predictions, leading to unfair outcomes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.model_selection <span style="color:#f92672">import</span> train_test_split
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.ensemble <span style="color:#f92672">import</span> RandomForestClassifier
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> sklearn.metrics <span style="color:#f92672">import</span> accuracy_score
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Assume we have a dataset with a binary target variable and two features (age and gender)</span>
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame({
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;age&#39;</span>: [<span style="color:#ae81ff">25</span>, <span style="color:#ae81ff">30</span>, <span style="color:#ae81ff">35</span>, <span style="color:#ae81ff">40</span>, <span style="color:#ae81ff">45</span>, <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">55</span>, <span style="color:#ae81ff">60</span>, <span style="color:#ae81ff">65</span>, <span style="color:#ae81ff">70</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;gender&#39;</span>: [<span style="color:#e6db74">&#39;M&#39;</span>, <span style="color:#e6db74">&#39;F&#39;</span>, <span style="color:#e6db74">&#39;M&#39;</span>, <span style="color:#e6db74">&#39;F&#39;</span>, <span style="color:#e6db74">&#39;M&#39;</span>, <span style="color:#e6db74">&#39;F&#39;</span>, <span style="color:#e6db74">&#39;M&#39;</span>, <span style="color:#e6db74">&#39;F&#39;</span>, <span style="color:#e6db74">&#39;M&#39;</span>, <span style="color:#e6db74">&#39;F&#39;</span>],
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;target&#39;</span>: [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>]
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>data[<span style="color:#e6db74">&#39;gender&#39;</span>] <span style="color:#f92672">=</span> data[<span style="color:#e6db74">&#39;gender&#39;</span>]<span style="color:#f92672">.</span>map({<span style="color:#e6db74">&#39;M&#39;</span>: <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;F&#39;</span>: <span style="color:#ae81ff">1</span>})
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Split the data</span>
+</span></span><span style="display:flex;"><span>X_train, X_test, y_train, y_test <span style="color:#f92672">=</span> train_test_split(data<span style="color:#f92672">.</span>drop(<span style="color:#e6db74">&#39;target&#39;</span>, axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>), data[<span style="color:#e6db74">&#39;target&#39;</span>], test_size<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>, random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Train a simple model</span>
+</span></span><span style="display:flex;"><span>model <span style="color:#f92672">=</span> RandomForestClassifier(random_state<span style="color:#f92672">=</span><span style="color:#ae81ff">42</span>)
+</span></span><span style="display:flex;"><span>model<span style="color:#f92672">.</span>fit(X_train, y_train)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Predict on the test set</span>
+</span></span><span style="display:flex;"><span>preds <span style="color:#f92672">=</span> model<span style="color:#f92672">.</span>predict(X_test)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Display prediction accuracy</span>
+</span></span><span style="display:flex;"><span>accuracy <span style="color:#f92672">=</span> accuracy_score(y_test, preds)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;The prediction accuracy of the model is </span><span style="color:#e6db74">{</span>accuracy<span style="color:#e6db74">:</span><span style="color:#e6db74">.2f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;</span>)
+</span></span></code></pre></div><p>This script might return a high prediction accuracy. However, if the &lsquo;gender&rsquo; feature dominates in the model decision process and we use this model to make a decision (like loan approval), it could end up generating unethical, biased decisions.</p>
+<h3 id="transparency-and-accountability">Transparency and Accountability<a hidden class="anchor" aria-hidden="true" href="#transparency-and-accountability">#</a></h3>
+<p>Ensuring transparency and accountability in AI systems can help determine whether these systems operate as expected and how their predictions/decisions are made.</p>
+<p>For example, the use of SHAP (SHapley Additive exPlanations) helps to explain the output of any machine learning model.</p>
+<p>To do this, you&rsquo;ll need to install the SHAP library:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install shap
+</span></span></code></pre></div><p>And then use it in your data science projects:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> shap
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Let&#39;s use the model trained above</span>
+</span></span><span style="display:flex;"><span>explainer <span style="color:#f92672">=</span> shap<span style="color:#f92672">.</span>TreeExplainer(model)
+</span></span><span style="display:flex;"><span>shap_values <span style="color:#f92672">=</span> explainer<span style="color:#f92672">.</span>shap_values(X_train)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Visualize the SHAP values for the first prediction</span>
+</span></span><span style="display:flex;"><span>shap<span style="color:#f92672">.</span>summary_plot(shap_values, X_train, plot_type<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bar&#34;</span>)
+</span></span></code></pre></div><p>Running this code will generate a visualization explaining how each feature contributed to the prediction, where [INSERT IMAGE HERE] will be the SHAP summary plot, helping us understand the model better.</p>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Data science ethics isn&rsquo;t an add-on. It should be an inherent component of any data science ecosystem - from data collection to prediction interpretation. As data professionals, it&rsquo;s our responsibility to ensure that models we build are fair, unbiased, transparent and respect users&rsquo; privacy. There might not be a one-size-fits-all solution for all ethical concerns, but a good starting point is being aware of these implications and tirelessly striving to minimize their effects.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://example.org/">Data Driven Discovery - D3</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Data Driven Discovery - D3</title>
+<meta name="keywords" content="">
+<meta name="description" content="Things Every Data Scientist Must Know About Web Scraping Web scraping is an essential skill in the data scientist&rsquo;s arsenal. It involves the extraction of data from webpages. This information often helps in understanding and predicting trends, making it an indispensable tool in the world of data science. In this article, we will dive into what web scraping entails, Python&rsquo;s tools available for web scraping, and key considerations to understand during the process.">
+<meta name="author" content="">
+<link rel="canonical" href="http://example.org/basics/Things_Every_Data_Scientist_Must_Know_About_Web_Scraping/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://example.org/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://example.org/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://example.org/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://example.org/apple-touch-icon.png">
+<link rel="mask-icon" href="http://example.org/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:title" content="" />
+<meta property="og:description" content="Things Every Data Scientist Must Know About Web Scraping Web scraping is an essential skill in the data scientist&rsquo;s arsenal. It involves the extraction of data from webpages. This information often helps in understanding and predicting trends, making it an indispensable tool in the world of data science. In this article, we will dive into what web scraping entails, Python&rsquo;s tools available for web scraping, and key considerations to understand during the process." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/basics/Things_Every_Data_Scientist_Must_Know_About_Web_Scraping/" /><meta property="article:section" content="basics" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Things Every Data Scientist Must Know About Web Scraping Web scraping is an essential skill in the data scientist&rsquo;s arsenal. It involves the extraction of data from webpages. This information often helps in understanding and predicting trends, making it an indispensable tool in the world of data science. In this article, we will dive into what web scraping entails, Python&rsquo;s tools available for web scraping, and key considerations to understand during the process."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Basics",
+      "item": "http://example.org/basics/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "",
+      "item": "http://example.org/basics/Things_Every_Data_Scientist_Must_Know_About_Web_Scraping/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "name": "",
+  "description": "Things Every Data Scientist Must Know About Web Scraping Web scraping is an essential skill in the data scientist\u0026rsquo;s arsenal. It involves the extraction of data from webpages. This information often helps in understanding and predicting trends, making it an indispensable tool in the world of data science. In this article, we will dive into what web scraping entails, Python\u0026rsquo;s tools available for web scraping, and key considerations to understand during the process.",
+  "keywords": [
+    
+  ],
+  "articleBody": "Things Every Data Scientist Must Know About Web Scraping Web scraping is an essential skill in the data scientist’s arsenal. It involves the extraction of data from webpages. This information often helps in understanding and predicting trends, making it an indispensable tool in the world of data science. In this article, we will dive into what web scraping entails, Python’s tools available for web scraping, and key considerations to understand during the process.\nIntroduction Web scraping is a potent technique to collect data from web pages. This process can be automated to search and extract large amounts of data quickly. Typically, a program sends a GET request to the targeted webpage’s server, gets the server’s response in HTML format, parses this HTML document, and extracts the required information.\nWeb scraping is instrumental in the fields of data analysis, machine learning, artificial intelligence, and several others, where huge sets of data are to be processed.\nWeb Scraping with Python Python stands out in web scraping field due to its simplicity and availability of tools. Key Python libraries for web scraping include requests, BeautifulSoup, and Scrapy.\nrequests requests make use of HTTP to communicate with websites just like your web browser. To illustrate this, let’s scrape the homepage of ’example.com':\nimport requests URL = 'http://www.example.com' res = requests.get(URL) print(res.text) Output\n\u003c!doctype html\u003e \u003chtml\u003e \u003chead\u003e \u003ctitle\u003eExample Domain\u003c/title\u003e ... \u003carticle\u003e \u003ch1\u003eExample Domain\u003c/h1\u003e ... \u003c/article\u003e \u003c/html\u003e BeautifulSoup Although requests are great for sending HTTP requests, they require a lot of work for parsing the HTML response. Here is where BeautifulSoup comes in handy - it handles all the complexities of parsing for you! Here’s an example:\nfrom bs4 import BeautifulSoup # Continuing from the previous snippet soup = BeautifulSoup(res.text, 'html.parser') # Extract the title of the page print(soup.title) # Extract the text of the title print(soup.title.string) Output\nExample Domain Example Domain Scrapy Scrapy is not just a library but a complete web scraping framework, allowing you to write spider programs to crawl in websites and extract data. It’s potent and efficient, however, it’s more complex to get started:\nimport scrapy class ExampleSpider(scrapy.Spider): name = 'example' start_urls = ['http://www.example.com'] def parse(self, response): print(response.css('title::text').get()) NB: Running this script requires the Scrapy command line interface, not just simple Python execution.\nLegal and ethical considerations Web scraping could unintentionally lead to legal problems. Here are certain key considerations:\nAlways read a website’s “Robots.txt” file and “Terms of Service” before scraping. These provide guidelines about what they allow to be scraped. Try to make your scraping activities as less intrusive as possible so as not to cause any harm to the website. Alter the headers of your requests, limit the rate of your requests, etc. Never use scraped data for commercial purposes without permission. Conclusion Web scraping is undoubtedly a powerful tool for any data scientist. Python, armed with libraries like requests, BeautifulSoup and Scrapy, makes the task easier. However, with great power, comes great responsibility - always remember the ethical considerations when undertaking a web scraping project.\nWith web scraping being integral to data collection and thus, the further stages of data processing and machine learning, mastering it is essential for a data science career. Happy scraping!\n",
+  "wordCount" : "528",
+  "inLanguage": "en",
+  "datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://example.org/basics/Things_Every_Data_Scientist_Must_Know_About_Web_Scraping/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data Driven Discovery - D3",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://example.org/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://example.org/" accesskey="h" title="Data Driven Discovery - D3 (Alt + H)">Data Driven Discovery - D3</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      
+    </h1>
+    <div class="post-meta">
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="things-every-data-scientist-must-know-about-web-scraping">Things Every Data Scientist Must Know About Web Scraping<a hidden class="anchor" aria-hidden="true" href="#things-every-data-scientist-must-know-about-web-scraping">#</a></h1>
+<p>Web scraping is an essential skill in the data scientist&rsquo;s arsenal. It involves the extraction of data from webpages. This information often helps in understanding and predicting trends, making it an indispensable tool in the world of data science. In this article, we will dive into what web scraping entails, Python&rsquo;s tools available for web scraping, and key considerations to understand during the process.</p>
+<h2 id="introduction">Introduction<a hidden class="anchor" aria-hidden="true" href="#introduction">#</a></h2>
+<p>Web scraping is a potent technique to collect data from web pages. This process can be automated to search and extract large amounts of data quickly. Typically, a program sends a GET request to the targeted webpage&rsquo;s server, gets the server&rsquo;s response in HTML format, parses this HTML document, and extracts the required information.</p>
+<p>Web scraping is instrumental in the fields of data analysis, machine learning, artificial intelligence, and several others, where huge sets of data are to be processed.</p>
+<h2 id="web-scraping-with-python">Web Scraping with Python<a hidden class="anchor" aria-hidden="true" href="#web-scraping-with-python">#</a></h2>
+<p>Python stands out in web scraping field due to its simplicity and availability of tools. Key Python libraries for web scraping include <code>requests</code>, <code>BeautifulSoup</code>, and <code>Scrapy</code>.</p>
+<h3 id="requests"><strong><code>requests</code></strong><a hidden class="anchor" aria-hidden="true" href="#requests">#</a></h3>
+<p><code>requests</code> make use of HTTP to communicate with websites just like your web browser. To illustrate this, let&rsquo;s scrape the homepage of &rsquo;example.com':</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> requests
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>URL <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;http://www.example.com&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>res <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>get(URL)
+</span></span><span style="display:flex;"><span>print(res<span style="color:#f92672">.</span>text)
+</span></span></code></pre></div><p><strong>Output</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-HTML" data-lang="HTML"><span style="display:flex;"><span><span style="color:#75715e">&lt;!doctype html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">title</span>&gt;Example Domain&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">article</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">h1</span>&gt;Example Domain&lt;/<span style="color:#f92672">h1</span>&gt;
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">article</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;
+</span></span></code></pre></div><h3 id="beautifulsoup"><strong><code>BeautifulSoup</code></strong><a hidden class="anchor" aria-hidden="true" href="#beautifulsoup">#</a></h3>
+<p>Although <code>requests</code> are great for sending HTTP requests, they require a lot of work for parsing the HTML response. Here is where <code>BeautifulSoup</code> comes in handy - it handles all the complexities of parsing for you! Here&rsquo;s an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> bs4 <span style="color:#f92672">import</span> BeautifulSoup
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Continuing from the previous snippet</span>
+</span></span><span style="display:flex;"><span>soup <span style="color:#f92672">=</span> BeautifulSoup(res<span style="color:#f92672">.</span>text, <span style="color:#e6db74">&#39;html.parser&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Extract the title of the page</span>
+</span></span><span style="display:flex;"><span>print(soup<span style="color:#f92672">.</span>title)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Extract the text of the title</span>
+</span></span><span style="display:flex;"><span>print(soup<span style="color:#f92672">.</span>title<span style="color:#f92672">.</span>string)
+</span></span></code></pre></div><p><strong>Output</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Text" data-lang="Text"><span style="display:flex;"><span>&lt;title&gt;Example Domain&lt;/title&gt;
+</span></span><span style="display:flex;"><span>Example Domain
+</span></span></code></pre></div><h3 id="scrapy"><strong>Scrapy</strong><a hidden class="anchor" aria-hidden="true" href="#scrapy">#</a></h3>
+<p>Scrapy is not just a library but a complete web scraping framework, allowing you to write spider programs to crawl in websites and extract data. It&rsquo;s potent and efficient, however, it&rsquo;s more complex to get started:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> scrapy
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ExampleSpider</span>(scrapy<span style="color:#f92672">.</span>Spider):
+</span></span><span style="display:flex;"><span>    name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;example&#39;</span>
+</span></span><span style="display:flex;"><span>    start_urls <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;http://www.example.com&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">parse</span>(self, response):
+</span></span><span style="display:flex;"><span>        print(response<span style="color:#f92672">.</span>css(<span style="color:#e6db74">&#39;title::text&#39;</span>)<span style="color:#f92672">.</span>get())
+</span></span></code></pre></div><p><strong>NB</strong>: Running this script requires the Scrapy command line interface, not just simple Python execution.</p>
+<h2 id="legal-and-ethical-considerations">Legal and ethical considerations<a hidden class="anchor" aria-hidden="true" href="#legal-and-ethical-considerations">#</a></h2>
+<p>Web scraping could unintentionally lead to legal problems. Here are certain key considerations:</p>
+<ul>
+<li>Always read a website&rsquo;s &ldquo;Robots.txt&rdquo; file and &ldquo;Terms of Service&rdquo; before scraping. These provide guidelines about what they allow to be scraped.</li>
+<li>Try to make your scraping activities as less intrusive as possible so as not to cause any harm to the website. Alter the headers of your requests, limit the rate of your requests, etc.</li>
+<li>Never use scraped data for commercial purposes without permission.</li>
+</ul>
+<h2 id="conclusion">Conclusion<a hidden class="anchor" aria-hidden="true" href="#conclusion">#</a></h2>
+<p>Web scraping is undoubtedly a powerful tool for any data scientist. Python, armed with libraries like <code>requests</code>, <code>BeautifulSoup</code> and <code>Scrapy</code>, makes the task easier. However, with great power, comes great responsibility - always remember the ethical considerations when undertaking a web scraping project.</p>
+<p>With web scraping being integral to data collection and thus, the further stages of data processing and machine learning, mastering it is essential for a data science career. Happy scraping!</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="http://example.org/">Data Driven Discovery - D3</a></span>
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
