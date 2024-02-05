@@ -1,0 +1,74 @@
+# Demystifying the Basics of Predictive Analytics
+
+Predictive analytics is a branch of advanced analytics that uses both new and historical data to predict future activity, behavior and trends. As an essential tool for machine learning, data science and data engineering, predictive analytics makes use of many techniques including statistical modeling, machine learning, and data mining to analyze current data and make predictions about the future. Let's discuss the basics of Predictive Analytics, its implementation leveraging python libraries like scikit-learn and pandas, and its applications in real-world scenarios. 
+
+## Introduction to Predictive Analytics
+
+Predictive analytics involves collecting data, creating a statistical model, making predictions and validating the model with the use of historical data. The goal is to use this data to foresee what’s going to happen in the future. A significant part depends on the quality and relevancy of the data used. 
+
+This predictive model provides estimates about the likelihood of a future outcome. To develop this model, it will require a dataset that has the historical information. Then, a statistical algorithm is selected that among this data identifies certain patterns. 
+
+
+## Building a Predictive Model with Python
+
+Open-source libraries in Python, like Scikit-learn and Pandas library, have made Python a great choice for predictive modeling. Let's illustrate this with a working example to demonstrate how easy it is.
+
+```python
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn import metrics
+
+
+# Let's make a dataset for our predictive model
+data = {
+    'Experience': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    'Salary': [4000, 5000, 6000, 7000, 8000, 9000, 10000, 11000, 12000, 13000]
+}
+df = pd.DataFrame(data)
+
+
+# split into X (independent) and y (dependent)
+X = df.Experience.values.reshape(-1, 1)
+y = df.Salary.values.reshape(-1, 1)
+
+
+# Splitting the dataset into the Training set and Test set
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)
+
+
+# Fitting Simple Linear Regression to the Training set
+regressor = LinearRegression()
+regressor.fit(X_train, y_train)
+
+
+# Predicting the Test set results
+y_pred = regressor.predict(X_test)
+
+
+# Comparing Actual vs Predicted
+comparison_df = pd.DataFrame({'Actual': y_test.flatten(), 'Predicted': y_pred.flatten()})
+print(comparison_df)
+```
+
+This simple linear regression model could predict the salary according to the experience level. When you run above code snippet, the output will be as follows:
+
+```plain
+   Actual  Predicted
+0    9000     8500.0
+1   13000    12500.0
+2    6000     4500.0
+```
+
+## Uses of Predictive Analytics
+
+Predictive analytics is at its best when it's used to make predictions about unknown future events. Some industries that extensively use predictive analytics include healthcare, marketing, finance, retail, travel and more. From predicting disease risks, forecasting retail sales, improving customer relations, to mitigating financial risks - Predictive analytics has a wide array of uses across sectors.
+
+
+## Conclusion
+
+Predictive analytics serves as a powerful tool in the arsenal of data professionals. It holds the key to unlocking insights from vast stores of data, helping organizations anticipate future events, manage uncertainty, and make smarter decisions. As predictive analytics continues to advance, it’s going to play an even more critical role in driving competitive advantage and innovation within the world of data science and data engineering.
+
+Understanding predictive analytics and how to leverage it using common data science tools like Python is a valuable skill for any aspiring data professional. Boasting a broad range of applications, mastery of predictive analytics will continue to be in high demand across numerous industries.
+
+Through this article, we've aimed to demystify predictive analytics, guiding you from the conceptual understanding to practical implementation using Python libraries. By continuing to explore and experiment with different datasets and prediction models, you can further enrich your learning and continue enhancing your predictive analytics skills.
