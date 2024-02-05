@@ -1,3 +1,12 @@
+
+---
+title: Introduction to Database Normalization
+date: 2024-02-05
+tags: ['Database', 'Normalization', 'Tutorial', 'Beginner']
+categories: ["basics"]
+---
+
+
 # Introduction to Database Normalization
 
 Database normalization is a crucial step in data engineering and design. It defines a set of methods to break down tables to their simplest form to avoid complex attributes and redundancy. The goal of normalization is to eliminate redundant (redundant = duplicate) data, which in turn prevents data anomalies and saves storage.

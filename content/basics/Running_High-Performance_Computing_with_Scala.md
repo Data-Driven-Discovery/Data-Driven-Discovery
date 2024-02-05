@@ -1,3 +1,12 @@
+
+---
+title: Running High-Performance Computing with Scala
+date: 2024-02-05
+tags: ['High-Performance Computing', 'Scala', 'Tutorial', 'Beginner']
+categories: ["basics"]
+---
+
+
 # Running High-Performance Computing with Scala
 
 In the data world, performance and speed when processing large-scale datasets is a top priority. The trend has inclined towards language tools that offer both functionality and efficiency. While Python has been a front-runner in data science, Scala is captivating a large number of developers and data professionals due to its high performance, functional programming capability, and adaptability with Big Data tools like Apache Spark. 

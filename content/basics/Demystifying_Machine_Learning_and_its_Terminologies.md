@@ -1,3 +1,12 @@
+
+---
+title: Demystifying Machine Learning and its Terminologies
+date: 2024-02-05
+tags: ['Machine Learning', 'Data Science', 'Tutorial', 'Beginner']
+categories: ["basics"]
+---
+
+
 # Demystifying Machine Learning and its Terminologies
 
 In today's data-driven world, Machine Learning (ML) has become a buzzword, but do we really understand what it means, and its potential? Are we aware of the various terminologies used in this field, which play a crucial role in understanding and implementing Machine Learning concepts? This article focuses on simplifying and explaining Machine Learning and its related terminologies.

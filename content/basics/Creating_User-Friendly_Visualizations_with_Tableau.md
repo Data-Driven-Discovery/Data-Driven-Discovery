@@ -1,3 +1,12 @@
+
+---
+title: Creating User-Friendly Visualizations with Tableau
+date: 2024-02-05
+tags: ['Data Visualization', 'Data Analysis', 'Tutorial', 'Data Science', 'Beginner']
+categories: ["basics"]
+---
+
+
 # Creating User-Friendly Visualizations with Tableau
 
 Data visualization plays an essential role in the field of Data Science, Machine Learning, and Data Engineering. It not only helps in understanding patterns, trends, or insights but also makes it easier to illustrate the story behind the numbers. In this guide, we're going to explore the role of **Tableau**, a widely-used data visualization tool, in creating user-friendly and interactive visualizations.

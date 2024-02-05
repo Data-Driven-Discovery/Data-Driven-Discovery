@@ -1,3 +1,12 @@
+
+---
+title: Understanding the Basics of SQL and its Importance
+date: 2024-02-05
+tags: ['SQL', 'Data Analysis', 'Tutorial', 'Beginner']
+categories: ["basics"]
+---
+
+
 # Understanding the Basics of SQL and its Importance
 
 SQL or Structured Query Language is a fundamental tool used across industries for accessing, manipulating, and analyzing data stored in relational databases. If you're a Data professional, chances are high that you will encounter SQL. This article covers the basics of SQL and its significance in Data Science, Machine Learning, Data Engineering, and MLOps.

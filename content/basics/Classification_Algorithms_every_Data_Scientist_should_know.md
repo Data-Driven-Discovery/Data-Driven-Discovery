@@ -1,3 +1,12 @@
+
+---
+title: Classification Algorithms Every Data Scientist Should Know
+date: 2024-02-05
+tags: ['Machine Learning', 'Data Science', 'Supervised Learning', 'Unsupervised Learning', 'Beginner']
+categories: ["basics"]
+---
+
+
 # Classification Algorithms Every Data Scientist Should Know
 
 Classification algorithms are indeed the backbone of machine learning. They help in predicting the category or class of certain data points based on past observations. The reliability of their prediction is staggeringly good, making them widely used across several domains. This post will walk you through some pivotal classification algorithms every data scientist should know.
