@@ -1,4 +1,4 @@
-baseURL = 'https://lustrous-paprenjak-b7c3d8.netlify.app/'
+baseURL = 'https://blog.datadrivendiscovery.tech/'
 languageCode = 'en-us'
 title = 'Data Driven Discovery - D3'
 theme = 'PaperMod'
