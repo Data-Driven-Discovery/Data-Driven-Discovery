@@ -1,12 +1,3 @@
-
----
-title: Introduction to Cloud Computing
-date: 2024-02-05
-tags: ['Cloud Computing for Data Science', 'Tutorial', 'Beginner']
-categories: ["basics"]
----
-
-
 # Introduction to Cloud Computing
 
 This article aims to give you a clear understanding about cloud computing and its importance in the world of Data Science, Machine Learning, and MLOps. As data professionals, we're surrounded by terms like 'software as a service' and 'infrastructure as a service': rooted in cloud computing. This article is a highly-readable primer: introducing you to these technologies, why they're important, and how they reshape how we work with data.

@@ -1,12 +1,3 @@
-
----
-title: Top Python Libraries for Data Science
-date: 2024-02-05
-tags: ['Data Science', 'Python', 'Libraries', 'Tutorial', 'Beginner']
-categories: ["basics"]
----
-
-
 # Top Python Libraries for Data Science 
 
 As we navigate the 21st century, data continues to grow exponentially. To make sense of this plethora of information, we resort to Data Science. Data Science concerns extraction of insights from raw, structured or unstructured data. It's an interdisciplinary field that uses various techniques from many fields like mathematics, machine learning, computer science, and statistics to generate insights from data.

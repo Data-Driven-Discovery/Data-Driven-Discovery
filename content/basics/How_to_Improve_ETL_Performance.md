@@ -1,12 +1,3 @@
-
----
-title: How to Improve ETL Performance
-date: 2024-02-05
-tags: ['ETL Processes', 'Data Engineering', 'Tutorial', 'Advanced Topic']
-categories: ["basics"]
----
-
-
 # How to Improve ETL Performance
 
 Extract, Transform, Load (ETL) is a fundamental concept in the realm of Data Engineering. ETL processes are the backbone of every data warehouse, responsible for the timely and accurate migration of data from source systems to the data warehouse. A bottleneck in ETL can lead to undesirable consequences in business decision-making, making ETL performance optimization a priority for every Data Engineer. In this article, we'll be looking at practical means to improve ETL performance, using Python and the pandarallel library to leverage parallel processing for our ETL tasks.

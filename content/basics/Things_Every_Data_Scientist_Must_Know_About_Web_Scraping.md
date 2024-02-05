@@ -1,12 +1,3 @@
-
----
-title: Things Every Data Scientist Must Know About Web Scraping
-date: 2024-02-05
-tags: ['Web Scraping', 'Data Science', 'Tutorial', 'Beginner']
-categories: ["basics"]
----
-
-
 # Things Every Data Scientist Must Know About Web Scraping
 
 Web scraping is an essential skill in the data scientist's arsenal. It involves the extraction of data from webpages. This information often helps in understanding and predicting trends, making it an indispensable tool in the world of data science. In this article, we will dive into what web scraping entails, Python's tools available for web scraping, and key considerations to understand during the process.

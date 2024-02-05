@@ -1,12 +1,3 @@
-
----
-title: Understanding the Basics of Artificial Intelligence
-date: 2024-02-05
-tags: ['Artificial Intelligence', 'Machine Learning', 'Tutorial', 'Beginner']
-categories: ["basics"]
----
-
-
 # Understanding the Basics of Artificial Intelligence
 
 Hello reader, whether you're a data enthusiast, a machine learning developer, or someone looking to dip their toes into the exciting world of artificial intelligence(AI), you've come to the right place. In this article, we will provide a comprehensive overview of AI, including its origins, core concepts, and step-by-step instructions (with Python source code) on how to build a simplistic AI model.

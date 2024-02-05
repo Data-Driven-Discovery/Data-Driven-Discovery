@@ -1,12 +1,3 @@
-
----
-title: Managing Big Data with Apache Spark
-date: 2024-02-05
-tags: ['Big Data', 'Apache Spark', 'Data Engineering', 'Tutorial', 'Beginner']
-categories: ["basics"]
----
-
-
 # Managing Big Data with Apache Spark
 
 In this digital age, virtually every aspect of our lives generates data. From our social media activities to our online shopping habits, data is being harvested and used in ways that we could hardly have imagined even a decade ago. Among the tools designed to handle big data analytics, Apache Spark stands out due to its speed, ease of use, and general-purpose processing power.

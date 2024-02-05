@@ -1,12 +1,3 @@
-
----
-title: Beyond Accuracy: Advanced Metrics for Evaluating Machine Learning Models
-date: 2024-02-05
-tags: ['Machine Learning', 'Model Evaluation', 'Advanced Topic']
-categories: ["advanced"]
----
-
-
 # Beyond Accuracy: Advanced Metrics for Evaluating Machine Learning Models
 
 When it comes to evaluating machine learning models, accuracy is often the first metric that comes to mind. However, depending solely on accuracy to measure the performance of a model can be misleading, especially in cases where the dataset is imbalanced or the cost of false positives is significantly different from the cost of false negatives. In this article, we dive deep into advanced metrics beyond accuracy that provide a more nuanced understanding of model performance. These insights are invaluable for data scientists, data engineers, and MLOps professionals aiming to develop robust machine learning systems.

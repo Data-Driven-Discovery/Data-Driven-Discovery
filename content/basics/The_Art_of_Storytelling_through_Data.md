@@ -1,12 +1,3 @@
-
----
-title: The Art of Storytelling through Data
-date: 2024-02-05
-tags: ['Data Visualization', 'Data Science', 'Storytelling', 'Tutorial', 'Beginner']
-categories: ["basics"]
----
-
-
 # The Art of Storytelling through Data
 
 In this technologically advanced era, data is often visualized as vast networks of numbers and codes. But, a skilled data practitioner knows data can be much more than dry statistics. For those who know how to wield, interpret and communicate, data becomes a compelling storyteller, offering tantalizing insights into patterns and trends that were previously hidden.

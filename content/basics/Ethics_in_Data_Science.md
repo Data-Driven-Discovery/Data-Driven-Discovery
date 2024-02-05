@@ -1,12 +1,3 @@
-
----
-title: Ethics in Data Science
-date: 2024-02-05
-tags: ['Data Science', 'AI Ethics', 'Tutorial', 'Advanced Topic']
-categories: ["basics"]
----
-
-
 # Ethics in Data Science
 
 With the proliferation of big data, the field of data science has been thrust into the spotlight. This increase in data availability and computational power has enabled businesses and organizations worldwide to leverage data to enhance operational efficiency, drive innovation and even pioneer new technological domains. Yet, as we propel further into this data-driven era, we mustn't disregard the ethical implications. 

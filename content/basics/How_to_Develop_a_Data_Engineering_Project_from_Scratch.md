@@ -1,12 +1,3 @@
-
----
-title: How to Develop a Data Engineering Project from Scratch
-date: 2024-02-05
-tags: ['Data Engineering', 'Project Management', 'Tutorial', 'Beginner']
-categories: ["basics"]
----
-
-
 # How to Develop a Data Engineering Project from Scratch
 
 There is a growing demand for professionals skilled in data engineering, which is the foundation of the data-driven decision-making that is pivotal in today’s business environment. Embarking on a data engineering project can certainly be exhilarating but also daunting. In this blog post, we'll walk through the major steps and practices for starting a data engineering project from scratch.

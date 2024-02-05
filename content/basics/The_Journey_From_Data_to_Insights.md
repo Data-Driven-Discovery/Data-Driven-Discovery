@@ -1,12 +1,3 @@
-
----
-title: The Journey From Data to Insights
-date: 2024-02-05
-tags: ['Data Analysis', 'Data Science', 'Tutorial', 'Beginner']
-categories: ["basics"]
----
-
-
 # The Journey From Data to Insights
 
 In this era of digital transformation, significantly influenced by the fourth industrial revolution, data is the critical fuel that powers business decision-making and strategy building. In the terrain of data, the journey from raw data to useful insights is not always easy. However, with the right set of skills, tools and techniques, one can seamlessly transform raw data into actionable insights.

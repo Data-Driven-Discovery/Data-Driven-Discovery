@@ -1,12 +1,3 @@
-
----
-title: TOP 10 Essential Excel Functions for Data Analysis
-date: 2024-02-05
-tags: ['Data Analysis', 'Excel', 'Data Science', 'Tutorial', 'Beginner']
-categories: ["basics"]
----
-
-
 # TOP 10 Essential Excel Functions for Data Analysis
 
 As a Data Professional, you stumble across a ton of data. Not all of them will be in a structured form suitable for Machine Learning or Data Science algorithms. Often, you'll find data hidden in Excel sheets. In such cases, the ability to use Excel becomes a necessary skill to have in your repertoire. In this article, we'll walk you through 10 invaluable Excel functions that are quintessential for Data Analysis. Whether you are a seasoned Data Scientist or a budding Data Engineer, chances are you'll find this helpful. Mastering these top 10 excel functions could serve as a stepping stone for breaking down a complex dataset and achieving intricate analyses.

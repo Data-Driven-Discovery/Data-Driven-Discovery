@@ -1,12 +1,3 @@
-
----
-title: Statistical Modeling: The Two Types of Errors One Should Know About
-date: 2024-02-05
-tags: ['Statistical Modeling', 'Data Science', 'Tutorial', 'Beginner']
-categories: ["basics"]
----
-
-
 # Statistical Modeling: The Two Types of Errors One Should Know About
 
 Statistical modeling is a crucial aspect of machine learning, data science, and data engineering. These models are often trained to predict unseen data. However, the predictions are not always 100% accurate. Therefore, it is important to understand the errors involved - Type I and Type II errors. Let's dive in to explore both of these error types.

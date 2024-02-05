@@ -1,12 +1,3 @@
-
----
-title: Getting Started with Data Visualization using Matplotlib
-date: 2024-02-05
-tags: ['Data Visualization', 'Python', 'Matplotlib', 'Tutorial', 'Beginner']
-categories: ["basics"]
----
-
-
 # Getting Started with Data Visualization using Matplotlib
 
 In the world of Data Science, visualization often takes precedence due to its crucial role in interpreting complex datasets, uncovering patterns, trends and correlations. Of the numerous libraries available for data visualization in Python, Matplotlib is the most widely used one. In this tutorial, we'll explore the basics of data visualization using Matplotlib, featuring some working Python code snippets that demonstrate its functionality.

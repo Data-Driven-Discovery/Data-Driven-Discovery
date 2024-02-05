@@ -1,12 +1,3 @@
-
----
-title: Demystifying the Basics of Predictive Analytics
-date: 2024-02-05
-tags: ['Predictive Analytics', 'Data Science', 'Tutorial', 'Beginner']
-categories: ["basics"]
----
-
-
 # Demystifying the Basics of Predictive Analytics
 
 In the modern age where data drives decisions, predictive analytics has emerged as a game-changer for businesses, governments, and individuals alike. This article aims to demystify the fundamentals of predictive analytics for readers who are interested in the burgeoning field of data science, machine learning, and data engineering. We will take a glimpse at what predictive analytics is, its working process, its applications, as well as a some practical Python code examples using common Machine Learning libraries.

@@ -1,12 +1,3 @@
-
----
-title: Statistical Analysis in Python: A Progressing Tool for Data Analysis
-date: 2024-02-05
-tags: ['Statistical Analysis', 'Python', 'Tutorial', 'Beginner']
-categories: ["basics"]
----
-
-
 # Statistical Analysis in Python: A Progressing Tool for Data Analysis
 
 ## Introduction
