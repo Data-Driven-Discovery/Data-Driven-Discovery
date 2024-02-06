@@ -4,3 +4,5 @@ title = 'Data Driven Discovery - D3'
 theme = 'PaperMod'
 disablePathToLower = true
 googleAnalytics = "G-M9DJPKLL1Z"
+gtm_id = "GTM-MWLTDMRW"
+gtm_ga = true
